@@ -1,0 +1,105 @@
+## _MTLCommandEncoder size=120
+  ivar   24 _device @"<MTLDevice>"
+  ivar   32 _commandBuffer @"_MTLCommandBuffer<MTLCommandBuffer>"
+  ivar   40 _numThisEncoder Q
+  ivar   48 _StatEnabled c
+  ivar   56 _numCommands Q
+  ivar   64 _StatOptions Q
+  ivar   72 _StatLocations Q
+  ivar   80 _globalTraceObjectID Q
+  ivar   88 _labelTraceID Q
+  ivar   96 _progressFence @"<MTLFence>"
+  ivar  104 _needsFrameworkAssistedErrorTracking B
+  ivar  105 _isProgressTrackingEncoder B
+  ivar  112 _debugSignposts @"NSMutableArray"
+  -dealloc  v16@0:8
+  -description  @16@0:8
+  -setMeshSamplerStates:withRange:  v40@0:8r^@16{_NSRange=QQ}24
+  -setObjectBuffer:offset:atIndex:  v40@0:8@16Q24Q32
+  -setThreadgroupDistributionMode:  v24@0:8q16
+  -pushDebugGroup:  v24@0:8@16
+  -barrierAfterQueueStages:beforeStages:  v32@0:8Q16Q24
+  -commandBuffer  @16@0:8
+  -copyFromTensor:sourceOrigin:sourceDimensions:toTensor:destinationOrigin:destinationDimensions:  v64@0:8@16@24@32@40@48@56
+  -copyFromTensor:sourceSlice:toTensor:destinationSlice:  v64@0:8@16{MTLTensorSlice=@@}24@40{MTLTensorSlice=@@}48
+  -device  @16@0:8
+  -dispatchType  Q16@0:8
+  -drawMeshThreadgroups:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:  v88@0:8{?=QQQ}16{?=QQQ}40{?=QQQ}64
+  -drawMeshThreadgroupsWithIndirectBuffer:indirectBufferOffset:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:  v80@0:8@16Q24{?=QQQ}32{?=QQQ}56
+  -drawMeshThreads:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:  v88@0:8{?=QQQ}16{?=QQQ}40{?=QQQ}64
+  -endEncoding  v16@0:8
+  -endEncodingAndRetrieveProgramAddressTable  @16@0:8
+  -formattedDescription:  @24@0:8Q16
+  -globalTraceObjectID  Q16@0:8
+  -insertDebugSignpost:  v24@0:8@16
+  -insertSplit  v16@0:8
+  -invalidateCompressedTexture:  v24@0:8@16
+  -invalidateCompressedTexture:slice:level:  v40@0:8@16Q24Q32
+  -numThisCommand  Q16@0:8
+  -optimizeContentsForCPUAccess:  v24@0:8@16
+  -optimizeContentsForCPUAccess:slice:level:  v40@0:8@16Q24Q32
+  -optimizeContentsForGPUAccess:  v24@0:8@16
+  -optimizeContentsForGPUAccess:slice:level:  v40@0:8@16Q24Q32
+  -optimizeContentsForTexture:readAccessPattern:readAccessor:  v40@0:8@16q24q32
+  -optimizeContentsForTexture:readAccessPattern:readAccessor:slice:level:  v56@0:8@16q24q32Q40Q48
+  -popDebugGroup  v16@0:8
+  -setAccelerationStructure:atBufferIndex:  v32@0:8@16Q24
+  -setBuffer:offset:attributeStride:atIndex:  v48@0:8@16Q24Q32Q40
+  -setBufferOffset:attributeStride:atIndex:  v40@0:8Q16Q24Q32
+  -setBuffers:offsets:attributeStrides:withRange:  v56@0:8r^@16r^Q24r^Q32{_NSRange=QQ}40
+  -setBytes:length:attributeStride:atIndex:  v48@0:8r^v16Q24Q32Q40
+  -setColorAttachmentMap:  v24@0:8@16
+  -setFragmentAccelerationStructure:atBufferIndex:  v32@0:8@16Q24
+  -setMeshAccelerationStructure:atBufferIndex:  v32@0:8@16Q24
+  -setMeshBuffer:offset:atIndex:  v40@0:8@16Q24Q32
+  -setMeshBufferOffset:atIndex:  v32@0:8Q16Q24
+  -setMeshBuffers:offsets:withRange:  v48@0:8r^@16r^Q24{_NSRange=QQ}32
+  -setMeshBytes:length:atIndex:  v40@0:8r^v16Q24Q32
+  -setMeshIntersectionFunctionTable:atBufferIndex:  v32@0:8@16Q24
+  -setMeshIntersectionFunctionTables:withBufferRange:  v40@0:8r^@16{_NSRange=QQ}24
+  -setMeshSamplerState:atIndex:  v32@0:8@16Q24
+  -setMeshSamplerState:lodMinClamp:lodMaxClamp:atIndex:  v40@0:8@16f24f28Q32
+  -setMeshSamplerStates:lodMinClamps:lodMaxClamps:withRange:  v56@0:8r^@16r^f24r^f32{_NSRange=QQ}40
+  -setMeshTexture:atIndex:  v32@0:8@16Q24
+  -setMeshTextures:withRange:  v40@0:8r^@16{_NSRange=QQ}24
+  -setMeshVisibleFunctionTable:atBufferIndex:  v32@0:8@16Q24
+  -setMeshVisibleFunctionTables:withBufferRange:  v40@0:8r^@16{_NSRange=QQ}24
+  -setObjectAccelerationStructure:atBufferIndex:  v32@0:8@16Q24
+  -setObjectBufferOffset:atIndex:  v32@0:8Q16Q24
+  -setObjectBuffers:offsets:withRange:  v48@0:8r^@16r^Q24{_NSRange=QQ}32
+  -setObjectBytes:length:atIndex:  v40@0:8r^v16Q24Q32
+  -setObjectIntersectionFunctionTable:atBufferIndex:  v32@0:8@16Q24
+  -setObjectIntersectionFunctionTables:withBufferRange:  v40@0:8r^@16{_NSRange=QQ}24
+  -setObjectSamplerState:atIndex:  v32@0:8@16Q24
+  -setObjectSamplerState:lodMinClamp:lodMaxClamp:atIndex:  v40@0:8@16f24f28Q32
+  -setObjectSamplerStates:lodMinClamps:lodMaxClamps:withRange:  v56@0:8r^@16r^f24r^f32{_NSRange=QQ}40
+  -setObjectSamplerStates:withRange:  v40@0:8r^@16{_NSRange=QQ}24
+  -setObjectTexture:atIndex:  v32@0:8@16Q24
+  -setObjectTextures:withRange:  v40@0:8r^@16{_NSRange=QQ}24
+  -setObjectThreadgroupMemoryLength:atIndex:  v32@0:8Q16Q24
+  -setObjectVisibleFunctionTable:atBufferIndex:  v32@0:8@16Q24
+  -setObjectVisibleFunctionTables:withBufferRange:  v40@0:8r^@16{_NSRange=QQ}24
+  -setThreadgroupDistributionModeWithClusterGroupIndex:  v20@0:8I16
+  -setThreadgroupPackingDisabled:  v20@0:8c16
+  -setTileAccelerationStructure:atBufferIndex:  v32@0:8@16Q24
+  -setToolsDispatchBufferSPI:atIndex:  v32@0:8Q16Q24
+  -setToolsDispatchBufferSPI:atIndex:stages:  v40@0:8Q16Q24Q32
+  -setVertexAccelerationStructure:atBufferIndex:  v32@0:8@16Q24
+  -setVertexBuffer:offset:attributeStride:atIndex:  v48@0:8@16Q24Q32Q40
+  -setVertexBufferOffset:attributeStride:atIndex:  v40@0:8Q16Q24Q32
+  -setVertexBuffers:offsets:attributeStrides:withRange:  v56@0:8r^@16r^Q24r^Q32{_NSRange=QQ}40
+  -setVertexBytes:length:attributeStride:atIndex:  v48@0:8r^v16Q24Q32Q40
+  -useResidencySet:  v24@0:8@16
+  -useResidencySets:count:  v32@0:8r^@16Q24
+  -getType  Q16@0:8
+  -getDriverUniqueID  Q16@0:8
+  -incNumCommands  v16@0:8
+  -initWithCommandBuffer:  @24@0:8@16
+  -memoryBarrierNotificationWithResources:count:  v32@0:8r^@16Q24
+  -memoryBarrierNotificationWithScope:  v24@0:8Q16
+  -newSample  ^{MTLStatSampleRec=^vQ[0Q]}16@0:8
+  -numThisEncoder  Q16@0:8
+  -optimizeContentsForTexture:readAccessPattern:  v32@0:8@16q24
+  -optimizeContentsForTexture:readAccessPattern:slice:level:  v48@0:8@16q24Q32Q40
+  -preEndEncoding  v16@0:8
+  -setNumThisEncoder:  v24@0:8Q16

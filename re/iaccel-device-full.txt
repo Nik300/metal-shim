@@ -1,0 +1,126 @@
+## MTLIOAccelDevice size=54424
+  ivar  712 _deviceRef ^{__IOAccelDevice=}
+  ivar  720 _sharedRef ^{__IOAccelShared=}
+  ivar  728 _acceleratorPort I
+  ivar  736 _acceleratorService @"MTLIOAccelService"
+  ivar  744 _storageCreateParams {?="segmentListShmemPool"@"MTLIOAccelDeviceShmemPool""kernelCommandShmemPool"@"MTLIOAccelDeviceShmemPool""hwResourcePools"^@"hwResourcePoolCount"I"akResourceListPool"@"MTLResourceListPool""akPrivateResourceListPool"@"MTLResourceListPool"}
+  ivar  792 _commandBufferStoragePool ^{MTLIOAccelCommandBufferStoragePool={storageQueue=^{MTLIOAccelCommandBufferStorage}^^{MTLIOAccelCommandBufferStorage}}{os_unfair_lock_s=I}iAi@}
+  ivar  800 _configBits I
+  ivar  804 _deviceBits I
+  ivar  808 _textureRam Q
+  ivar  816 _videoRam Q
+  ivar  824 _sharedMemorySize Q
+  ivar  832 _accelID I
+  ivar  836 _numCommandBuffers Ai
+  ivar  840 _segmentByteThreshold Q
+  ivar  848 _peerGroupID Q
+  ivar  856 _peerIndex I
+  ivar  860 _peerCount I
+  ivar  864 _peerMask I
+  ivar  872 _peerConnectionsLock @"NSLock"
+  ivar  880 _peerConnections [4{?="device"@"MTLIOAccelDevice""refCount"i}]
+  ivar  944 _bufferHeaps [16{MTLIOAccelBufferHeap="buffers"[64@"MTLIOAccelBuffer"]"allocators"[64{MTLRangeAllocator="elements"^{MTLRangeAllocatorElement}"numElements"I"capacity"Q"capacityIncrement"Q"defaultAlignmentMask"Q}]"allocations"[64I]"count"I}]
+  ivar 54320 _device_dispatch_queue @"NSObject<OS_dispatch_queue>"
+  ivar 54328 _device_pool_cleanup_queue @"NSObject<OS_dispatch_queue>"
+  ivar 54336 _device_pool_cleanup_source @"NSObject<OS_dispatch_source>"
+  ivar 54344 _device_pool_cleanup_scheduled B
+  ivar 54348 _fenceAllocatedCount I
+  ivar 54352 _fenceMaximumCount I
+  ivar 54356 _fenceBitmapSearchStart I
+  ivar 54360 _fenceBitmapCount I
+  ivar 54368 _fenceAllocationBitmap ^Q
+  ivar 54376 _bufferClass #
+  ivar 54384 _registryID Q
+  ivar 54392 _location Q
+  ivar 54400 _locationNumber Q
+  ivar 54408 _maxTransferRate Q
+  ivar 54416 _deviceWrapper @"<MTLDeviceSPI>"
+  -dealloc  v16@0:8
+  -.cxx_destruct  v16@0:8
+  -maxTransferRate  Q16@0:8
+  -acceleratorPort  I16@0:8
+  -maxBufferLength  Q16@0:8
+  -newIndirectCommandBufferWithDescriptor:maxCommandCount:options:  @40@0:8@16Q24Q32
+  -_deviceWrapper  @16@0:8
+  -_setDeviceWrapper:  v24@0:8@16
+  -currentAllocatedSize  Q16@0:8
+  -dedicatedMemorySize  Q16@0:8
+  -getSurfaceMode:width:height:forId:  i44@0:8^Q16^I24^I32I40
+  -hasUnifiedMemory  c16@0:8
+  -indirectArgumentBufferDecodingData  @16@0:8
+  -isHeadless  c16@0:8
+  -isLowPower  c16@0:8
+  -isRemovable  c16@0:8
+  -location  Q16@0:8
+  -locationNumber  Q16@0:8
+  -newAccelerationStructureWithBuffer:offset:  @32@0:8@16Q24
+  -newAccelerationStructureWithBuffer:offset:resourceIndex:  @40@0:8@16Q24Q32
+  -newAccelerationStructureWithSize:  @24@0:8Q16
+  -newAccelerationStructureWithSize:resourceIndex:  @32@0:8Q16Q24
+  -newAccelerationStructureWithSize:withDescriptor:  @32@0:8Q16@24
+  -newArgumentEncoderWithLayout:  @24@0:8@16
+  -newCommandQueueWithDescriptor:  @24@0:8@16
+  -newEvent  @16@0:8
+  -newEventWithOptions:  @24@0:8q16
+  -newFence  @16@0:8
+  -newGLDrawable  @16@0:8
+  -newIOCommandQueueWithDescriptor:error:  @32@0:8@16^@24
+  -newIOFileHandleWithURL:compressionMethod:error:  @40@0:8@16q24^@32
+  -newIOFileHandleWithURL:error:  @32@0:8@16^@24
+  -newIOHandleWithURL:compressionMethod:error:  @40@0:8@16q24^@32
+  -newIOHandleWithURL:compressionType:error:  @40@0:8@16q24^@32
+  -newIOHandleWithURL:error:  @32@0:8@16^@24
+  -newIndirectArgumentBufferLayoutWithStructType:  @24@0:8@16
+  -newIndirectArgumentEncoderWithLayout:  @24@0:8@16
+  -newIntersectionFunctionTableWithDescriptor:  @24@0:8@16
+  -newTiledTextureWithBytesNoCopy:length:deallocator:descriptor:offset:bytesPerRow:  @64@0:8^v16Q24@?32@40Q48Q56
+  -newTiledTextureWithBytesNoCopy:length:descriptor:offset:bytesPerRow:  @56@0:8^v16Q24@32Q40Q48
+  -newUncachedIOFileHandleWithURL:compressionMethod:error:  @40@0:8@16q24^@32
+  -newUncachedIOFileHandleWithURL:error:  @32@0:8@16^@24
+  -newUncachedIOHandleWithURL:compressionType:error:  @40@0:8@16q24^@32
+  -newUncachedIOHandleWithURL:error:  @32@0:8@16^@24
+  -peerCount  I16@0:8
+  -peerGroupID  Q16@0:8
+  -peerIndex  I16@0:8
+  -recommendedMaxWorkingSetSize  Q16@0:8
+  -registryID  Q16@0:8
+  -setIndirectArgumentBufferDecodingData:  v24@0:8@16
+  -sharedMemorySize  Q16@0:8
+  -supportPriorityBand  c16@0:8
+  -supportsVertexAmplification  c16@0:8
+  -supportsVertexAmplificationCount:  c24@0:8Q16
+  -memoryInfo  @16@0:8
+  -hwResourcePools  ^@16@0:8
+  -deallocBufferSubData:heapIndex:bufferIndex:bufferOffset:length:  v48@0:8@16s24s28Q32Q40
+  -_addResource:  v24@0:8@16
+  -_purgeDevice  v16@0:8
+  -_removeResource:  v24@0:8@16
+  -_setAcceleratorService:  v24@0:8@16
+  -akPrivateResourceListPool  @16@0:8
+  -akResourceListPool  @16@0:8
+  -allocBufferSubDataWithLength:options:alignment:heapIndex:bufferIndex:bufferOffset:  @64@0:8Q16Q24Q32^s40^s48^Q56
+  -bufferClass  #16@0:8
+  -deviceRef  ^{__IOAccelDevice=}16@0:8
+  -getBuiltInGPUProperties:transferRate:  v32@0:8^Q16^Q24
+  -getExternalGPUProperties:transferRate:  v32@0:8^Q16^Q24
+  -getSlottedGPUProperties:transferRate:  v32@0:8^Q16^Q24
+  -heapIndexWithOptions:  s24@0:8Q16
+  -hwResourcePoolCount  I16@0:8
+  -initWithAcceleratorPort:  @20@0:8I16
+  -initialKernelCommandShmemSize  I16@0:8
+  -initialSegmentListShmemSize  I16@0:8
+  -isBuiltIn  c16@0:8
+  -isSlotted  c16@0:8
+  -kickCleanupQueue  v16@0:8
+  -lazyInitialize  c16@0:8
+  -numCommandBuffers  i16@0:8
+  -releaseFenceIndex:  v20@0:8I16
+  -releasePeerConnection:  v24@0:8@16
+  -retainPeerConnection:  c24@0:8@16
+  -setComputePipelineStateCommandShmemSize:  v20@0:8I16
+  -setHwResourcePool:count:  v28@0:8^@16i24
+  -setSegmentListShmemSize:  v20@0:8I16
+  -sharedRef  ^{__IOAccelShared=}16@0:8
+  -supportLazyInitialization  c16@0:8
+  -updateGPUSelectionProperties  v16@0:8
+  -updateResourcePoolPurgeability  v16@0:8

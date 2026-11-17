@@ -1,0 +1,8 @@
+## _MTLObjectWithLabel size=24
+  ivar    8 _label @"NSString"
+  ivar   16 _labelLock {os_unfair_lock_s="_os_unfair_lock_opaque"I}
+  -dealloc  v16@0:8
+  -init  @16@0:8
+  -label  @16@0:8
+  -setLabel:  v24@0:8@16
+  -retainedLabel  @16@0:8

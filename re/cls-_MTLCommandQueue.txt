@@ -1,0 +1,112 @@
+## _MTLCommandQueue size=680
+  ivar   24 _dev @"_MTLDevice"
+  ivar   32 _pendingQueue @"NSMutableArray"
+  ivar   40 _submittedQueue @"NSMutableArray"
+  ivar   48 _pendingQueueLock {_opaque_pthread_mutex_t="__sig"q"__opaque"[56c]}
+  ivar  112 _submittedQueueLock {_opaque_pthread_mutex_t="__sig"q"__opaque"[56c]}
+  ivar  176 _submittedGroup @"NSObject<OS_dispatch_group>"
+  ivar  184 _commandQueueDispatch @"NSObject<OS_dispatch_queue>"
+  ivar  192 _completionQueueDispatch @"NSObject<OS_dispatch_queue>"
+  ivar  200 _commandQueueEventSource @"NSObject<OS_dispatch_source>"
+  ivar  208 _commandBufferSemaphore @"NSObject<OS_dispatch_semaphore>"
+  ivar  216 _backgroundTrackingPID i
+  ivar  224 _globalTraceObjectID Q
+  ivar  232 _labelTraceID Q
+  ivar  240 _profilingEnabled c
+  ivar  248 _logState @"<MTLLogState>"
+  ivar  256 _StatEnabled c
+  ivar  264 _StatOptions Q
+  ivar  272 _StatLocations Q
+  ivar  280 _numCommandBuffers Ai
+  ivar  288 _perfSampleHandlerBlock @?
+  ivar  296 _listIndex Q
+  ivar  304 _numRequestedCounters Q
+  ivar  312 _numInternalSampleCounters Q
+  ivar  320 _counterInfo @"NSMutableDictionary"
+  ivar  328 _maxCommandBufferCount Q
+  ivar  336 _qosLevel Q
+  ivar  344 _commitQueue @"NSObject<OS_dispatch_queue>"
+  ivar  352 _commitSynchronously c
+  ivar  360 _completionQueue @"NSObject<OS_dispatch_queue>"
+  ivar  368 _disableCrossQueueHazardTracking c
+  ivar  369 _executionEnabled c
+  ivar  370 _skipRender c
+  ivar  371 _openGLQueue c
+  ivar  376 _commandQueueBacktraceInfo {CoreAnalyticsBacktraceInfo="nFrames"i"callstack"[32^v]}
+  ivar  640 _hasLoggedTelemetry c
+  ivar  648 _presentScheduledSemaphore @"NSObject<OS_dispatch_semaphore>"
+  ivar  656 _forceImmediateSubmissionOnCommitThread c
+  ivar  664 _privateDataTable @"MTLPrivateDataTable"
+  ivar  672 _commitsWithQoS c
+  -dealloc  v16@0:8
+  -description  @16@0:8
+  -finish  v16@0:8
+  -StatOptions  Q16@0:8
+  -addInternalResidencySets:count:  v32@0:8^@16Q24
+  -completionQueue  @16@0:8
+  -setCounterInfo:  v24@0:8@16
+  -setStatOptions:  v24@0:8Q16
+  -StatLocations  Q16@0:8
+  -disableCrossQueueHazardTracking  c16@0:8
+  -initWithDevice:  @24@0:8@16
+  -setStatEnabled:  v20@0:8c16
+  -addInternalResidencySet:  v24@0:8@16
+  -addPerfSampleHandler:  v24@0:8@?16
+  -addResidencySet:  v24@0:8@16
+  -addResidencySets:count:  v32@0:8^@16Q24
+  -availableCounters  @16@0:8
+  -backgroundTrackingPID  i16@0:8
+  -commandBufferWithDescriptor:  @24@0:8@16
+  -commitQueue  @16@0:8
+  -commitSynchronously  c16@0:8
+  -commitsWithQoS  c16@0:8
+  -counterInfo  @16@0:8
+  -dispatchAvailableCompletionNotifications  v16@0:8
+  -executionEnabled  c16@0:8
+  -formattedDescription:  @24@0:8Q16
+  -getListIndex  Q16@0:8
+  -getPrivateDataAndOffset:privateDataOffset:  c32@0:8^@16^Q24
+  -getStatLocations  Q16@0:8
+  -getStatOptions  Q16@0:8
+  -globalTraceObjectID  Q16@0:8
+  -insertDebugCaptureBoundary  v16@0:8
+  -isOpenGLQueue  c16@0:8
+  -isProfilingEnabled  c16@0:8
+  -isStatEnabled  c16@0:8
+  -maxCommandBufferCount  Q16@0:8
+  -numInternalSampleCounters  Q16@0:8
+  -numRequestedCounters  Q16@0:8
+  -qosLevel  Q16@0:8
+  -removeInternalResidencySet:  v24@0:8@16
+  -removeInternalResidencySets:count:  v32@0:8^@16Q24
+  -removeResidencySet:  v24@0:8@16
+  -removeResidencySets:count:  v32@0:8^@16Q24
+  -requestCounters:  i24@0:8@16
+  -requestCounters:withIndex:  i32@0:8@16Q24
+  -setBackgroundTrackingPID:  v20@0:8i16
+  -setExecutionEnabled:  v20@0:8c16
+  -setLabel:  v24@0:8@16
+  -setNumInternalSampleCounters:  v24@0:8Q16
+  -setNumRequestedCounters:  v24@0:8Q16
+  -setProfilingEnabled:  v20@0:8c16
+  -setSkipRender:  v20@0:8c16
+  -setStatLocations:  v24@0:8Q16
+  -setSubmissionQueue:  v24@0:8@16
+  -skipRender  c16@0:8
+  -subdivideCounterList:  @24@0:8@16
+  -initWithDevice:descriptor:  @32@0:8@16@24
+  -setListIndex:  v24@0:8Q16
+  -_submitAvailableCommandBuffers  c16@0:8
+  -commandBufferDidComplete:startTime:completionTime:error:  v48@0:8@16Q24Q32@40
+  -commitCommandBuffer:wake:  v28@0:8@16c24
+  -completeCommandBuffers:count:  v32@0:8^@16Q24
+  -createTelemetryWithLabel:  v24@0:8@16
+  -enqueueCommandBuffer:  v24@0:8@16
+  -getAndIncrementNumCommandBuffers  Q16@0:8
+  -initWithDevice:maxCommandBufferCount:  @32@0:8@16Q24
+  -internalCounterSampleSize  Q16@0:8
+  -numCommandBuffers  Q16@0:8
+  -releasePrivateData:privateDataOffset:  v32@0:8^@16Q24
+  -setPrivateData:privateDataOffset:logState:  v40@0:8@16Q24@32
+  -submitCommandBuffer:  c24@0:8@16
+  -submitCommandBuffers:count:  v32@0:8r^@16Q24

@@ -1,0 +1,4925 @@
+label =
+<none>
+name =
+objectFunction =
+meshFunction =
+fragmentFunction =
+maxTotalThreadsPerObjectThreadgroup =
+maxTotalThreadsPerMeshThreadgroup =
+objectThreadgroupSizeIsMultipleOfThreadExecutionWidth =
+meshThreadgroupSizeIsMultipleOfThreadExecutionWidth =
+payloadMemoryLength =
+maxTotalThreadgroupsPerMeshGrid =
+rasterSampleCount =
+alphaToCoverageEnabled =
+alphaToOneEnabled =
+rasterizationEnabled =
+maxVertexAmplificationCount =
+supportIndirectCommandBuffers =
+maxAccelerationStructureTraversalDepth =
+shaderValidation =
+shaderValidationState =
+requiredThreadsPerObjectThreadgroup =
+requiredThreadsPerMeshThreadgroup =
+objectLinkedFunctions =
+meshLinkedFunctions =
+fragmentLinkedFunctions =
+depthAttachmentPixelFormat =
+stencilAttachmentPixelFormat =
+Color Attachment %u:
+Object Buffer %u:
+Mesh Buffer %u:
+Fragment Buffer %u:
+%@%@
+-[MTLMeshRenderPipelineDescriptor setVertexAmplificationMode:]
+vertexAmplificationMode value %lu is invalid
+-[MTLMeshRenderPipelineDescriptor setObjectLinkedFunctions:]
+linkedFunctions is not a MTLLinkedFunctions.
+-[MTLMeshRenderPipelineDescriptor setMeshLinkedFunctions:]
+-[MTLMeshRenderPipelineDescriptor setFragmentLinkedFunctions:]
+-[MTLMeshRenderPipelineDescriptor setLabel:]
+label is not a NSString.
+-[MTLMeshRenderPipelineDescriptor setName:]
+name must not be nil.
+name is not a NSString.
+-[MTLMeshRenderPipelineDescriptor setObjectFunction:]
+objectFunction is not a MTLFunction.
+objectFunction functionType is not MTLFunctionTypeObject.
+-[MTLMeshRenderPipelineDescriptor setMeshFunction:]
+meshFunction is not a MTLFunction.
+meshFunction functionType is not MTLFunctionTypeMesh.
+-[MTLMeshRenderPipelineDescriptor setFragmentFunction:]
+fragmentFunction is not a MTLFunction.
+fragmentFunction functionType is not a MTLFunctionTypeFragment.
+rasterSampleCount (%lu) is not supported by device.
+PipelineError
+validateWithDevice
+Mesh Render Pipeline Descriptor Validation
+fragmentFunction
+objectFunction
+meshFunction
+Binary linked functions are not supported for object and mesh shaders
+Use of mesh shader pipelines in indirect command buffers is not supported by this device.
+maxAccelerationStructureTraversalDepth (%lu) must be less than or equal to %lu
+If objectFunction is nil, requiredThreadsPerObjectThreadgroup must be [0, 0, 0] but is [%lu, %lu, %lu]
+requiredThreadsPerObjectThreadgroup
+requiredThreadsPerMeshThreadgroup
+functions
+privateFunctions
+v24@?0@"<MTLSharedEvent>"8Q16
+v16@?0@"<MTLIOCommandBuffer>"8
+-[_MTLIOCommandBuffer pushDebugGroup:]
+string must not be nil.
+string is not a NSString.
+-[MTLTileRenderPipelineColorAttachmentDescriptorArrayInternal objectAtIndexedSubscript:]
+attachmentIndex(%lu) must be < %lu
+-[MTLTileRenderPipelineColorAttachmentDescriptorArrayInternal setObject:atIndexedSubscript:]
+attachment is not a MTLTileRenderPipelineColorAttachmentDescriptor.
+Raster Sample Count =
+Tile Function =
+threadgroupSizeMatchesTileSize =
+true
+false
+colorSampleCount =
+maxTotalThreadsPerThreadgroup =
+textureWriteRoundingMode =
+requiredThreadsPerThreadgroup =
+Buffer %u:
+linkedFunction =:
+supportAddingBinaryFunctions =
+maxCallStackDepth =
+-[MTLTileRenderPipelineDescriptorInternal setLabel:]
+label must not be nil.
+-[MTLTileRenderPipelineDescriptorInternal setName:]
+-[MTLTileRenderPipelineDescriptorInternal setTileFunction:]
+tileFunction is not a MTLFunction.
+-[MTLTileRenderPipelineDescriptorInternal setMaxTotalThreadsPerThreadgroup:]
+max total threads must be less than or equal to %d.
+-[MTLTileRenderPipelineDescriptorInternal setLinkedFunctions:]
+pixelFormat =
+validateMTLPixelFormat
+pixelFormat is not a valid MTLPixelFormat.
+Tile Render Pipeline Descriptor Validation
+tileFunction must not be nil
+tileFunction is associated with a different device
+function %s cannot be used to build a pipeline state without setting constant values first.
+colorSampleCount expected to be smaller or equal to rasterSampleCount
+rasterSampleCount expected to be greater or equal to colorSampleCount
+colorSampleCount (%lu) is not supported by device.
+colorSampleCount expected to be 0.
+device does not support %@
+MTLTileRenderPipelineDescriptor color render target(%lu) exceeds platform max(%lu).
+pixelFormat, for color render target(%lu), is not a valid MTLPixelFormat.
+pixelFormat, for color render target(%lu), %s is not color renderable.
+This set of render targets requires %lu bytes of pixel storage. This device supports %lu bytes.
+requiredThreadsPerThreadgroup
+-[MTLIOAccelIndirectCommandBuffer makeAliasable]
+Cannot call makeAliasable on an IndirectCommandBuffer
+-[MTLIOAccelBlitCommandEncoder synchronizeResource:]
+synchronizeResource: is not supported on this platform
+-[MTLIOAccelBlitCommandEncoder synchronizeTexture:slice:level:]
+synchronizeTexture:slice:level:Resource: is not available on this platform
+MTL_DEBUG_IGNORE_PRECOMPILED_BINARIES
+ignored
+used if set
+Metal
+ignore_precompiled_binaries
+MTL_DEBUG_IGNORE_PSO_FAIL_ON_MISS
+MTL_DEBUG_LOG_FUNCTIONID_KEYS
+Looking for functionId: %@
+load
+store
+unknown
+atomic_load
+atomic_store
+atomic_exchange
+atomic_fetch_or
+atomic_fetch_add
+atomic_fetch_and
+atomic_fetch_max
+atomic_fetch_min
+atomic_fetch_sub
+atomic_fetch_xor
+atomic_compare_exchange
+<unknown>
+%@() - %@:%u:%u
+<unknown reason>
+Killing Compiler Process XPC Connection
+error
+MTLCompiler[reqID=
+MTLCompiler: 
+ProbGuardMalloc
+com.apple.MTLCompilerService
+v16@?0@"NSObject<OS_xpc_object>"8
+unique_lock::unlock: not locked
+unique_lock::lock: references null mutex
+unique_lock::lock: already locked
+/System/Library/PrivateFrameworks/MTLCompiler.framework/Versions/32023/MTLCompiler
+/System/Library/PrivateFrameworks/MTLCompiler.framework/Versions/32024/MTLCompiler
+MTLCodeGenServiceCreate
+MTLCodeGenServiceDestroy
+MTLCodeGenServiceBuildRequest
+MTLCodeGenServiceSetPluginPath
+-[MTLBufferLayoutDescriptorArrayInternal objectAtIndexedSubscript:]
+bufferIndex(%lu) must be < %lu.
+-[MTLBufferLayoutDescriptorArrayInternal setObject:atIndexedSubscript:]
+bufferDesc is not a MTLVertexBufferLayoutDescriptor.
+-[MTLAttributeDescriptorInternal setBufferIndex:]
+buffer index (%lu) must be < %lu.
+-[MTLAttributeDescriptorArrayInternal objectAtIndexedSubscript:]
+vertex attribute index (%lu) must be < %lu.
+-[MTLAttributeDescriptorArrayInternal setObject:atIndexedSubscript:]
+attributeDesc is not a MTLVertexAttributeDescriptor.
+-[MTLStageInputOutputDescriptorInternal newSerializedDescriptor]
+Serialized Descriptor Creation
+None of the attributes set bufferIndex to %d, but %s set buffer layout[%d].stride(%lu).
+MTLStageInputOutputDescriptor
+-[MTLStageInputOutputDescriptorInternal validateWithVertexFunction:error:renderPipelineDescriptor:]
+Vertex Descriptor Validation
+Vertex attribute %@(%d) is missing from the vertex descriptor
+Vertex attribute %@(%d) references a vertex buffer at index %d, but there is no buffer layout set for that index
+Vertex attribute %@(%d) of type %s cannot be read using %@
+MTLIndexTypeUInt16
+MTLIndexTypeUInt32
+Unknown
+MTLStageInputOutputDescriptorDescription
+bufferIndex < MTL_MAX_VERTEX_BUFFERS
+Buffer %lu:
+stepFunction =
+stepRate =
+stride = dynamic
+stride =
+Attribute %u:
+offset =
+format =
+IndexType: %@
+IndexBufferIndex: %lu
+Attribute at index %d references a buffer at index %lu that has no stride.
+stepFunction is not a valid MTLStepFunction.
+stepRate(%lu) must be zero if stepFunction is MTLStepFunctionConstant.
+stepRate(%lu) cannot be zero if stepFunction is %@.
+invalid stepFunction value
+CompilerError
+MTLStepFunctionConstant
+MTLStepFunctionPerVertex
+MTLStepFunctionPerInstance
+MTLStepFunctionPerPatch
+MTLStepFunctionPerPatchControlPoint
+MTLStepFunctionThreadPositionInGridX
+MTLStepFunctionThreadPositionInGridY
+MTLStepFunctionThreadPositionInGridXIndexed
+MTLStepFunctionThreadPositionInGridYIndexed
+MTLFunction
+MTLComputePipelineDescriptor
+library
+index
+MTLRenderPipelineDescriptor
+MTLTileRenderPipelineDescriptor
+MTLMeshRenderPipelineDescriptor
+MTLLibrary
+type
+name
+fileName
+isFromSource
+specialized
+%u.%u
+Offline Compilation
+version
+contents
+finalize
+serialization failed with error: %@
+baseFunction
+constants
+computeFunction
+threadGroupSizeIsMultipleOfThreadExecutionWidth
+label
+stageInputDescriptor
+required featureSets
+excluded featureSets
+buffers
+supportIndirectCommandBuffers
+maxTotalThreadsPerThreadgroup
+insertLibraries
+textureWriteRoundingMode
+preloadedLibraries
+needsCustomBorderColorSamplers
+vertexFunction
+vertexDescriptor
+sampleCount
+alphaToCoverageEnabled
+alphaToOneEnabled
+rasterizationEnabled
+colorAttachments
+depthAttachmentPixelFormat
+stencilAttachmentPixelFormat
+inputPrimitiveTopology
+tessellationPartitionMode
+maxTessellationFactor
+tessellationFactorScaleEnabled
+tessellationFactorFormat
+tessellationControlPointIndexType
+tessellationFactorStepFunction
+tessellationOutputWindingOrder
+vertexBuffers
+fragmentBuffers
+vertexAmplificationMode
+maxVertexAmplificationCount
+sampleCoverage
+sampleMask
+vertexPreloadedLibraries
+fragmentPreloadedLibraries
+alphaTestEnabled
+alphaTestFunc
+logicOpEnabled
+clipDistanceEnableMask
+pointSmoothEnabled
+pointCoordLowerLeft
+pointSizeOutputVS
+twoSideEnabled
+vertexDepthCompareClampMask
+fragmentDepthCompareClampMask
+logicOperation
+depthStencilWriteDisabled
+explicitVisibilityGroupID
+attributes
+layouts
+indexType
+indexBufferIndex
+format
+offset
+bufferIndex
+stepFunction
+stepRate
+stride
+pixelFormat
+blendingEnabled
+sourceRGBBlendFactor
+destinationRGBBlendFactor
+rgbBlendOperation
+sourceAlphaBlendFactor
+destinationAlphaBlendFactor
+alphaBlendOperation
+writeMask
+dataType
+value
+width
+height
+depth
+tileFunction
+threadgroupSizeMatchesTileSize
+tileBuffers
+maxTotalThreadsPerObjectThreadgroup
+maxTotalThreadsPerMeshThreadgroup
+objectThreadgroupSizeIsMultipleOfThreadExecutionWidth
+meshThreadgroupSizeIsMultipleOfThreadExecutionWidth
+payloadMemoryLength
+maxThreadgroupsPerMeshGrid
+objectBuffers
+meshBuffers
+objectPreloadedLibraries
+meshPreloadedLibraries
+mutability
+air.vertex_id
+air.instance_id
+air.patch_id
+air.position_in_patch
+air.amplification_id
+air.point_size
+air.position
+air.render_target_array_index
+air.vertex_output
+air.viewport_array_index
+air.render_target
+air.depth
+air.stencil
+air.sample_mask
+air.accept_intersection
+air.continue_search
+air.distance
+air.mesh_primitive_data
+air.vertex_data
+air.primitive_culled
+air.primitive_id
+air.clip_distance
+%@[%d]
+Mismatch in postVertex stride %d vs %d
+Mismatch in postVertex dump count %d vs %d
+Mismatch in post vertex dump outputs
+ New:
+
+Old:
+NONE
+FragmentFunction
+KernelFunction
+VertexFunction
+VisibleFunction
+IntersectionFunction
+MeshFunction
+ObjectFunction
+CIFunction
+VecTypeHintFnAttr
+WorkgroupSizeFnAttr
+WorkgroupSizeHintFnAttr
+WorkgroupMaxSizeFnAttr
+PatchFnAttr
+MaxMeshWorkgroupsFnAttr
+UserAnnotationFnAttr
+ClipDistanceRet
+PointSizeRet
+PositionRet
+RenderTargetArrayIndexRet
+VertexOutputRet
+ViewportArrayIndexRet
+RenderTargetRet
+DepthRet
+StencilRet
+SampleMaskRet
+ImageblockDataRet
+AcceptIntersectionRet
+ContinueSearchRet
+DistanceRet
+MeshPrimitiveDataRet
+MeshVertexDataRet
+PrimitiveCulledRet
+PrimitiveIDRet
+CIPointerRet
+CIStructRet
+CITextureRet
+CIBuiltinRet
+CIMatrixRet
+CISamplerRet
+CIImageblockRet
+BufferArg
+SamplerArg
+TextureArg
+ConstantArg
+IndirectBufferArg
+IndirectConstantArg
+CommandBufferArg
+ComputePipelineStateArg
+RenderPipelineStateArg
+VisibleFunctionTableArg
+IntersectionFunctionTableArg
+InstanceAccelerationStructureArg
+PrimitiveAccelerationStructureArg
+BufferStrideArg
+DepthStencilStateArg
+FunctionHandleArg
+TensorArg
+ThreadPositionInGridArg
+ThreadsPerGridArg
+ThreadgroupPositionInGridArg
+ThreadgroupsPerGridArg
+ThreadPositionInThreadgroupArg
+ThreadsPerThreadgroupArg
+DispatchThreadsPerThreadgroupArg
+ThreadIndexInThreadgroupArg
+ThreadExecutionWidthArg
+StageInArg
+StageInGridOriginArg
+StageInGridSizeArg
+ThreadIndexInSimdgroupArg
+ThreadsPerSimdgroupArg
+SimdgroupIndexInThreadgroupArg
+SimdgroupsPerThreadgroupArg
+DispatchSimdgroupsPerThreadgroupArg
+ThreadIndexInQuadgroupArg
+QuadgroupIndexInThreadgroupArg
+QuadgroupsPerThreadgroupArg
+DispatchQuadgroupsPerThreadgroupArg
+BaseInstanceArg
+BaseVertexArg
+InstanceIDArg
+VertexIDArg
+VertexInputArg
+ControlPointIndexBufferArg
+PatchIDArg
+PositionInPatchArg
+PatchInputArg
+ControlPointInputArg
+ControlPointField
+AmplificationCountArg
+AmplificationIDArg
+FragmentInputArg
+FrontFacingArg
+PositionArg
+PointCoordArg
+RenderTargetArg
+RenderTargetArrayIndexArg
+SampleIDArg
+SampleMaskArg
+ViewportArrayIndexArg
+BarycentricCoordArg
+PrimitiveIDArg
+PixelPositionInTileArg
+PixelsPerTileArg
+TileIndexArg
+ImageblockArg
+ImageblockDataArg
+PayloadArg
+OriginArg
+DirectionArg
+MinDistanceArg
+MaxDistanceArg
+DistanceArg
+WorldSpaceOriginArg
+WorldSpaceDirectionArg
+GeometryIDArg
+UserInstanceIDArg
+GeometryIntersectionFunctionTableOffsetArg
+InstanceIntersectionFunctionTableOffsetArg
+OpaquePrimitiveArg
+ObjectToWorldTransformArg
+WorldToObjectTransformArg
+TimeArg
+KeyFrameCountArg
+MotionStartTimeArg
+MotionEndTimeArg
+PrimitiveDataArg
+InstanceIDCountArg
+UserInstanceIDCountArg
+CurveParameterArg
+FunctionIDArg
+UserDataBufferArg
+MeshArg
+MeshGridPropertiesArg
+CIArrayArg
+CIPaddingArg
+CIPointerArg
+CIStructArg
+CITextureArg
+CIBuiltinArg
+CIMatrixArg
+CISamplerArg
+CIImageblockArg
+FunctionConstant
+StructTypeInfo
+StitchingArgument
+MeshTypeInfo
+GlobalBinding
+InlineTypeInfo
+VisibleFunctionReference
+OpaqueType
+VoidType
+BoolType
+CharType
+UCharType
+ShortType
+UShortType
+IntType
+UIntType
+LongType
+ULongType
+LLongType
+ULLongType
+HalfType
+FloatType
+DoubleType
+BFloatType
+VectorType
+PackedVectorType
+MatrixType
+FunctionType
+PointerType
+LValueReferenceType
+RValueReferenceType
+ArrayType
+EnumType
+RecordBase
+RecordField
+StructType
+UnionType
+ArrayOfType
+ArrayRefOfType
+Texture1dType
+Texture1dArrayType
+Texture2dType
+Texture2dArrayType
+Texture3dType
+TextureCubeType
+TextureCubeArrayType
+Texture2dMsType
+Texture2dMsArrayType
+TextureBuffer1dType
+Depth2dType
+Depth2dArrayType
+DepthCubeType
+DepthCubeArrayType
+Depth2dMsType
+Depth2dMsArrayType
+SamplerType
+PatchControlPointType
+ImageblockType
+R8UNormType
+R8SNormType
+R16UNormType
+R16SNormType
+RG8UNormType
+RG8SNormType
+RG16UNormType
+RG16SNormType
+RGBA8UNormType
+RGBA8SNormType
+RGBA16UNormType
+RGBA16SNormType
+SRGBA8UNormType
+RGB10A2Type
+RG11B10FType
+RGB9E5Type
+CommandBufferType
+ComputePipelineStateType
+RenderPipelineStateType
+InterpolantType
+VisibleFunctionTableType
+IntersectionFunctionTableType
+AccelerationStructureType
+MeshType
+MeshGridPropertiesType
+VertexValueType
+DepthStencilStateType
+FunctionHandleType
+IntersectionFunctionHandleType
+ExtentsType
+TensorType
+AddressSpaceTypeQual
+ClipDistanceAttr
+FunctionConstantPredicateAttr
+LocationIndexAttr
+PointSizeAttr
+PositionAttr
+PrimitiveCulledAttr
+PrimitiveIDAttr
+RenderTargetAttr
+RenderTargetArrayIndexAttr
+ViewportArrayIndexAttr
+UserAttr
+InvariantAttr
+SharedAttr
+MeshEmulationValueGroup
+MeshEmulationBlock
+MeshEmulationMeshLayout
+MeshEmulationMeshKernel
+MeshEmulationMeshVertex
+MeshEmulationObjectKernel
+MeshEmulationFragmentAnalysisResult
+stageInBuffer
+vertexBuffer
+generated
+float
+float2
+float3
+float4
+uchar
+uchar2
+uchar3
+uchar4
+char
+char2
+char3
+char4
+int2
+int3
+int4
+uint
+uint2
+uint3
+uint4
+bool
+bool2
+bool3
+bool4
+half
+half2
+half3
+half4
+long
+long2
+long3
+long4
+ulong
+ulong2
+ulong3
+ulong4
+bfloat
+bfloat2
+bfloat3
+bfloat4
+user(%s)
+trace.buffer
+AIRR
+MTL_VERIFY_REFLECTION
+Argument %d differs
+---New--
+%@
+---Old---
+ 
+%@
+User annotation differs
+---New--
+%@
+---Old---
+ 
+%@
+-[MTL4RenderPassDescriptor setSamplePositions:count:]
+count (%lu) is not a supported sample count for custom positions. count must be 0, 2, 4 or 8.
+Non-zero count (%lu) provided with a NULL positions parameter.
+Provided sample position x-coodinate (%f) at index %u is not within the range [0,1).
+Provided sample position y-coodinate (%f) at index %u is not within the range [0,1).
+-[MTL4RenderPassDescriptor getSamplePositions:count:]
+Non-zero count (%lu) does not match the number of programmed custom sample positions (%lu).
+-[MTL4RenderPassDescriptor setDepthAttachment:]
+depthAttachment is not a MTLRenderPassDepthAttachmentDescriptor.
+-[MTL4RenderPassDescriptor setStencilAttachment:]
+stencilAttachment is not a MTLRenderPassStencilAttachmentDescriptor.
+-[MTL4RenderPassDescriptor validate:width:height:]
+Render Pass Descriptor Validation
+FS_CACHE_REUSE_ON_REBOOT
+already used previously for initialization as
+previously set to the different value
+<NULL>
+<DEFAULT PATH>
+MTL_SHADER_CACHE_SIZE
+FS_CACHE_SIZE
+%s/%s
+%s/%s%u
+failed to remove file %@ from the shader cache destination path
+failed to copy %@ to %@ which copy Metal shader cache
+flushElement
+%s.tmp
+Failed to open: %s
+
+Failed to write to: %s
+
+com.apple.metal
+com.apple.metalfe
+com.apple.gpuarchiver
+FS_CACHE_RESET
+METAL_TELEMETRY_LOG_MODE
+Key: 
+
+Legacy key:
+
+ %@ Function hash
+ 
+%@ Linked bitcode(%i)
+ 
+%@ air-nt 
+ 
+n/a 
+
+%@ air-nt plugin
+ 
+%@ metal framework 
+ 
+%@ Single SHA256 
+ 
+FlatBuffers 1.12.0
+0123456789ABCDEF
+fnd:
+_Path_not_available_for_lib_from_%s_with_UUID_%s
+source
+data
+AIRC
+MTL4
+std::unique_ptr
+_generated
+deprecated
+required
+shared
+hash
+force_align
+bit_flags
+bit_flags_set
+original_order
+nested_flatbuffer
+csharp_partial
+streaming
+idempotent
+cpp_type
+cpp_ptr_type
+cpp_ptr_type_get
+cpp_str_type
+cpp_str_flex_ctor
+native_inline
+native_custom_alloc
+native_type
+native_default
+flexbuffer
+private
+apple_internal
+MTLLogState is not created: minimum size is %d bytes.
+MTLLogState is not created: Maximum size is %ld bytes.
+Cannot create MTLLogState
+MTLLogBuffer
+MTLLogBufferResidencySet
+Cannot create residency set for MTLLogState: %@
+MTLLogStateDescriptor is nil, MTLLogState is not created
+com.apple.Metal
+Shader Logging
+B16@?0r^*8
+MTL_LOG_TO_STDERR
+%Y-%m-%d %H:%M:%S
+%s [%s] [%s] %s
+
+MTLLogLevelInfo
+MTLLogLevelDebug
+MTLLogLevelNotice
+MTLLogLevelError
+MTLLogLevelFault
+%v[234]([h]{1,2}|[h]?[l])[diuoxXc]
+%v[234][h][l]?[aAeEfFgG]
+%[0 #+-]?(\d*\.?\d*)?[hl]{0,2}?[diuoxXaAeEfFgGcp]
+-[MTL4ComputePipelineDescriptor setStaticLinkingDescriptor:]
+linkedFunctions is not a MTL4StaticLinkingDescriptor.
+-[MTLBVHGeometryDescriptor primitiveType]
+This method must be implemented by a derived class
+Apple
+MTLBVHBuilder
+metallib
+dispatchBinsKernel
+binFragmentsKernel
+clearBatchesKernel
+createBVHNodesKernel
+findBestSplitKernel
+splitFragmentsKernel
+binFragmentsSpatialKernel
+findBestSpatialSplitKernel
+initializeQueueKernel
+initializeDebugFragmentIndicesKernel
+initializeFragmentIndicesKernel
+initializeFragmentsKernel
+initializeCountersKernel
+initializeCountersForBinningKernel
+enqueueLeafNodeSplitsKernel
+getPolygonFragmentsKernel
+getBoundingBoxFragmentsKernel
+getCurveFragmentsKernel
+writeBVHMetadataKernel
+setCountersKernel
+copyCountersKernel
+dispatchIndirectKernel
+encodeMTLBVHNode0Kernel
+encodeMTLPrimitiveBVHKernel
+encodeMTLInstanceBVHKernel
+encodeMTLPrimitiveBVHInnerNodeKernel
+encodeMTLInstanceBVHInnerNodeKernel
+encodeMTLTriangleBVHLeafNodeKernel
+encodeMTLBoundingBoxBVHLeafNodeKernel
+encodeMTLCurveBVHLeafNodeKernel
+encodeMTLCurveBVHControlPointsKernel
+encodeMTLInstanceBVHLeafNodeKernel
+encodeMTLInstanceBVHLeafNodeUserIDKernel
+encodeMTLInstanceBVHLeafNodeIndirectKernel
+encodeMTLInstanceBVHResourceIDsKernel
+encodeMTLInstanceBVHResourceIDsUserIDKernel
+encodeMTLInstanceBVHResourceIDsIndirectKernel
+getCompactedMTLBVHSize32Kernel
+getCompactedMTLBVHSize64Kernel
+getMTLBVHSizeKernel
+getMTLBVHDepthKernel
+copyAndCompactMTLBVHHeaderKernel
+copyMTLBVHHeaderKernel
+copyMTLBVHInnerNodesKernel
+copyMTLBVHLeafNodesKernel
+copyMTLBVHPrimitivesKernel
+copyMTLBVHGeometriesKernel
+copyMTLBVHTransformsKernel
+copyMTLBVHPrimitiveBVHsKernel
+copyMTLBVHControlPointsKernel
+copyMTLBVHResourceIDsKernel
+getMTLInstanceBoundsKernel
+getMTLInstanceBoundsUserIDKernel
+getMTLInstanceBoundsIndirectKernel
+copyKernel
+refitTriangleLeafNodeKernel
+refitTriangleLeafNodeInPlaceKernel
+refitBoundingBoxLeafNodeKernel
+refitBoundingBoxLeafNodeInPlaceKernel
+refitCurveLeafNodeKernel
+refitCurveLeafNodeInPlaceKernel
+refitCurveControlPointsKernel
+refitCurveControlPointsInPlaceKernel
+refitInstanceLeafNodeKernel
+refitInstanceLeafNodeUserIDKernel
+refitInstanceLeafNodeIndirectKernel
+refitInstanceLeafNodeInPlaceKernel
+refitInstanceLeafNodeUserIDInPlaceKernel
+refitInstanceLeafNodeIndirectInPlaceKernel
+refitInstanceResourceIDsKernel
+refitInstanceResourceIDsUserIDKernel
+refitInstanceResourceIDsIndirectKernel
+refitInstanceResourceIDsInPlaceKernel
+refitInstanceResourceIDsUserIDInPlaceKernel
+refitInstanceResourceIDsIndirectInPlaceKernel
+refitInnerNodeKernel
+refitInnerNodeInPlaceKernel
+refitGeometriesKernel
+refitGeometriesInPlaceKernel
+getSerializedMTLBVHSizeKernel
+getSerializedMTLBVHRawSizeKernel
+getDeserializedMTLBVHSizeKernel
+getDeserializedMTLPrimitiveBVHSizesKernel
+writeMTLBVHSerializationDataKernel
+writeSerializedMTLBVHKernel
+writeDeserializedMTLBVHKernel
+getSerializedGeometrySizeKernel
+getSerializedGeometryPrimitiveCountKernel
+extractMTLBVHPrimitivesKernel
+writeMTLGenericBVHSizesKernel_1_1
+extractMTLGenericBVHHeaderKernel_1_1
+extractMTLGenericBVHInnerNodesKernel
+extractMTLGenericBVHLeafNodesKernel_1_1
+extractMTLGenericBVHPrimitiveNodesKernel
+writeSerializedMTLBVHPatchKernel
+writeDeserializedMTLBVHPatchKernel
+extractMTLGenericBVHGeometryKernel
+extractMTLGenericInstanceTransformKernel
+dispatchIndirect64Kernel
+dispatchBinsWideKernel
+fastGPUMemcpyKernel
+breadthFirstLayoutInitKernel
+breadthFirstLayoutFinishIterationKernel
+breadthFirstLayoutClassifyKernel
+breadthFirstLayoutKernel
+prefixSumKernel
+prefixSumReduceKernel
+prefixSumAddKernel
+copyFragmentIndicesKernel
+writeMTLGenericBVHSizesKernel_1_0
+extractMTLGenericBVHHeaderKernel_1_0
+extractMTLGenericBVHLeafNodesKernel_1_0
+writeSerializationDataKernel
+encodePrimitiveDataKernel
+refitPrimitiveDataKernel
+refitPrimitiveDataInPlaceKernel
+copyPrimitiveDataKernel
+extractMTLGenericBVHPrimitiveData
+writeMTLGenericBVHSizesKernel_1_2
+extractMTLGenericBVHGeometryKernel_1_2
+refitHeaderKernel
+refitHeaderInPlaceKernel
+finishBuildIterationKernel
+threadgroupBreadthFirstLayoutKernel
+binFragmentsTemporalSplitKernel
+findBestTemporalSplitKernel
+extractMTLGenericBVHLeafNodesKernel_1_3
+writeMTLGenericBVHSizesKernel_1_3
+splitFragmentsPrefixSumKernel
+zeroBuffer
+writeMTLGenericBVHSizesKernel_1_4
+writeMTLGenericBVHSizesKernel_1_5
+extractMTLGenericBVHHeaderKernel_1_4
+extractMTLGenericBVHHeaderKernel_1_5
+extractMTLGenericBVHControlPointData
+extractMTLGenericBVHGeometryKernel_1_5
+Motion
+%@%llu
+newPipeline
+Failed to specialize function: %@
+Failed to create compute pipeline state
+v16@?0@"<MTLCommandBuffer>"8
+-[MTLGPUBVHBuilder buildGenericBVHWithEncoder:descriptor:outputBuffer:outputBufferOffset:scratchBuffer:scratchBufferOffset:primitiveCountBuffer:primitiveCountBufferOffset:]
+GPU BVH builder only supports BinnedSAH and BinnedSpatialSAH split heuristics
+Branching factor must be between 2 and 8 inclusive
+GPU BVH builder is not supported on this Metal device
+-[MTLGPUBVHBuilder encodeMTLSWBVHWithEncoder:descriptor:bvhDescriptor:outputBuffer:outputBufferOffset:genericBVHBuffer:genericBVHBufferOffset:scratchBuffer:scratchBufferOffset:gpuResourceID:accelerationStructureUniqueIdentifier:]
+Unhandled instance descriptor type
+Unexpected MTLAccelerationStructureDescriptor type
+Unexpected MTLAccelerationStructureInstanceDescriptorType
+-[MTLGPUBVHBuilder refitVertexDataWithEncoder:descriptor:bvhDescriptor:inPlace:sourceBuffer:sourceBufferOffset:scratchBuffer:scratchBufferOffset:retainedResources:innerNodeCapacity:leafNodeCapacity:]
+MTLBVHDescriptorForMTLAccelerationStructureDescriptor
+Motion keyframe count mismatch in MTLPrimitiveAccelerationStructureDescriptor (MTLPrimitiveAccelerationStructureDescriptor has %lu keyframes and MTLAccelerationStructureTriangleGeometryDescriptor which can have only one keyframe).
+Motion keyframe count mismatch in MTLPrimitiveAccelerationStructureDescriptor (MTLPrimitiveAccelerationStructureDescriptor has %lu keyframes and MTLAccelerationStructureCurveGeometryDescriptor which can have only one keyframe).
+Motion keyframe count mismatch in MTLPrimitiveAccelerationStructureDescriptor (MTLPrimitiveAccelerationStructureDescriptor has %lu keyframes and and one of the MTLAccelerationStructureMotionCurveGeometryDescriptor has %lu keyframes).
+Motion keyframe count mismatch in MTLPrimitiveAccelerationStructureDescriptor (MTLPrimitiveAccelerationStructureDescriptor has %lu keyframes and one of the MTLAccelerationStructureMotionTriangleGeometryDescriptor has %lu keyframes).
+Motion keyframe count mismatch in MTLPrimitiveAccelerationStructureDescriptor (MTLPrimitiveAccelerationStructureDescriptor has %lu keyframes and one of the MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor has %lu keyframes).
+Motion keyframe count mismatch in MTLPrimitiveAccelerationStructureDescriptor (MTLPrimitiveAccelerationStructureDescriptor has %lu keyframes and MTLAccelerationStructureBoundingBoxGeometryDescriptor which can have only one keyframe).
+com.apple.system.performance_profile_changed
+com.apple.system.sustained_execution_mode_changed
+UnifiedGamingPerfLevelMacTier2
+UnifiedGamingPerfLevelMacTier1
+UnifiedGamingPerfLeveliPadTier2
+UnifiedGamingPerfLeveliPadTier1
+iphone-performance-gaming-tier
+v12@?0i8
+-[MTLIOAccelCommandBuffer validate]
+commit an already committed command buffer
+commit command buffer with uncommitted encoder
+-[MTLIOAccelCommandBuffer encodeSignalEvent:value:]
+encodeSignalEvent:value: with uncommitted encoder
+-[MTLIOAccelCommandBuffer encodeWaitForEvent:value:]
+encodeWaitForEvent:value: with uncommitted encoder
+-[MTLIOAccelCommandBuffer encodeWaitForEvent:value:timeout:]
+encodeWaitForEvent:value:timeout: with uncommitted encoder
+-[MTLIOAccelCommandBuffer encodeConditionalAbortEvent:]
+encodeConditionalAbortEvent:value: with uncommitted encoder
+-[MTLIOAccelCommandBuffer setProtectionOptions:]
+setProtectionOptions: with uncommitted encoder
+-[MTLIOAccelCommandBuffer setResponsibleTaskIDs:count:]
+setResponsibleTaskIDs: with uncommitted encoder
+MTLCreateStructTypeFromArgumentDescriptors
+dataType (%@) is not a valid data type
+Constant block alignment can only be set the first constant in a constant block
+Invalid argument type at index %lu
+v24@?0@"MTLStructType"8Q16
+-[_MTLIndirectArgumentEncoder setBuffer:offset:atIndex:]
+Unreachable code
+-[_MTLIndirectArgumentEncoder setBuffers:offsets:withRange:]
+-[_MTLIndirectArgumentEncoder setTexture:atIndex:]
+-[_MTLIndirectArgumentEncoder setTextures:withRange:]
+-[_MTLIndirectArgumentEncoder setSamplerState:atIndex:]
+-[_MTLIndirectArgumentEncoder setSamplerStates:withRange:]
+-[_MTLIndirectArgumentEncoder setRenderPipelineState:atIndex:]
+-[_MTLIndirectArgumentEncoder setRenderPipelineStates:withRange:]
+-[_MTLIndirectArgumentEncoder setComputePipelineState:atIndex:]
+-[_MTLIndirectArgumentEncoder setComputePipelineStates:withRange:]
+-[_MTLIndirectArgumentEncoder setIndirectCommandBuffer:atIndex:]
+-[_MTLIndirectArgumentEncoder setIndirectCommandBuffers:withRange:]
+-[_MTLIndirectArgumentEncoder constantDataAtIndex:]
+assignArgumentIndices
+Unexpected data type in indirect argument buffer
+countArgument
+-[MTLEmulationIndirectArgumentBufferLayout uniqueIdentifierForRenderPipelineAtIndex:inIndirectArgumentBuffer:atOffset:]
+Setting a pipeline is not supported on this hardware
+-[MTLEmulationIndirectArgumentBufferLayout uniqueIdentifierForComputePipelineAtIndex:inIndirectArgumentBuffer:atOffset:]
+-[MTLEmulationIndirectArgumentBufferLayout offsetForBuffer:]
+Invalid ID: %lu
+-[MTLEmulationIndirectArgumentBufferLayout offsetForTexture:]
+-[MTLEmulationIndirectArgumentBufferLayout offsetForSampler:]
+-[MTLEmulationIndirectArgumentBufferLayout offsetForConstant:]
+-[MTLEmulationIndirectArgumentBufferLayout offsetForVisibleFunctionTable:]
+-[MTLEmulationIndirectArgumentBufferLayout offsetForIntersectionFunctionTable:]
+-[MTLEmulationIndirectArgumentBufferLayout offsetForPrimitiveAccelerationStructure:]
+-[MTLEmulationIndirectArgumentBufferLayout offsetForInstanceAccelerationStructure:]
+MTLBinaryArchiveDomain
+ (%lu bytes)
+MTLBinaryArchive descriptor must not be nil.
+At least one option must be set.
+MTLBinaryArchive
+MTLBinaryArchive_Serialize
+log_binary_archive_compilation_url
+MTL_DEBUG_PRINT_BINARY_ARCHIVE_URL_LOAD_ERRORS
+r^v24@?0Q8Q16
+c32@?0{MTLLoaderSliceIdentifier=ii}8Q16Q24
+c48@?0{MTLLoaderSliceIdentifier=ii}8^{MTLLoaderMachOPayload=@{?=[32C]}ccQ@@@@@QQ}16Q24Q32Q40
+c52@?0{MTLLoaderSliceIdentifier=ii}8Q16r^{?=[32C]}24I32Q36Q44
+The file %@ has an invalid format.
+Invalid URL
+count =
+compute pipeline descriptor must not be nil.
+render pipeline descriptor must not be nil.
+tile pipeline descriptor must not be nil.
+mesh pipeline descriptor must not be nil.
+library does not contain base function '%@'
+c24@?0r^{?=[32C]}8@"NSObject<OS_dispatch_data>"16
+.airp-json
+.aird-json
+.airf-json
+Failed to map library at path: %s
+Nothing to serialize
+/%@.metallib
+v16@?0r^{MTLCompiledRequestReply=Q@^{?}@}8
+__air_resolved__::
+Failed to find the requested function hash in the binary archive
+Failed to materialize AirScript for pipeline
+Failed to materialize function bitcode for compute pipeline
+Failed to materialize vertex function bitcode for render pipeline
+Failed to materialize function bitcode for tile render pipeline
+Archive cannot be recompiled in place
+Legacy archive cannot be recompiled
+Archive containting builtin objects cannot be recompiled
+No recompilable artifacts found
+Serialization options not compatible with this binary archive
+The binary archive contains no items eligible to be serialized
+v32@?0@"MTLBinaryKey"8@"MTLBinaryEntry"16*24
+Serialization of binaries to file failed
+Serialization of archives to file failed
+Output URL is invalid.
+c68@?0{MTLLoaderSliceIdentifier=ii}8I16r^{?=[32C]}20r^I28Q36Q44Q52Q60
+c16@?0^v8
+B16@?0r^{?=[32C]}8
+v24@?0@"MTLBinaryEntry"8r^{?=[32C]}16
+Failed to generate archiveID; the returned ID seems invalid
+Failed to generate archiveID with error: %@
+Failed to generate archiveID
+{?=[32C]}
+MTL_USE_AIRNT_BA
+com.apple.
+applegpu_gx2
+applegpu_g4g
+applegpu_g11p
+applegpu_g11m
+applegpu_g11g
+applegpu_g12p
+applegpu_g13p
+applegpu_g13g
+applegpu_g13s
+applegpu_g13c
+applegpu_g13d
+applegpu_g14p
+applegpu_g14g
+applegpu_g14s
+applegpu_g14d
+applegpu_g15g
+applegpu_g15s
+applegpu_g15d
+applegpu_g16p
+applegpu_g16g
+applegpu_g16s
+x86_64
+x86_64h
+arm64
+arm64_32
+applegpu_g4p
+applegpu_g5p
+applegpu_g9p
+applegpu_g9g
+applegpu_g10p
+applegpu_g11g_8fstp
+applegpu_g15p
+applegpu_g17p
+applegpu_g17g
+applegpu_g17s
+applegpu_g18p
+amdgpu_gfx600
+amdgpu_gfx600_nwh
+amdgpu_gfx701
+amdgpu_gfx704
+amdgpu_gfx803
+amdgpu_gfx802
+amdgpu_gfx900
+amdgpu_gfx904
+amdgpu_gfx906
+amdgpu_gfx1010_nsgc
+amdgpu_gfx1010
+amdgpu_gfx1011
+amdgpu_gfx1012
+amdgpu_gfx1030
+amdgpu_gfx1032
+intelgpu_skl_gt2r6
+intelgpu_skl_gt2r7
+intelgpu_skl_gt3r10
+intelgpu_kbl_gt2r0
+intelgpu_kbl_gt2r2
+intelgpu_kbl_gt2r4
+intelgpu_kbl_gt3r1
+intelgpu_kbl_gt3r6
+intelgpu_icl_1x6x8r7
+intelgpu_icl_1x8x8r7
+string_view::substr
+programObject Queue
+AIRP
+sampleCount.width =
+sampleCount.height =
+maxSampleCount.width =
+maxSampleCount.height =
+horizontal =
+vertical =
+screenSize.width =
+screenSize.height =
+layerCount =
+ layers[
+] = 
+%@%@%@
+physicalGranularity.width =
+physicalGranularity.height =
+parameterBuffer.size =
+parameterBuffer.align =
+new_compiler_scheduler
+optimal_core_count_is_p_cores
+hw.perflevel0.logicalcpu
+hw.perflevel1.logicalcpu
+MTL_COMPILER_SCHEDULER_VERSION
+MTL_MAX_COMPILER_TASKS
+MTLPixelFormatA8Unorm
+MTLPixelFormatR8Unorm
+MTLPixelFormatR8Unorm_sRGB
+MTLPixelFormatR8Snorm
+MTLPixelFormatR8Uint
+MTLPixelFormatR8Sint
+MTLPixelFormatR16Unorm
+MTLPixelFormatR16Snorm
+MTLPixelFormatR16Uint
+MTLPixelFormatR16Sint
+MTLPixelFormatR16Float
+MTLPixelFormatRG8Unorm
+MTLPixelFormatRG8Unorm_sRGB
+MTLPixelFormatRG8Snorm
+MTLPixelFormatRG8Uint
+MTLPixelFormatRG8Sint
+MTLPixelFormatB5G6R5Unorm
+MTLPixelFormatA1BGR5Unorm
+MTLPixelFormatABGR4Unorm
+MTLPixelFormatBGR5A1Unorm
+MTLPixelFormatR32Uint
+MTLPixelFormatR32Sint
+MTLPixelFormatR32Float
+MTLPixelFormatRG16Unorm
+MTLPixelFormatRG16Snorm
+MTLPixelFormatRG16Uint
+MTLPixelFormatRG16Sint
+MTLPixelFormatRG16Float
+MTLPixelFormatRGBA8Unorm
+MTLPixelFormatRGBA8Unorm_sRGB
+MTLPixelFormatRGBA8Snorm
+MTLPixelFormatRGBA8Uint
+MTLPixelFormatRGBA8Sint
+MTLPixelFormatARGB8Unorm
+MTLPixelFormatARGB8Unorm_sRGB
+MTLPixelFormatBGRA8Unorm
+MTLPixelFormatBGRA8Unorm_sRGB
+MTLPixelFormatRGB10A2Unorm
+MTLPixelFormatBGR10A2Unorm
+MTLPixelFormatRGB10A2Uint
+MTLPixelFormatRG11B10Float
+MTLPixelFormatRGB9E5Float
+MTLPixelFormatRG32Uint
+MTLPixelFormatRG32Sint
+MTLPixelFormatRG32Float
+MTLPixelFormatRGBA16Unorm
+MTLPixelFormatRGBA16Snorm
+MTLPixelFormatRGBA16Uint
+MTLPixelFormatRGBA16Sint
+MTLPixelFormatRGBA16Float
+MTLPixelFormatRGBA16Float_XR
+MTLPixelFormatRGBA32Uint
+MTLPixelFormatRGBA32Sint
+MTLPixelFormatRGBA32Float
+MTLPixelFormatBGRA4Unorm
+MTLPixelFormatRGBX8Unorm
+MTLPixelFormatRGBX8Unorm_sRGB
+MTLPixelFormatRGBX8Snorm
+MTLPixelFormatRGBX8Uint
+MTLPixelFormatRGBX8Sint
+MTLPixelFormatRGBX16Uint
+MTLPixelFormatRGBX16Sint
+MTLPixelFormatRGBX16Float
+MTLPixelFormatRGBX32Uint
+MTLPixelFormatRGBX32Sint
+MTLPixelFormatRGBX32Float
+MTLPixelFormatRGB10A2Unorm_sRGB
+MTLPixelFormatRGB10A2Unorm_PQ
+MTLPixelFormatBGR10A2Unorm_sRGB
+MTLPixelFormatBGR10A2Unorm_PQ
+MTLPixelFormatRGB10A2Unorm_HLG
+MTLPixelFormatR16Bfloat
+MTLPixelFormatRG16Bfloat
+MTLPixelFormatRGBA16Bfloat
+MTLPixelFormatBC1_RGBA
+MTLPixelFormatBC1_RGBA_sRGB
+MTLPixelFormatBC2_RGBA
+MTLPixelFormatBC2_RGBA_sRGB
+MTLPixelFormatBC3_RGBA
+MTLPixelFormatBC3_RGBA_sRGB
+MTLPixelFormatBC4_RUnorm
+MTLPixelFormatBC4_RSnorm
+MTLPixelFormatBC5_RGUnorm
+MTLPixelFormatBC5_RGSnorm
+MTLPixelFormatBC6H_RGBFloat
+MTLPixelFormatBC6H_RGBUfloat
+MTLPixelFormatBC7_RGBAUnorm
+MTLPixelFormatBC7_RGBAUnorm_sRGB
+MTLPixelFormatPVRTC_RGB_2BPP
+MTLPixelFormatPVRTC_RGB_2BPP_sRGB
+MTLPixelFormatPVRTC_RGB_4BPP
+MTLPixelFormatPVRTC_RGB_4BPP_sRGB
+MTLPixelFormatPVRTC_RGBA_2BPP
+MTLPixelFormatPVRTC_RGBA_2BPP_sRGB
+MTLPixelFormatPVRTC_RGBA_4BPP
+MTLPixelFormatPVRTC_RGBA_4BPP_sRGB
+MTLPixelFormatEAC_R11Unorm
+MTLPixelFormatEAC_R11Snorm
+MTLPixelFormatEAC_RG11Unorm
+MTLPixelFormatEAC_RG11Snorm
+MTLPixelFormatEAC_RGBA8
+MTLPixelFormatEAC_RGBA8_sRGB
+MTLPixelFormatETC2_RGB8
+MTLPixelFormatETC2_RGB8_sRGB
+MTLPixelFormatETC2_RGB8A1
+MTLPixelFormatETC2_RGB8A1_sRGB
+MTLPixelFormatASTC_4x2_sRGB
+MTLPixelFormatASTC_4x4_sRGB
+MTLPixelFormatASTC_5x4_sRGB
+MTLPixelFormatASTC_5x5_sRGB
+MTLPixelFormatASTC_6x5_sRGB
+MTLPixelFormatASTC_6x6_sRGB
+MTLPixelFormatASTC_8x4_sRGB
+MTLPixelFormatASTC_8x5_sRGB
+MTLPixelFormatASTC_8x6_sRGB
+MTLPixelFormatASTC_8x8_sRGB
+MTLPixelFormatASTC_10x5_sRGB
+MTLPixelFormatASTC_10x6_sRGB
+MTLPixelFormatASTC_10x8_sRGB
+MTLPixelFormatASTC_10x10_sRGB
+MTLPixelFormatASTC_12x10_sRGB
+MTLPixelFormatASTC_12x12_sRGB
+MTLPixelFormatASTC_4x2_LDR
+MTLPixelFormatASTC_4x4_LDR
+MTLPixelFormatASTC_5x4_LDR
+MTLPixelFormatASTC_5x5_LDR
+MTLPixelFormatASTC_6x5_LDR
+MTLPixelFormatASTC_6x6_LDR
+MTLPixelFormatASTC_8x4_LDR
+MTLPixelFormatASTC_8x5_LDR
+MTLPixelFormatASTC_8x6_LDR
+MTLPixelFormatASTC_8x8_LDR
+MTLPixelFormatASTC_10x5_LDR
+MTLPixelFormatASTC_10x6_LDR
+MTLPixelFormatASTC_10x8_LDR
+MTLPixelFormatASTC_10x10_LDR
+MTLPixelFormatASTC_12x10_LDR
+MTLPixelFormatASTC_12x12_LDR
+MTLPixelFormatASTC_4x2_HDR
+MTLPixelFormatASTC_4x4_HDR
+MTLPixelFormatASTC_5x4_HDR
+MTLPixelFormatASTC_5x5_HDR
+MTLPixelFormatASTC_6x5_HDR
+MTLPixelFormatASTC_6x6_HDR
+MTLPixelFormatASTC_8x4_HDR
+MTLPixelFormatASTC_8x5_HDR
+MTLPixelFormatASTC_8x6_HDR
+MTLPixelFormatASTC_8x8_HDR
+MTLPixelFormatASTC_10x5_HDR
+MTLPixelFormatASTC_10x6_HDR
+MTLPixelFormatASTC_10x8_HDR
+MTLPixelFormatASTC_10x10_HDR
+MTLPixelFormatASTC_12x10_HDR
+MTLPixelFormatASTC_12x12_HDR
+MTLPixelFormatGBGR422
+MTLPixelFormatBGRG422
+MTLPixelFormatDepth16Unorm
+MTLPixelFormatDepth32Float
+MTLPixelFormatStencil8
+MTLPixelFormatDepth24Unorm_Stencil8
+MTLPixelFormatDepth32Float_Stencil8
+MTLPixelFormatX24_Stencil8
+MTLPixelFormatX32_Stencil8
+MTLPixelFormatAnyDepth
+MTLPixelFormatAnyStencil
+MTLPixelFormatYCBCR8_420_2P
+MTLPixelFormatYCBCR8_422_1P
+MTLPixelFormatYCBCR8_422_2P
+MTLPixelFormatYCBCR8_444_2P
+MTLPixelFormatYCBCR10_444_1P
+MTLPixelFormatYCBCR10_420_2P
+MTLPixelFormatYCBCR10_422_2P
+MTLPixelFormatYCBCR10_444_2P
+MTLPixelFormatYCBCR10_420_2P_PACKED
+MTLPixelFormatYCBCR10_422_2P_PACKED
+MTLPixelFormatYCBCR10_444_2P_PACKED
+MTLPixelFormatYCBCR8_420_2P_sRGB
+MTLPixelFormatYCBCR8_422_1P_sRGB
+MTLPixelFormatYCBCR8_422_2P_sRGB
+MTLPixelFormatYCBCR8_444_2P_sRGB
+MTLPixelFormatYCBCR10_444_1P_sRGB
+MTLPixelFormatYCBCR10_420_2P_sRGB
+MTLPixelFormatYCBCR10_422_2P_sRGB
+MTLPixelFormatYCBCR10_444_2P_sRGB
+MTLPixelFormatYCBCR10_420_2P_PACKED_sRGB
+MTLPixelFormatYCBCR10_422_2P_PACKED_sRGB
+MTLPixelFormatYCBCR10_444_2P_PACKED_sRGB
+MTLPixelFormatRGB8_420_2P
+MTLPixelFormatRGB8_422_2P
+MTLPixelFormatRGB8_444_2P
+MTLPixelFormatRGB10_420_2P
+MTLPixelFormatRGB10_422_2P
+MTLPixelFormatRGB10_444_2P
+MTLPixelFormatRGB10_420_2P_PACKED
+MTLPixelFormatRGB10_422_2P_PACKED
+MTLPixelFormatRGB10_444_2P_PACKED
+MTLPixelFormatYCBCR10_444_1P_PQ
+MTLPixelFormatYCBCR10_420_2P_PQ
+MTLPixelFormatYCBCR10_422_2P_PQ
+MTLPixelFormatYCBCR10_444_2P_PQ
+MTLPixelFormatYCBCR10_420_2P_PACKED_PQ
+MTLPixelFormatYCBCR10_422_2P_PACKED_PQ
+MTLPixelFormatYCBCR10_444_2P_PACKED_PQ
+MTLPixelFormatYCBCR12_420_2P
+MTLPixelFormatYCBCR12_422_2P
+MTLPixelFormatYCBCR12_444_2P
+MTLPixelFormatYCBCR12_420_2P_PQ
+MTLPixelFormatYCBCR12_422_2P_PQ
+MTLPixelFormatYCBCR12_444_2P_PQ
+MTLPixelFormatYCBCR12_420_2P_PACKED
+MTLPixelFormatYCBCR12_422_2P_PACKED
+MTLPixelFormatYCBCR12_444_2P_PACKED
+MTLPixelFormatYCBCR12_420_2P_PACKED_PQ
+MTLPixelFormatYCBCR12_422_2P_PACKED_PQ
+MTLPixelFormatYCBCR12_444_2P_PACKED_PQ
+MTLPixelFormatYCBCRA8_444_1P
+MTLPixelFormatYCBCR8_422_1P_REV
+MTLPixelFormatRGB10A8_2P_XR10
+MTLPixelFormatRGB10A8_2P_XR10_sRGB
+MTLPixelFormatBGRA10_XR
+MTLPixelFormatBGRA10_XR_sRGB
+MTLPixelFormatBGR10_XR
+MTLPixelFormatBGR10_XR_sRGB
+MTLPixelFormatBGRA10Uint_PACKED
+MTLPixelFormatBGRA10_XR_PACKED
+MTLPixelFormatBGRA10_XR_PACKED_sRGB
+MTLPixelFormatBGRA10Unorm_PACKED
+MTLPixelFormatBGRA10Unorm_PACKED_sRGB
+MTLPixelFormatBGRA10Unorm_PACKED_HLG
+MTLPixelFormatBGRA10Unorm_PACKED_PQ
+MTLPixelFormatBGRA10Uint
+MTLPixelFormatBGRA10Unorm
+MTLPixelFormatBGRA10Unorm_sRGB
+MTLPixelFormatBGRA10Unorm_HLG
+MTLPixelFormatBGRA10Unorm_PQ
+MTLPixelFormatR10Uint_X6
+MTLPixelFormatR10Uint_PACKED
+MTLPixelFormatRG10Uint_X12
+MTLPixelFormatRG10Uint_PACKED
+MTLPixelFormatR12Uint_X4
+MTLPixelFormatR12Uint_PACKED
+MTLPixelFormatRG12Uint_X8
+MTLPixelFormatRG12Uint_PACKED
+MTLPixelFormatRGB10A8Uint_2P
+MTLPixelFormatR10Unorm_X6
+MTLPixelFormatR10Unorm_X6_sRGB
+MTLPixelFormatRG10Unorm_X12
+MTLPixelFormatRG10Unorm_X12_sRGB
+MTLPixelFormatR10Unorm_X6_PQ
+MTLPixelFormatR12Unorm_X4
+MTLPixelFormatR12Unorm_X4_PQ
+MTLPixelFormatRG12Unorm_X8
+MTLPixelFormatR10Unorm_PACKED
+MTLPixelFormatRG10Unorm_PACKED
+MTLPixelFormatYCBCR10_444_1P_XR
+MTLPixelFormatYCBCR10_420_2P_XR
+MTLPixelFormatYCBCR10_422_2P_XR
+MTLPixelFormatYCBCR10_444_2P_XR
+MTLPixelFormatYCBCR10_420_2P_PACKED_XR
+MTLPixelFormatYCBCR10_422_2P_PACKED_XR
+MTLPixelFormatYCBCR10_444_2P_PACKED_XR
+MTLPixelFormatYCBCR12_420_2P_XR
+MTLPixelFormatYCBCR12_422_2P_XR
+MTLPixelFormatYCBCR12_444_2P_XR
+MTLPixelFormatYCBCR12_420_2P_PACKED_XR
+MTLPixelFormatYCBCR12_422_2P_PACKED_XR
+MTLPixelFormatYCBCR12_444_2P_PACKED_XR
+MTLPixelFormatYCBCR10_444_1P_HLG
+MTLPixelFormatYCBCR10_420_2P_HLG
+MTLPixelFormatYCBCR10_422_2P_HLG
+MTLPixelFormatYCBCR10_444_2P_HLG
+MTLPixelFormatYCBCR10_420_2P_PACKED_HLG
+MTLPixelFormatYCBCR10_422_2P_PACKED_HLG
+MTLPixelFormatYCBCR10_444_2P_PACKED_HLG
+MTLPixelFormatYCBCR12_420_2P_HLG
+MTLPixelFormatYCBCR12_422_2P_HLG
+MTLPixelFormatYCBCR12_444_2P_HLG
+MTLPixelFormatYCBCR12_420_2P_PACKED_HLG
+MTLPixelFormatYCBCR12_422_2P_PACKED_HLG
+MTLPixelFormatYCBCR12_444_2P_PACKED_HLG
+MTLPixelFormatR10Unorm_X6_HLG
+MTLPixelFormatR12Unorm_X4_HLG
+MTLPixelFormatRGB10A8_2P
+MTLPixelFormatRGB10A8_2P_sRGB
+MTLPixelFormatRGB10A8_2P_PQ
+MTLPixelFormatRGB10A8_2P_HLG
+MTLPixelFormatUnspecialized
+MTLPixelFormatInvalid
+Unrecognized Metal Feature Set for this platform
+Unrecognized Metal GPU Family
+short
+ushort
+MTLDebugValidateMTLPixelFormat
+pixelFormat (%lu) is not a valid MTLPixelFormat.
+MTLAccelerationStructureInstanceDescriptorSize
+Invalid instance descriptor type
+-[MTLIndirectInstanceAccelerationStructureDescriptor instanceDescriptorStride]
+%lli
+%llu
+name: %@; type: %@; value: %@
+Name =
+Type =
+Value =
+index: %@; type: %@; value: %@
+Index =
+Constant %@ (%lu) is of type %@ but value found has type %@
+Constant %@ (%lu) value is required by function %@
+-[MTLFunctionConstantValuesInternal setConstantValue:type:atIndex:]
+Constant index (%lu) must be smaller than %u
+-[MTLFunctionConstantValuesInternal setConstantValues:type:withRange:]
+%@
+%@
+named constants
+index constants
+unable to copy compressed bitcode for function 
+unable to copy bitcode for function 
+MTLDynamicLibraryDomain
+Dynamic Library Install Name
+Library has no install name
+MTLDynamicLibrary could not be loaded as its AIR slice is missing
+MTLDynamicLibrary AIR compilation failed
+AIR is required, but not available.
+URL for dynamic library is nil
+installName =
+loadPath =
+MTLIOAccelResourcePool
+-[MTLBufferBindingInternal bufferIndirectArgumentType]
+Not supported at this point
+Alignment =
+DataSize =
+DataType =
+TextureType =
+TextureDataType =
+IsDepthTexture =
+MTLBuiltInArgumentInvalid
+MTLBuiltInArgumentVertexID
+MTLBuiltInArgumentInstanceID
+MTLBuiltInArgumentBaseVertex
+MTLBuiltInArgumentBaseInstance
+MTLBuiltInArgumentThreadPositionInGrid
+MTLBuiltInArgumentThreadsPerGrid
+MTLBuiltInArgumentThreadPositionInThreadgroup
+MTLBuiltInArgumentThreadIndexInThreadgroup
+MTLBuiltInArgumentThreadsPerThreadgroup
+MTLBuiltInArgumentThreadgroupPositionInGrid
+MTLBuiltInArgumentThreadgroupsPerGrid
+MTLBuiltInArgumentThreadExecutionWidth
+MTLBuiltInArgumentPatchID
+MTLBuiltInArgumentPositionInPatch
+MTLBuiltInArgumentStageInGridOrigin
+MTLBuiltInArgumentStageInGridSize
+MTLBuiltInArgumentThreadIndexInQuadgroup
+MTLBuiltInArgumentThreadIndexInSimdgroup
+MTLBuiltInArgumentThreadsPerQuadgroup
+MTLBuiltInArgumentThreadsPerSimdgroup
+MTLBuiltInAmplificationID
+MTLBuiltInAmplificationCount
+MTLBuiltInMeshGridProperties
+MTLBuiltInMesh
+BuiltInArgumentType =
+MTLMeshTopologyKindNone
+MTLMeshTopologyKindLine
+MTLMeshTopologyKindPoint
+MTLMeshTopologyKindTriangle
+%@%@%@%@%@%@%@
+MeshVertexStructMembers =
+MeshPrimitiveStructMembers =
+MeshVertexCount =
+MeshPrimitiveCount =
+MeshTopologyType =
+TensorDataType =
+IndexType =
+Dimensions =
+%s.%u
+%08X
+ && supportsFamily(mac2)
+ || supportsFamily(mac2)
+ supportsFamily(mac2)
+mtlScriptSerializerQueue
+alias:
+SpecializedLib_
+supportsFamily(apple6) || supportsFamily(mac2)
+StitchedLib_
+v32@?0@"NSString"8@"NSArray"16*24
+0123456789ABCDEF
+Air.ConstantsSpecializationDescriptor
+Air.FunctionConstantValue
+Air.ConstantFloat
+Air.ConstantFloat2
+Air.ConstantFloat3
+Air.ConstantFloat4
+Air.ConstantHalf
+Air.ConstantHalf2
+Air.ConstantHalf3
+Air.ConstantHalf4
+Air.ConstantInt
+Air.ConstantInt2
+Air.ConstantInt3
+Air.ConstantInt4
+Air.ConstantUInt
+Air.ConstantUInt2
+Air.ConstantUInt3
+Air.ConstantUInt4
+Air.ConstantShort
+Air.ConstantShort2
+Air.ConstantShort3
+Air.ConstantShort4
+Air.ConstantUShort
+Air.ConstantUShort2
+Air.ConstantUShort3
+Air.ConstantUShort4
+Air.ConstantChar
+Air.ConstantChar2
+Air.ConstantChar3
+Air.ConstantChar4
+Air.ConstantUChar
+Air.ConstantUChar2
+Air.ConstantUChar3
+Air.ConstantUChar4
+Air.ConstantBool
+Air.ConstantBool2
+Air.ConstantBool3
+Air.ConstantBool4
+Air.ConstantLong
+Air.ConstantLong2
+Air.ConstantLong3
+Air.ConstantLong4
+Air.ConstantULong
+Air.ConstantULong2
+Air.ConstantULong3
+Air.ConstantULong4
+Air.ConstantDouble
+Air.ConstantDouble2
+Air.ConstantDouble3
+Air.ConstantDouble4
+Air.ConstantFloat8
+Air.ConstantFloat16
+Air.ConstantHalf8
+Air.ConstantHalf16
+Air.ConstantInt8
+Air.ConstantInt16
+Air.ConstantUInt8
+Air.ConstantUInt16
+Air.ConstantShort8
+Air.ConstantShort16
+Air.ConstantUShort8
+Air.ConstantUShort16
+Air.ConstantChar8
+Air.ConstantChar16
+Air.ConstantUChar8
+Air.ConstantUChar16
+Air.ConstantLong8
+Air.ConstantLong16
+Air.ConstantULong8
+Air.ConstantULong16
+Air.ConstantDouble8
+Air.ConstantDouble16
+Air.ConstantBool8
+Air.ConstantBool16
+Mtl.FunctionStitching.Graph
+Mtl.FunctionStitching.Node
+Mtl.FunctionStitching.InputNode
+Mtl.FunctionStitching.FunctionNode
+Mtl.FunctionStitching.BufferNode
+Mtl.FunctionStitching.BufferAddressNode
+Mtl.FunctionStitching.BufferDataNode
+Mtl.FunctionStitching.TextureNode
+Mtl.FunctionStitching.SamplerNode
+Mtl.FunctionStitching.ThreadgroupNode
+Mtl.FunctionStitching.ImageblockNode
+Mtl.FunctionStitching.BuiltinNode
+Mtl.FunctionStitching.EarlyReturnNode
+Mtl.FunctionStitching.NodeId
+Mtl.FunctionStitching.Attribute
+Mtl.FunctionStitching.AlwaysInlineAttribute
+Mtl.FunctionStitching.KernelAttribute
+MTLP
+basic_string
+v24@?0^v8Q16
+0123456789ABCDEF
+vector
+MTLMutabilityDefault
+MTLMutabilityMutable
+MTLMutabilityImmutable
+MTLRoundingModeDefault
+MTLRoundingModeRTZ
+MTLRoundingModeRTNE
+mutability =
+Mutability
+-[MTLPipelineBufferDescriptorArrayInternal objectAtIndexedSubscript:]
+bufferIndex(%lu) must be < %lu
+-[MTLPipelineBufferDescriptorArrayInternal setObject:atIndexedSubscript:]
+buffer is not a MTLPipelineBufferDescriptor.
+%@:%u
+filename =
+function =
+column =
+inlinedAt
+validateMTLMutability
+%lu is not a valid MTLMutability.
+com.apple.metal.gl
+MTLDeviceErrorDomain
+Device serial queue
+Pipeline serialization queue
+Device concurrent queue
+MTL_FORCE_COMMAND_BUFFER_ENHANCED_ERRORS
+MTL_DISABLE_UPGRADER_DAEMON
+requires_legacy_compiler_process_count
+rate_limit_command_queue_generation
+MTL_LOG_LEVEL
+MTL_LOG_BUFFER_SIZE
+MTL_DUMP_PIPELINES_TO_JSON_FILE
+-[_MTLDevice initSerializationPaths]
+!"Dumping pipelines is not supported!"
+MTL_DUMP_LIBRARIES_TO_DIRECTORY
+MTL_COLLECT_PIPELINES_AT_EXIT
+manifest.json
+Invalid metal package
+mtlpackage
+major
+minor
+patch
+Unsupported metal package version
+content
+pkgtype
+MLLibrary
+Metal package does not contain an MTLLibrary
+mpspkgname
+-[_MTLDevice newLibraryWithURL:error:]
+url must not be nil.
+Invalid file url
+kMetalRegistryID
+kMetalTextureType
+kMetalTexturePixelFormat
+kMetalTextureWidth
+kMetalTextureHeight
+kMetalTextureDepth
+kMetalTextureMipmapLevelCount
+kMetalTextureSampleCount
+kMetalTextureArrayLength
+kMetalTextureResourceOptions
+kMetalTextureUsage
+kMetalTextureSparseValue
+kMetalTextureGPUOptimization
+kMetalTextureSwizzleKey
+kMetalTextureRotation
+kMetalTextureFootprint
+kMetalTextureResourceIndex
+kMetalTextureCSCMatrix
+kMetalTextureWriteAccessPattern
+forceDeviceName
+METAL_FORCE_DEVICE_VENDOR_NAME
+METAL_FORCE_DEVICE_FAMILY_NAME
+METAL_FORCE_DEVICE_PRODUCT_NAME
+Unnamed_GPU
+default
+no default library was found
+v24@?0@"<MTLLibrary>"8@"NSError"16
+MTL_DUMP_PIPELINES_AS_METAL_SCRIPT
+-[_MTLDevice startCollectingPipelineDescriptorsUsingPrefixForNames:]
+name prefix is null
+-[_MTLDevice endCollectingPipelineDescriptors]
+startCollectingPipelineDescriptors was not called
+Device does not support dynamic libraries.
+Expected a library with type MTLLibraryTypeDynamic, found invalid type: %@
+null
+Invalid descriptor. Dynamic library must be created from a URL or a MTLLibrary
+v24@?0r^{MTLBinaryRequestReply=Q@^{?}@^{?}@^{?}@^{?}@@@^{?}@@}8@"NSError"16
+Compilation failed: 
+
+
+v16@?0r^{MTLBinaryRequestReply=Q@^{?}@^{?}@^{?}@^{?}@@@^{?}@@}8
+v24@?0@"<MTLComputePipelineState>"8@"NSError"16
+v32@?0@"<MTLComputePipelineState>"8@"MTLComputePipelineReflection"16@"NSError"24
+ciKernelMain
+-[_MTLDevice newLibraryWithStitchedDescriptor:error:]
+Stitched Library with Descriptor Validation
+-[_MTLDevice newLibraryWithStitchedDescriptor:completionHandler:]
+-[_MTLDevice newLibraryWithStitchedDescriptor:destinationBinaryArchive:error:]
+Stitched Library with Descriptor SPI Validation
+-[_MTLDevice newDagStringWithGraphs:]
+New Dag String With Graphs Validation
+-[_MTLDevice initLimits]
+_limits.maxColorAttachments > 0
+_limits.maxIndirectBuffers > 0
+_limits.maxIndirectTextures > 0
+_limits.maxIndirectSamplers > 0
+_limits.maxIndirectSamplersPerDevice > 0
+v32@?0@"<MTLRenderPipelineState>"8@"MTLRenderPipelineReflection"16@"NSError"24
+Tile render pipelines are not supported on this device
+Error creating compute variant
+-[_MTLDevice minimumLinearTextureAlignmentForPixelFormat:]
+%s is not supported on this device.
+Linear textures do not support compressed pixel formats
+Linear textures do not support depth/stencil pixel formats
+-[_MTLDevice minLinearTextureAlignmentForPixelFormat:]
+-[_MTLDevice requiredLinearTextureBytesPerRowForDescriptor:]
+Linear textures only support 2D non-MSAA textures and texture buffers
+-[_MTLDevice getDefaultSamplePositions:count:]
+count (%lu) is not supported on this device.
+Null provided for positions array.
+-[_MTLDevice newArgumentEncoderWithArguments:structType:]
+count must be greater than zero
+URL is not a file
+MTLPerformanceStateAssertionDomain
+Device does not support performance state assertion feature
+com.apple.metalassetupgrader
+archiveMapping.db
+archiveUsage.db
+MPSGraphExecutable
+MPSGraphExecutableReflection
+failed to open MPSGraph package
+Function %@ was not found in library
+DylibLoading
+Device does not support Metal 4.
+com.feralinteractive.riseofthetombraider
+com.feralinteractive.empire
+com.crowscrowscrows.thestanleyparableultradeluxe
+-[_MTLDevice(MTLDeviceInternal) newLibraryWithFunctionArray:error:]
+Array must be not nil
+Array must not be emty
+Array cannot be nil or emty
+MTLGPUFamilyApple1
+MTLGPUFamilyApple2
+MTLGPUFamilyApple3
+MTLGPUFamilyApple4
+MTLGPUFamilyApple5
+MTLGPUFamilyApple6
+MTLGPUFamilyApple7
+MTLGPUFamilyApple8
+MTLGPUFamilyApple9
+MTLGPUFamilyApple10
+MTLGPUFamilyMac1
+MTLGPUFamilyMac2
+MTLGPUFamilyCommon1
+MTLGPUFamilyCommon2
+MTLGPUFamilyCommon3
+MTLGPUFamilyMacCatalyst1
+MTLGPUFamilyMacCatalyst2
+MTLGPUFamilyMetal3
+MTLGPUFamilyMetal4
+MTLValidateFeatureSupport
+%@ is not supported on this device
+%@ is only supported on %@ and later.
+MTLFeatureSet_macOS_GPUFamily1_v1
+MTLFeatureSet_macOS_GPUFamily1_v2
+MTLFeatureSet_macOS_GPUFamily1_v3
+MTLFeatureSet_macOS_GPUFamily1_v4
+MTLFeatureSet_macOS_GPUFamily2_v1
+MTLFeatureSet_macOS_ReadWriteTextureTier2
+Libraries From Source
+Pipelines
+Render Pipelines
+Compute Pipelines
+Dynamic Libraries
+Binary Functions
+MTL_LOG_COMPILE_STATS
+writeCompileTimeStatsJSONFile_block_invoke
+Output stream for writing compile statistics could not be created
+Failed to write compile statistics, error: %@
+pipeline
+MTLLibraryTypeExecutable
+MTLLibraryTypeDynamic
+dataType =
+index =
+arrayLength =
+access =
+textureType =
+constantBlockAlignment =
+libraryBuilder
+MTL_LEGACY_COMPILER_PROCESS_COUNT
+Metal Compiler Warning
+descriptor cannot be nil.
+descriptor is not a MTLStitchedLibraryDescriptor.
+descriptor.functionGraphs cannot be nil.
+descriptor.functionGraphs is not an NSArray.
+descriptor.functionGraphs cannot be empty.
+descriptor.functions cannot be nil.
+descriptor.functions is not an NSArray.
+descriptor.functions cannot be empty.
+descriptor.functions[%lu] does not conform to MTLFunction.
+descriptor.binaryArchives cannot be nil.
+descriptor.binaryArchives is not an NSArray.
+descriptor.binaryArchives[%lu] does not conform to MTLBinaryArchive.
+DAGS {
+
+functionGraphs[%lu] cannot be nil.
+functionGraphs[%lu] is not a MTLFunctionStitchingGraph.
+functionGraphs[%lu].functionName cannot be nil
+functionGraphs[%lu].functionName is not an NSString.
+functionGraphs[%lu].functionName cannot be empty.
+functionGraphs[%lu].attributes cannot be nil.
+functionGraphs[%lu].attributes is not an NSArray.
+ALWAYS_INLINE;
+
+KERNEL;
+
+functionGraphs[%lu].attributes[%lu] is of incorrect type: %@.
+functionGraphs[%lu].nodes cannot be nil if functionGraphs[%lu].outputNode is nil.
+functionGraphs[%lu].nodes cannot be empty if functionGraphs[%lu].outputNode is nil.
+functionGraphs[%lu].nodes[%lu] was listed again in the same graph at .nodes[%lu].
+functionGraphs[%lu].nodes is not an NSArray.
+NODE(node_early_return) : EARLY_RETURN, NODE(node_%lu);
+
+Non-output node functionGraphs[%lu].nodes[%lu] cannot be nil.
+functionGraphs[%lu].nodes[%lu] is not a MTLFunctionStitchingFunctionNode.
+functionGraphs[%lu].outputNode is not a MTLFunctionStitchingFunctionNode.
+OUTPUT(node_output) : 
+NODE(node_%lu) : 
+functionGraphs[%lu].outputNode.arguments cannot be nil.
+functionGraphs[%lu].outputNode.arguments is not an NSArray.
+functionGraphs[%lu].outputNode.controlDependencies cannot be nil.
+functionGraphs[%lu].outputNode.controlDependencies is not an NSArray.
+functionGraphs[%lu].nodes[%lu].arguments cannot be nil.
+functionGraphs[%lu].nodes[%lu].arguments is not an NSArray.
+functionGraphs[%lu].nodes[%lu].controlDependencies cannot be nil.
+functionGraphs[%lu].nodes[%lu].controlDependencies is not an NSArray.
+functionGraphs[%lu].nodes[%lu].arguments must have one element.
+EARLY_RETURN
+functionGraphs[%lu].outputNode.name cannot be nil.
+functionGraphs[%lu].outputNode.name cannot be empty.
+functionGraphs[%lu].nodes[%lu].name cannot be nil.
+functionGraphs[%lu].nodes[%lu].name cannot be empty.
+FUNCTION(%@)
+functionGraphs[%lu].outputNode.arguments[%lu] does not conform to MTLFunctionStitchingNode.
+functionGraphs[%lu].nodes[%lu].arguments[%lu] does not conform to MTLFunctionStitchingNode.
+functionGraphs[%lu].nodes does not contain functionGraphs[%lu].outputNode.arguments[%lu].
+functionGraphs[%lu].nodes does not contain functionGraphs[%lu].nodes[%lu].arguments[%lu].
+NODE(node_%lu)
+NODE(node_output)
+INPUT(%lu)
+BUFFER(CONSTANT, %lu)
+%cBUFFER_ADDR(BUFFER(CONSTANT, %lu), %lu)
+TEXTURE(%lu)
+SAMPLER(%lu)
+THREADGROUP(%lu)
+IMAGEBLOCK
+BUILTIN(THREAD_POSITION_IN_GRID)
+BUILTIN(THREAD_POSITION_IN_THREADGROUP)
+functionGraphs[%lu].outputNode.arguments[%lu] is of incorrect type: %@.
+functionGraphs[%lu].nodes[%lu].arguments[%lu] is of incorrect type: %@.
+functionGraphs[%lu].nodes[%lu].controlDependencies is not a NSArray.
+functionGraphs[%lu].outputNode.controlDependencies[%lu] is not of type MTLFunctionStitchingFunctionNode.
+functionGraphs[%lu].nodes[%lu].controlDependencies[%lu] is not of type MTLFunctionStitchingFunctionNode.
+functionGraphs[%lu].nodes does not contain functionGraphs[%lu].outputNode.controlDependencies[%lu].
+functionGraphs[%lu].nodes does not contain functionGraphs[%lu].nodes[%lu].controlDependencies[%lu].
+*NODE(node_%lu)
+*NODE(node_output)
+functionGraphs[%lu].nodes[%lu] contains a reference to .output_node, which must be listed in .nodes before its use.
+functionGraphs[%lu].nodes[%lu] contains a reference to .nodes[%lu], which must be listed before its use.
+MTL_MAXIMUM_CONCURRENT_COMPILATION_TASK_COUNT_API_OVERRIDE
+MTL_FIXED_COMPILER_PROCESS_COUNT
+MTL_THREADS_PER_COMPILER
+MTL_WRITE_COMPILE_STATS_TO_JSON_FILE
+Intel
+MTLECBE
+progressTrackVertex
+progressTrackKernel
+MTLMeshShaderEmulator
+object_prefix_sum_kernel
+no_object_prefix_sum_kernel
+mesh_prefix_sum_kernel_1
+mesh_prefix_sum_kernel_2
+mesh_prefix_sum_kernel_3
+functionCount =
+forceResourceIndex =
+resourceIndex =
+-[MTLComputePassSampleBufferAttachmentDescriptorArrayInternal objectAtIndexedSubscript:]
+-[MTLComputePassSampleBufferAttachmentDescriptorArrayInternal setObject:atIndexedSubscript:]
+enable-acceleration-structure-viewer-intersect-instrumentation
+com.apple.MTLCompilerConnectionQueue
+com.apple.MTLCompilerCancellationQueue
+GPUTimestamp
+TessellationInputPatches
+VertexInvocations
+PostTessellationVertexInvocations
+ClipperInvocations
+ClipperPrimitivesOut
+FragmentInvocations
+FragmentsPassed
+KernelInvocations
+TotalCycles
+VertexCycles
+TessellationCycles
+PostTessellationCycles
+FragmentCycles
+RenderTargetWriteCycles
+A timestamp in nanoseconds on the GPU.
+The number of patches input to the tessellation unit.
+The number of invocations of the vertex shader.
+The number of invocations of the post tessellation vertex shader.
+The number of primitives that were passed to the viewport clipper.
+The number of primitives that were output from the viewport clipper.
+The number of invocations of the fragment shader.
+The number of fragments that passed depth and stencil testing.
+The number of compute kernel invocations.
+The total amount of cycles to this point.
+The number of cycles during which the vertex shader was running.
+The number of cycles during which the tessellation unit was running.
+The number of cycles during which the post tessellation vertex shader was running.
+The number of cycles during which the fragment shader was running.
+The number of cycles that were spent storing values into the render target.
+timestamp
+stageutilization
+statistic
+A counter set containing only a GPU timestamp.
+A counter set containing counters representing relative amounts of work per pipeline stage.
+A counter set containing statistics about pipeline stages.
+MTLTextureType1D
+MTLTextureType1DArray
+MTLTextureType2D
+MTLTextureType2DArray
+MTLTextureType2DMultisample
+MTLTextureType2DMultisampleArray
+MTLTextureTypeCube
+MTLTextureTypeCubeArray
+MTLTextureType3D
+MTLTextureTypeTextureBuffer
+MTLCPUCacheModeWriteCombined
+MTLCPUCacheModeDefaultCache
+Invalid
+MTLStorageModeShared
+MTLStorageModeManaged
+MTLStorageModePrivate
+MTLStorageModeMemoryless
+MTLTextureUsageShaderRead
+MTLTextureUsageShaderWrite
+MTLTextureUsageRenderTarget
+MTLTextureUsagePixelFormatView
+MTLTextureUsageVideo
+MTLTextureUsageNoConcurrentAccess
+MTLTextureUsageBlockWritesOnly
+MTLTextureUsageUnknown
+MTLUnmappedDepthValueZero
+MTLUnmappedDepthValueOne
+MTLTextureCompressionTypeLossless
+MTLTextureCompressionTypeLossy
+MTLTextureAccessPatternDefault
+MTLTextureAccessPatternCoherent
+MTLTextureAccessPatternIncoherent
+type (%lu) is not a valid MTLTextureType.
+MTL_ENABLE_TEXTURE_USAGE_UNKNOWN_DEFAULT
+MTLResourceOptions (0x%lx) contains unknown bits.
+MTLTextureUsage has unknown bits 0x%lx.
+_validateTextureUsage
+MTLTextureSwizzleRed
+MTLTextureSwizzleGreen
+MTLTextureSwizzleBlue
+MTLTextureSwizzleAlpha
+MTLTextureSwizzleOne
+MTLTextureSwizzleZero
+Unknown(%u)
+MTLTextureCompressionModeDefault
+MTLTextureCompressionModeOptIn
+MTLTextureCompressionModeOptOut
+ioSurface
+width =
+height =
+depth =
+mipmapLevelCount =
+sampleCount =
+cpuCacheMode =
+storageMode =
+hazardTrackingMode =
+resourceOptions =
+framebufferOnly =
+usage =
+swizzle =
+sparseSurfaceDefaultValue =
+allowGPUOptimizedContents =
+compressionType =
+writeAccessPattern =
+placementSparsePageSize =
+-[MTLTextureDescriptorInternal validateWithDevice:]
+Texture Descriptor Validation
+MTLTextureDescriptor has compressionType set to MTLTextureCompressionTypeLossy, but the device does not support lossy compression
+MTLTextureDescriptor has compressionType set to MTLTextureCompressionTypeLossy, but the pixel format %s does not support lossy compression
+MTLTextureDescriptor uses compressionFootprint %d, but the pixel format %s does not support that lossy compression mode on this device
+MTLTextureDescriptor uses compressionFootprint %d, which does not support any textureType other than MTLTextureType2D
+MTLTextureDescriptor uses compressionFootprint %d, which does not support any mipmapLevelCount other than 1
+MTLTextureDescriptor %s, which is not supported for 1D, 1DArray or TextureBuffer texture types
+has compressionType set to MTLTextureCompressionTypeLossy
+uses compressionFootprint enabled
+MTLTextureDescriptor has compressionType set to MTLTextureCompressionTypeLossy, but the storageMode is not MTLStorageModePrivate
+MTLTextureDescriptor %s, but usage includes MTLTextureUsageShaderWrite
+MTLTextureDescriptor %s, but usage includes MTLTextureUsagePixelFormatView
+MTLTextureDescriptor has compressionMode set to optOut, but requests lossy compression
+MTLTextureDescriptor has compressionType set to MTLTextureCompressionTypeLossy, but allowGPUOptimizedContents is set to NO
+MTLTextureDescriptor has compressionType set to MTLTextureCompressionTypeLossy, but usage includes MTLTextureUsageShaderAtomic
+MTLTextureDescriptor has invalid pixelFormat (%lu).
+Texture swizzling is not compatable with %s
+MTLTextureDescriptor requests a height of %lu but the texture type %s requires that height is 1
+MTLTextureDescriptor requests a mipmapLevelCount of %lu but the texture type %s requires that mipmapLevelCount is 1
+MTLTextureDescriptor requests a depth of %lu but the texture type %s requires that depth is 1
+MTLTextureDescriptor requests %lu mipmap levels, but the dimensions (%lu, %lu, %lu) can only support a maxiumum of %lu levels
+MTLTextureDescriptor has sampleCount set but is using a type that does not allow sampleCount.
+MTLTextureDescriptor mipmapLevelCount must equal 1 for multisample textures.
+MTLTextureDescriptor pixelFormat (%s) does not support multisample textures.
+MTLTextureDescriptor sampleCount must be > 1 for multisample textures.
+MTLTextureDescriptor sampleCount (%lu) is not supported by device.
+MTLTextureDescriptor width must equal height for cube textures.
+MTLTextureDescriptor requests an arrayLength of %lu, but %s requires that arrayLength is 1
+MTLTextureDescriptor arrayLength (%lu) is set to zero or greater than the max allowed size (%lu).
+MTLTextureDescriptor has a compressed pixel format set with a sample count greater than one.
+The compressed pixel format %s cannot be used with MTLTextureType3D.
+MTLTextureDescriptor: compressed pixel formats require texture type of MTLTextureType2D[Array]%s or MTLTextureTypeCube[Array].
+, MTLTextureType3D
+PVRTC 3D textures are not supported
+MTLTextureDescriptor has a PVRTC pixel format (%s) set with non-square and/or non-power of two dimensions.
+MTLTextureDescriptor has a non-zero rotation set but is not marked as framebufferOnly.
+MTLTextureDescriptor requests %lu mipmap levels, but the MTLPixelFormat422 pixel format does not support mipmaps.
+MTLTextureDescriptor: MTLPixelFormat422 requires MTLTextureType2D.
+MTLTextureDescriptor: MTLPixelFormat422 requires even width.
+MTLTextureDescriptor: MTLResourceStorageModeMemoryless is not a supported storage mode on this device.
+MTLTextureDescriptor: depth/stencil pixel formats require texture type of MTLTextureType2D[Array] or MTLTextureTypeCube[Array].
+MTLTextureDescriptor: Depth, Stencil, DepthStencil textures cannot be allocated with MTLStorageModeShared or MTLStorageModeManaged on this device.
+MTLTextureDescriptor: Depth, Stencil, DepthStencil textures cannot be allocated with MTLResourceStorageModeMemoryless on this device.
+MTLTextureDescriptor: Multisample textures cannot be allocated with MTLStorageModeShared or MTLStorageModeManaged on this device.
+MTLTextureDescriptor: Multisample textures cannot be allocated with MTLResourceStorageModeMemoryless on this device.
+MTLTextureType2DMultisampleArray is not supported on this device
+MTLTextureColorSpaceConversionMatrix selection is not supported on this device.
+MTLTextureColorSpaceConversionMatrix (%lu) is not supported by this version of Metal.
+_mtlValidateArgumentsForTextureViewOnDevice
+Texture Creation
+source texture (%s) is not a compressed pixel format.
+texture view pixelFormat (%s) is a compressed pixel format.
+source texture block size (%lu) does not match texture view pixel size (%lu)
+source texture pixelFormat (%s) not castable.
+texture view pixelFormat (%s) not castable.
+source texture pixelFormat (%s) not compatible with texture view pixelFormat (%s).
+source texture textureType (%@) not compatible with texture view textureType (%@).
+newLevelRange.length must not be 0.
+newSliceRange.length must not be 0.
+(newLevelRange.location + newLevelRange.length)(%lu) must be <= [texture mipmapLevelCount](%lu).
+(newSliceRange.location + newSliceRange.length)(%lu) must be <= (%lu).
+newSliceRange.length(%lu) must be a multiple of (%lu).
+newSliceRange.length(%lu) must equal (%lu) for textureType (%@).
+newPixelFormat(%s) must be MSAA capable to be used to view a texture with sampleCount(%lu).
+_mtlValidateStrideTextureParameters
+IOSurface
+Linear
+%s texture: bytesPerRow (%llu) must be greater or equal to (%llu) bytes
+2D linear texture array is not supported.
+%s texture: bytesPerRow (%llu) must be aligned to %llu bytes
+%s texture: offset (%llu) must be aligned to %llu bytes
+%s texture: cannot create compressed, depth, or stencil textures, pixelFormat (%s) disallowed
+%s texture: cannot be mipmapped, mipmapLevelCount (%lu) disallowed
+%s texture: must have depth == 1, depth (%lu) disallowed
+%s texture: must be of type MTLTextureType2D or linear MTLTextureType2DArray, textureType (%@) disallowed
+%s texture: must be of type MTLTextureType2D, textureType (%@) disallowed
+levels =
+slices =
+invalid cpuCacheMode (%lu)
+invalid storageMode (%lu). Must be one of
+ %@(%lu)
+_mtlValidateMTLTextureSwizzle
+swizzle(%u) is not a valid MTLTextureSwizzle.
+MTL_DISABLE_MEMORYLESS_STORAGE_MODE
+MTLTextureDescriptor has width of zero.
+MTLTextureDescriptor has width (%lu) greater than the maximum allowed size of %lu.
+MTLTextureDescriptor has height of zero.
+MTLTextureDescriptor has height (%lu) greater than the maximum allowed size of %lu.
+MTLTextureDescriptor has depth of zero.
+MTLTextureDescriptor has depth (%lu) greater than the maximum allowed size of %lu.
+MTLTextureDescriptor has arrayLength of zero.
+MTLTextureDescriptor has arrayLength (%lu) greater than the maximum allowed size of %lu.
+rotation is not a valid MTLTextureRotation.
+compressionMode is not a valid MTLTextureCompressionMode.
+compressionFootprint is not a valid MTLTextureCompressionFootprint.
+This device does not support ulong texture atomics, so MTLPixelFormatRG32Uint cannot be used with texture atomics
+%s is not a valid format to be used with texture atomics.
+compressionType is not a valid MTLTextureCompressionType.
+invalid writeAccessPattern (%lu)
+MTLIOCreateDecompressionContext
+0 && "unsupported compression method"
+shareable =
+purgeableState =
+isCompressed =
+parentTexture =
+<null>
+parentRelativeLevel =
+parentRelativeSlice =
+buffer =
+bufferOffset =
+bufferBytesPerRow =
+iosurface =
+iosurfacePlane =
++[MTLIOAccelTexture initNewTextureDataWithDevice:descriptor:sysMemSize:sysMemRowBytes:vidMemSize:vidMemRowBytes:args:]
+Non IOSurface texture has invalid rotation %u
+-[MTLIOAccelTexture initWithDevice:descriptor:iosurface:plane:field:args:argsSize:]
+IOSurface texture has invalid rotation %u
+IOSurface argument must not be NULL
+IOSurface is non-planar, but plane %u specified
+Descriptor rowBytes (%lu) > IOSurface rowBytes (%lu)
+Descriptor height*arrayLength > IOSurface height
+Pixel format bytes per pixel doesn't match IOSurface bytes per pixel (size casting disallowed by this IOSurface)
+-[MTLIOAccelTexture initWithBuffer:descriptor:sysMemOffset:sysMemRowBytes:vidMemSize:vidMemRowBytes:args:argsSize:isStrideTexture:]
+Buffer texture has invalid rotation %u
+Type
+Renderbuffer
+Texture
+MTLIOAccelTexture
+, %s
+, %d mipmap levels
+, %d array slices
+, %d samples
+shaderRead 
+shaderWrite 
+renderTarget 
+pixelFormatView 
+video 
+noConcurrentAccess 
+blockWritesOnly 
+, usage (%08x) %@
+, "%s"
+Description
+OpenGLObjects
+getTargetString
+!"INVALID TEXTURE TYPE"
+, %ld
+, %ld x %ld
+, %ld x %ld x %ld
+appendDimensionString
+length =
+-[MTLIOAccelBuffer initWithDevice:pointer:length:options:sysMemSize:vidMemSize:gpuAddress:args:argsSize:deallocator:]
+storageModePrivate incompatible with ...WithBytes variant of newBuffer
+storageModeMemoryless incompatible with ...WithBytes variant of newBuffer
+Invalid cacheMode %u
+Invalid storageMode %u
+Buffer
+MTLIOAccelBuffer
+, %@
+PipelineLibrary
+pipelineDescriptions queue
+initWithFileDescriptor
+stringWithUTF8String returned nil!
+stringByStandardizingPath returned nil!
+stringByDeletingLastPathComponent returned nil!
+Library has no fileName property !
+stringWithUTF8String return nil !
+stringByAppendingPathComponent returned nil !
+getLibraryByIndex
+Invalid library index in pipeline library file
+getLibraryByIndex_block_invoke
+Error: %@
+initializeDescriptorHash_block_invoke
+pipeline descriptor has no name in file
+pipeline descriptor %s duplicated
+compute pipeline %s not found in pipelineLibrary.
+newComputePipelineDescriptor
+invalid compute pipeline descriptor %s in pipeline library
+deserializeFunction
+Function with no name in pipeline library
+Specialized function %s not found in pipelineLibrary.
+Base function with no name in pipeline library
+Specialized Function %s has no 'base function' in pipeline library
+Invalid library index in pipeline library for function %s
+No constant values specified for specialized function %s
+Function %@ could not be found in library
+render pipeline %s not found in pipelineLibrary.
+newRenderPipelineDescriptor
+invalid render pipeline descriptor %s in pipeline library
+newLibraryWithFile
+filePath must not be nil.
+filePath is not a NSString.
+device must not be nil.
+device is not a MTLDevice.
+pipeline library not found
+%s/pipelines.desc
+file not found: %s
+could not open file: %s
+%s/pipelines.%s
+Could not open pipeline cache file: %s
+%s/functions
+Could not open function cache file: %s
+deserializeFunctionConstants
+Unknown property in descriptor
+com.Metal.DeviceDispatchQueue
+com.Metal.DeviceCleaupQueue
+IOService
+IOPCIDevice
+built-in
+AAPL,slot-name
+IOPCIExpressLinkStatus
+Thunderbolt Path
+Socket ID
+Supported Link Speed
+Supported Link Width
+-[MTLIOAccelDevice newFence]_block_invoke
+gotFenceCount == newFenceCount
+_fenceAllocatedCount < _fenceMaximumCount
+searchIndex < _fenceMaximumCount
+-[MTLIOAccelDevice releaseFenceIndex:]
+fenceIndex != 0 && fenceIndex < _fenceMaximumCount
+-[MTLIOAccelDevice retainPeerConnection:]
+_peerConnections[peerIndex].device == nil
+_peerConnections[peerIndex].device == peerDevice
+-[MTLIOAccelDevice releasePeerConnection:]
+deviceNameMatch
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+CGSCreateDefaultMetalDevice
+MTLAddDevice
+_deviceArray != NULL
+[newDevice conformsToProtocol:@protocol(MTLDevice)]
+[newDevice conformsToProtocol:@protocol(MTLDeviceSPI)]
+MTLDeviceWasAdded
+MTLDeviceRemovalRequested
+MTLDeviceWasRemoved
+MTLCopyAllDevicesWithObserver
+_deviceArrayQueue != NULL
+MTLRemoveDeviceObserver
+_MTLNotifyDeviceWasAdded
+_MTLNotifyDeviceRemovalRequested
+_MTLNotifyDeviceWasRemoved
+com.Metal.DeviceArray
+com.Metal.DeviceNotifyQueueDispatch
+GPUSelectionPolicy
+preferRemovable
+%s: prefer use of removable GPUs (via %@:%@->%@)
+apply_selection_policy_once
+avoidRemovable
+%s: avoid use of removable GPUs (via %@:%@->%@)
+ALLOWED_GPU_IDS
+MTL_CAPTURE_PATH
+METAL_LOAD_INTERPOSER
+DYMTL_TOOLS_DYLIB_PATH
+MTL_HUD_ENABLED
+MTL_HUD_PATH
+MetalHudEnabled
+MetalForceHudEnabled
+DYMTLWrapDeviceWithDebugLayer
+MTLInitializeInterpose
+Metal GPU Frame Capture could not be enabled
+Unknown Wrapper Type : %d
+METAL_CAPTURE_ENABLED
+MTL_CAPTURE_ENABLED
+MetalCaptureEnabled
+MetalForceCaptureEnabled
+/System/Library/PrivateFrameworks/GPUToolsCapture.framework/GPUToolsCapture
+MTLDebugDevice
+com.apple.gpusw.MetalTools
+/System/Library/PrivateFrameworks/MetalTools.framework
+MTLTelemetryDevice
+MTLCountersDevice
+MTLGPUDebugDevice
+MTLLegacySVDevice
+MTL_SHADER_VALIDATION_ON_API_VALIDATION
+Metal API Extended Validation Enabled
+Metal API Validation %s
+Enabled
+Disabled
+Metal API Telemetry Enabled!
+Metal API Counters Enabled!
+Metal GPU Validation Enabled
+/System/Library/PrivateFrameworks/MTLSimDriver.framework/MTLSimDriver
+MTLCreateSimulatorDevice
+%s gpuid match 0x%lx registryID for pid %d 
+
+_mtlIsDeviceAllowed
+METAL_DEVICE_WRAPPER_TYPE
+MTL_DEBUG_LAYER
+MTL_SHADER_VALIDATION
+UseMetalTelemetry
+v36@?0I8r^v12Q20r*28
+MTL_MONOLITHIC_COMPILER
+USE_MONOLITHIC_COMPILER
+MTL_MONOLITHIC_COMPILER_LLVM_VERSION
+-[_MTLParallelRenderCommandEncoder initWithCommandBuffer:renderPassDescriptor:]
+commandBuffer must not be nil.
+commandBuffer is not a MTLCommandBuffer.
+framebuffer must not be nil.
+render pass descriptor is not an MTLRenderPassDescriptor.
+device =
+MTLCaptureError
+Capture layer is not inserted.
+Enable GPU Frame Capture in your Xcode scheme or run with MTL_CAPTURE_ENABLED=1.
+Already capturing.
+Invalid Descriptor.
+MTL_PRIVATE_ALLOW_CPU_ACCESS
+Processes
+AllocationIdentifiers
+Name
+ResponsiblePID
+MTLIOAccelResource
+AIRF
+Air.FunctionStitching.Graph
+Air.FunctionStitching.Node
+Air.FunctionStitching.InputNode
+Air.FunctionStitching.FunctionNode
+Air.FunctionStitching.BufferNode
+Air.FunctionStitching.BufferAddressNode
+Air.FunctionStitching.BufferDataNode
+Air.FunctionStitching.TextureNode
+Air.FunctionStitching.SamplerNode
+Air.FunctionStitching.ThreadgroupNode
+Air.FunctionStitching.ImageblockNode
+Air.FunctionStitching.BuiltinNode
+Air.FunctionStitching.EarlyReturnNode
+Air.FunctionStitching.NodeId
+Air.FunctionStitching.Attribute
+Air.FunctionStitching.AlwaysInlineAttribute
+Air.FunctionStitching.KernelAttribute
+AIRS
+^{__CFArray=}8@?0
+minTextureWidth =
+maxTextureWidth =
+minTextureHeight =
+maxTextureHeight =
+macroBlockWidth =
+macroBlockHeight =
+regionWidth =
+regionHeight =
+precisionNumerator =
+precisionDenominator =
+textureWidth =
+textureHeight =
+-[MTLIOAccelRenderCommandEncoder setFragmentTexture:atTextureIndex:samplerState:atSamplerIndex:]
+%s is not supported on this device
+-[MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray objectAtIndexedSubscript:]
+-[MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray setObject:atIndexedSubscript:]
+v16@?0I8I12
+AIR_HEADER_EXT
+AIR_MODULE
+AIR_DESCRIPTOR
+AIR_OBJECT
+AIR_OBJECT_INDEX
+AIR_PIPELINE
+AIR_HASHES
+AIR_STRTABLE
+AIR_METALLIB
+com.apple.graphics.perProcessGLfeatures
+com.apple.message.signature1
+com.apple.message.signature2
+com.apple.message.signature3
+@"NSDictionary"8@?0
+com.apple.graphics.GLfeatures
+{%@}
+<unavailable>
+largeMRT-Metal
+com.apple.graphics.commandqueuelimit
+process_name
+<unavaliable>
+AppleIntel*
+GeForceMTLDriver*
+AMDMTL*
+CoreImage
+CoreUI
+libdispatch.dylib
+<Unknown>
+Direct
+<Unavailable Framework>
+com.apple.graphics.clients
+com.apple.message.architecture
+com.apple.message.context_type
+com.apple.message.intermediate_frameworks
+v28@?0Q8Q16I24
+validateGPUPriority
+priority (%d) is not valid for foreground
+priority (%d) is not a valid MTLGPUPriority
+_data_
+compiler request queue
+compiler reply queue
+_DB_VERSION_
+-[MTL4TileRenderPipelineDescriptor setStaticLinkingDescriptor:]
+staticLinkingDescriptor is not a MTL4StaticLinkingDescriptor.
+MTLSamplerMinMagFilterNearest
+MTLSamplerMinMagFilterLinear
+MTLSamplerMinMagFilterCubic
+MTLSamplerMipFilterNotMipmapped
+MTLSamplerMipFilterNearest
+MTLSamplerMipFilterLinear
+MTLSamplerAddressModeClampToEdge
+MTLSamplerAddressModeMirrorClampToEdge
+MTLSamplerAddressModeRepeat
+MTLSamplerAddressModeMirrorRepeat
+MTLSamplerAddressModeClampToZero
+MTLSamplerAddressModeClampToBorderColor
+MTLSamplerAddressModeClampToHalfBorderColor
+MTLSamplerBorderColorTransparentBlack
+MTLSamplerBorderColorOpaqueBlack
+MTLSamplerBorderColorOpaqueWhite
+MTLSamplerReductionModeWeightedAverage
+MTLSamplerReductionModeMinimum
+MTLSamplerReductionModeMaximum
+minFilter =
+magFilter =
+mipFilter =
+maxAnisotropy =
+sAddressMode =
+tAddressMode =
+rAddressMode =
+normalizedCoordinates =
+borderColor =
+borderColorcustomValue0 =
+borderColorcustomValue1 =
+borderColorcustomValue2 =
+borderColorcustomValue3 =
+forceSeamsOnCubemapFiltering =
+lodMinClamp =
+lodMaxClamp =
+lodAverage =
+compareFunction =
+supportArgumentBuffers =
+reductionMode =
+MTL_FORCE_MIN_FILTER_LINEAR_TO_NEAREST
+MTL_FORCE_MAG_FILTER_LINEAR_TO_NEAREST
+MTL_FORCE_MIP_FILTER_LINEAR_TO_NEAREST
+MTL_CAP_MAX_ANISOTROPY
+-[MTLSamplerDescriptorInternal setLabel:]
+-[_MTLSamplerState initWithDevice:samplerDescriptor:]
+New Sampler State Validation
+desc must not be nil.
+desc is not a MTLSamplerDescriptor.
+filter is not a valid MTLSamplerMinMagFilter.
+mipFilter is not a valid MTLSamplerMipFilter.
+borderColor is not a valid MTLSamplerBorderColorSPI.
+reductionMode is not a valid MTLSamplerReductionMode.
+addressMode is not a valid MTLSamplerAddressMode.
+setDescriptorFromBitmask
+Constant sampler does not have the most significant bit set: 0x%llX
+Constant sampler has unrecognized bits: 0x%llx
+addressModeFromConstantSamplerLiteral
+Unexpected MTLSamplerAddressMode from constant sampler reflection: %llu
+compareFunctionFromConstantSamplerLiteral
+Unexpected MTLCompareFunction from constant sampler reflection: %llu
+-[_MTL4MachineLearningCommandEncoder dispatchNetworkWithIntermediatesHeap:]
+argument table only contains %u buffer bind points but %u are required
+MPSNDArray
+MPSNDArrayDescriptor
+_NewTensorDataWithMTLTensor
+Invalid tensor usage flags at buffer index %llu
+Element stride must be 1 for tensors with Machine Learning usage flag
+Tensor offset is not zero
+Dimension 1 stride (bytes per row) must be aligned to 64 bytes
+The stride of dimension %u (= %u) is not equal to strides[%u] (%u) * dimensions[%u] (%u) = %u
+MPSGraphTensorData
+-[_MTL4MachineLearningCommandEncoder encodeToCommandQueue:]
+Invalid resource type at buffer index %llu
+MPSGraphExecutableExecutionDescriptor
+MTLLoader device cache queue
+URL is nil
++[MTLLoader sliceIDForDevice:legacyDriverVersion:airntDriverVersion:]
+Target device architecture is nil
+c24@?0r^{load_command=II}8I16I20
+__TEXT
+__DATA
+__text
+__data
+c16@?0q8
+B60@?0^{?=[32C]}8^I16I24Q28Q36Q44Q52
+c80@?0{MTLLoaderSliceIdentifier=ii}8Q16I24r^{?=[32C]}28r^I36I44Q48Q56Q64Q72
+c24@?0r^v8Q16
+B40@?0@"NSObject<OS_dispatch_data>"8Q16r^v24Q32
+0123456789ABCDEF
+File at url %@ is empty.
+MTLLoader global file queue
+/System/Library/Frameworks/CoreImage.framework/CoreImage.metallib
+: @executable_path cannot be used in a library that has not been loaded from file URL
+: @loader_path cannot be used in a library that has not been loaded from file URL
+: relative paths cannot be used to load Metal libraries
+<no URL>
+__compute
+__vertex
+__fragment
+__visible
+__intersection
+__mesh
+__object
+MTLHeapTypeAutomatic
+MTLHeapTypePlacement
+size =
+type =
+addressRanges =
+maxCompatiblePlacementSparsePageSize = 
+-[MTLHeapDescriptorInternal validateWithDevice:]
+Heap Descriptor Validation
+Placement heap type is not supported.
+Sparse heaps are not supported.
+Unknown heap type.
+usedSize =
+Invalid cpuCacheMode (%@)
+Sparse heap cannot have shared storage mode
+Shared storage mode disallowed
+Invalid storageMode (%@)
+MTLIOError
+maxCommandBufferCount =
+priority =
+scratchBufferAllocator =
+com.Metal.IOScratchBufferAllocatorCleanupQueue
+Internal Error
+Not a regular file
+Failed to create compression context because file was not compressed with MTLIOCompressionContext
+-[_MTLIOCommandQueue initWithDevice:descriptor:]
+IO Command Queue Creation Validation
+invalid descriptor.maxCommandBufferCount value %u
+com.Metal.IOCommandQueueDispatch
+com.Metal.IOCommandQueueFollowon
+MTLIOPriorityHigh
+MTLIOPriorityNormal
+MTLIOPriorityLow
+MTLTensorDomain
+Rank =
+Extents = [
+-[MTLTensorDescriptor validateWithDevice:error:]
+Tensor Descriptor Validation
+Strides should be nil when using [MTLDevice newTensorWithDescriptor:error:]
+-[MTLTensorDescriptor validateWithBuffer:offset:error:]
+Tensor's storage mode (0x%lu) should match the buffer's storage mode (0x%lu)
+Tensor's cpu cache mode (0x%lu) should match the buffer's cpu cache mode (0x%lu)
+Tensor's hazard tracking mode (0x%lu) should match the buffer's hazard tracking mode (0x%lu)
+Strides should not be nil when using [MTLBuffer newTensorWithDescriptor:offset:error:] and dimensions.rank > 0
+tensor
+Buffer offset (%llu) should be 0 when using MTLTensorUsageMachineLearning
+Stride at index 0 (%llu) should be 1 when using MTLTensorUsageMachineLearning
+Stride at index 1 (%llu elements, %llu bytes, %llu bits) should be 64-byte (512-bit) aligned when using MTLTensorUsageMachineLearning
+Unknown tensor data type (%lu)
+Tensor usage (0x%lx) contains unknown bits
+Tensor rank (%lu) should be at most MTL_TENSOR_MAX_RANK (%d)
+Tensor dimension (%llu) at index 0 should be aligned to %llu elements
+Tensor dimension (%llu) at index %lu should be greater than 0
+Buffer offset (%llu bytes) should be aligned to 128 bytes for %lu-bit data types
+Buffer offset (%llu bytes) should be aligned to the tensor data type size (%lu bytes)
+[strides extentAtDimensionIndex:%lu] (%lu elements) must be aligned to %lu elements (128 byte aligned) for %lu-bit data types
+Frontend total time for library from source in ns
+Frontend total time for function specialization in ns
+Frontend total time for CoreImage SPI in ns
+Functions in library
+Library was cached
+Binary function's name
+MTL_USE_DEVICE_LLVM_VERSION_SELECTOR
+MTL_FORCE_LANGUAGE_VERSION
+MTL_FORCE_AIR_VERSION
+Using MTLAIRVersion%d_%d (set with %s=%s)
+
+Using MTLLanguageVersion%d_%d (set with MTL_FORCE_LANGUAGE_VERSION=%s)
+
+preprocessorMacros:
+mathMode =
+mathFloatingPointFunctions =
+framebufferReadEnabled =
+preserveInvariance =
+optimizationLevel =
+libraryType =
+compileSymbolVisibility = 
+allowReferencingUndefinedSymbols = 
+maxTotalThreadsPerThreadgroup = 
+enableLogging =
+languageVersion =
+%u:%u
+requiredThreadsPerThreadgroup = 
+preprocessorMacros
+fastMathEnabled
+mathMode
+mathFloatingPointFunctions
+languageVersion
+tracingEnabled
+framebufferReadEnabled
+debuggingEnabled
+compileTimeStatisticsEnabled
+additionalCompilerArguments
+sourceLanguage
+libraries
+installName
+preserveInvariance
+optimizationLevel
+compileSymbolVisibility
+allowReferencingUndefinedSymbols
+enableLogging
+libraryType
+attributeIndex =
+attributeType =
+active =
+isPatchData =
+isPatchControlPointData =
+Tag =
+required =
+MTL Bindings =
+Dimensions[%lu] %lu:
+Invalid library file (unexpected end of file)
+Invalid library file (Unexpected number of reflection entries)
+#main
+__main
+Fat library file but no AIR slice
+Invalid library file
+This version of metallib is too old and not supported any longer.
+This version of metallib is too recent and not supported.
+Non zero terminated function name!
+Corrupted function name: %@!
+This library is using language version %u.%u which is not supported on this %s.
+device
+This library is using a deployment target (0x%08X) that is not supported on this %s.
+force_shader_platform_check
+This library format is not supported on this platform (or was built with an old version of the tools)
+Library with both qualified functions and extern functions is not supported!
+failed to parse variable list, no tokens read
+failed to parse the variable list, expected %u variables, found only %u
+failed to parse imported symbol names, no tokens read
+failed to parse imported symbol names, expected %u symbols, found only %u
+Invalid script file
+readFunctionPublicOrPrivateMetadata
+Invalid library file/data (unexpected end of file)
+Invalid library file/data (bad VATY token)
+readFunctionSourceArchiveMetadata
+filepath must not be nil.
+filepath is not a NSString.
+library not found
+error while opening the library
+metal library file %s failed to open with error: %s
+^v16@?0^@8
+newLibraryWithData
+data should not be null
+newLibraryDataWithArchive
+newLibraryWithFunctionArray
+function names must be unique
+-[_MTLLibrary newFunctionWithNameInternal:]
+functionName must not be nil.
+functionName is not a NSString.
+-[_MTLLibrary newExternFunctionWithName:]
+Function %@ has type %@, expected MTLFunctionTypeExtern.
+-[_MTLLibrary newFunctionWithName:]
+Function %@ was not found in the library
+v16@?0@"NSError"8
+v24@?0@"<MTLFunction>"8@"NSError"16
+MTLLibrary is not formatted as a MetalLib file.
+Compilation succeeded with: 
+
+
+Compiler found unsupported library with both qualified functions and extern functions
+initLibraryContainerWithRequestData
+requestData must not be nil.
+requestSize must not be 0.
+v32@?0Q8@"NSObject<OS_dispatch_data>"16r*24
+newLibraryWithSource
+source must not be nil.
+source is not a NSString.
+options is not a MTLCompileOptions.
+options.installName cannot be nil or empty when options.libraryType is MTLLibraryTypeDynamic.
+options.optimizationLevel has unsupported value %u
+Library From Source Validation
+MTL_DISABLE_FASTMATH
+MTL_REPLACE_FAST_MATH_WITH_RELAXED_MATH
+-Wl,-create-shared-library 
+-Wl,
+-Wl,-install_name -Wl,
+--driver-mode=metal -x metal 
+--driver-mode=openclc -x cl 
+-fmetal-math-mode=relaxed 
+-fmetal-math-mode=fast 
+-fmetal-math-mode=safe 
+-fmetal-math-fp32-functions=precise 
+-fmetal-math-fp32-functions=fast 
+-fmax-total-threads-per-threadgroup=%lu 
+-frequired-threads-per-threadgroup=%lu,%lu,%lu 
+-std=metal%u.%u 
+-std=ios-metal%u.%u 
+-std=macos-metal%u.%u 
+-debug-info-kind=line-tables-only 
+-working-directory "%@" 
+METAL_FORCE_OPT_SIZE
+-active-platform=maccatalyst 
+-active-platform=ios 
+-fvisibility hidden 
+-Wl,-undefined,suppress 
+-fframebuffer-fetch 
+-fpreserve-invariance 
+-fimplicit-invariant-position 
+-fmetal-enable-logging 
+-ftracepoint-instrument 
+-fmodules-cache-path="
+newLibraryWithDAG
+functionDag cannot be nil
+functions cannot be nil
+functions cannot be empty
+^v16@?0@"NSObject<OS_dispatch_data>"8
+Failed to find library in binary archive.
+Compiler returned an empty reply.
+unable to locate bitcode for function 
+invalid bitcode size 0 for function 
+functionNames:
+MTLFunctionTypeVertex
+MTLFunctionTypeFragment
+MTLFunctionTypeKernel
+MTLFunctionTypeVisible
+MTLFunctionTypeIntersection
+MTLFunctionTypeObject
+MTLFunctionTypeMesh
+-[_MTLFunction initWithName:type:libraryData:device:]
+-[_MTLFunction bitCodeHash]
+-[_MTLFunction bitCodeFileSize]
+-[_MTLFunction requiredLLVMVersion]
+-[_MTLFunction newFunctionWithPluginData:bitcodeType:]
+-[_MTLFunction functionConstantsDictionary]
+functionType =
+attributes:
+v32@?0Q8@"NSObject<OS_dispatch_data>"16@"NSString"24
+-[_MTLFunction newArgumentEncoderWithBufferIndex:reflection:functionReflection:]
+bufferIndex %lu does not identify an argument buffer
+-[_MTLFunction functionHandle]
+Driver needs to override this
+function queue
+MTL_ENABLE_METAL_SCRIPT_COLLECTION
+binary archive
+FS cache
+Failed to find specialized function "%@" in %s
+-[MTLCompiler initWithTargetData:cacheUUID:pluginPath:device:compilerFlags:fallbackDeviceFeatureProfile:]
+pluginPath must not be nil.
+pluginPath is not a NSString.
+Aug 18 2026
+21:46:10
+compiler queue
+binary archives
+pipeline library
+Failed to find precompiled data in %s
+Error decompressing bitcode.
+Error: couldn't open file at: %@
+Error: unable to extend sandbox to: %@
+Error uncompressing bitcode
+Function %@ is using language version %u.%u which is incompatible with this OS.
+Function %@ has a deployment target (0x%08X) which is incompatible with this OS (0x%08X).
+Unable to find %s for function "%@"
+Unable to find function "%@"
+render pipeline)
+compute pipeline)
+tile pipeline)
+mesh pipeline)
+unknown pipeline type)
+ in (legacy) %s.
+ Expected 
+ in %s. 
+ Expected 
+function is nil
+pipeline statistics
+debug instrumentation data
+depthAttachmentPixelFormat is not valid and shader writes to depth
+Source and destination are not compatible. The request requires legacy data to be stored on a new binary archive
+linking data
+Bitcode missing. Unable to compile function %@
+Downgrade failed with error: %@
+Fail on cache miss was set and failed to find aint-compatible reflection
+Failed to find compiled function in %s.
+Empty request.
+Invalid MTLLibrary to compile as to a MTLDynamicLibrary
+Compiling mesh pipelines for binary archives is not supported!
+Compilation failed
+v16@?0@"_MTLRenderPipelineState"8
+v80@?0^v8@"MTLFunctionVariant"16@"NSObject<OS_dispatch_data>"24^v32@"MTLFunctionVariant"40@"NSObject<OS_dispatch_data>"48^v56@"MTLFunctionVariant"64@"NSObject<OS_dispatch_data>"72
+v56@?0^v8@"MTLFunctionVariant"16@"NSObject<OS_dispatch_data>"24^v32@"MTLFunctionVariant"40@"NSObject<OS_dispatch_data>"48
+MTLPipelineOptionFailOnBinaryArchiveMiss was set and failed to find compiled pipeline functions in binary archive.
+payloadMemoryLength property of MTLMeshRenderPipelineDescriptor (%lu bytes) exceeds maximum supported by this device (%lu bytes)
+size of data payload in object function (%lu) exceeds maximum supported for this device (%lu)
+v32@?0^v8@"MTLFunctionVariant"16@"NSObject<OS_dispatch_data>"24
+-[MTLCompiler newRenderPipelineStateWithDescriptorInternal:options:reflection:destinationBinaryArchive:error:compilerTask:completionHandler:]
+device cannot be null.
+descriptor cannot be null.
+Vertex function cannot be nil.
+Precompiled render pipeline states are not supported for this device
+-[MTLCompiler newComputePipelineStateWithDescriptorInternal:options:pipelineCache:destinationBinaryArchive:reflection:error:compilerTask:completionHandler:]
+-[MTLCompiler newRenderPipelineStateWithTileDescriptorInternal:options:reflection:destinationBinaryArchive:error:compilerTask:completionHandler:]
+MPSGraphCompilationDescriptor
+_MTLNewMPSGraphCompilationDescriptor
+Unsupported enum value
+resources.bin
+model_0.mpsgraph
+main
+-[_MTLMLLibrary reflectionForFunctionWithName:]
+%@ not found in the library
+-[_MTLMLLibrary newFunctionWithDescriptor:completionHandler:]
+newFunctionWithDescriptor:completionHandler: is not supported for machine learning libraries
+-[_MTLMLLibrary newFunctionWithDescriptor:error:]
+newFunctionWithDescriptor:error: is not supported for machine learning libraries
+-[_MTLMLLibrary newFunctionWithName:]
+newFunctionWithName is not supported for machine learning libraries
+-[_MTLMLLibrary newFunctionWithName:constantValues:completionHandler:]
+newFunctionWithName:constantValues:completionHandler: is not supported for machine learning libraries
+-[_MTLMLLibrary newFunctionWithName:constantValues:error:]
+newFunctionWithName:constantValues: is not supported for machine learning libraries
+-[_MTLMLLibrary newIntersectionFunctionWithDescriptor:completionHandler:]
+newIntersectionFunctionWithDescriptor:completionHandler: is not supported for machine learning libraries
+-[_MTLMLLibrary newIntersectionFunctionWithDescriptor:error:]
+newIntersectionFunctionWithDescriptor:error: is not supported for machine learning libraries
+-[_MTLMLLibrary newExternFunctionWithName:]
+%s is not supported for machine learning libraries
+-[_MTLMLLibrary newFunctionWithDescriptor:destinationArchive:error:]
+-[_MTLMLLibrary newFunctionWithName:constantValues:functionCache:error:]
+-[_MTLMLLibrary newFunctionWithName:constantValues:pipelineLibrary:completionHandler:]
+-[_MTLMLLibrary newFunctionWithName:constantValues:pipelineLibrary:error:]
+-[_MTLMLLibrary serializeToURL:error:]
+MTL_FORCE_MTLCOMPILER_LLVM_VERSION
+%d_%d
+MTLMathModeRelaxed
+MTLMathModeFast
+MTLMathModeSafe
+MTLMathFloatingPointFunctionsPrecise
+MTLMathFloatingPointFunctionsFast
+MTLLibraryOptimizationLevelDefault
+MTLLibraryOptimizationLevelSize
+Invalid metallib file, unexpected end of file while parsing reflection data
+Invalid metallib file, unexpected end of file while parsing the variable list
+Invalid metallib file, unexpected end of file while parsing imported symbol names
+Invalid metallib file, unexpected end of file while parsing the script list
+Aug 18 2026 21:46:10
+%s, %s
+%s_ShaderValidation
+v24@?0@"NSObject<OS_dispatch_data>"8@"NSError"16
+empty error message
+compiler error log is invalid
+Compiler returned an empty reply
+Compilation failed: 
+
+ compiler response is invalid
+Downgrade request was nil!
+MTL_DISABLE_MULTITHREADED_COMPILATION
+-Os 
+validateMTLFunctionType
+type is not a valid MTLFunctionType.
+%u_%u
+%@_ShaderValidation
+[Hash for %@ (%@)] base hash: %@ [initialized with name(%@), bitcode hash(%@), bitcode type (%d), cache compiler options (%s)]
+enable-shader-validation
+disable-shader-validation
+enable-bounds-checking
+enable-threadgroup-memory-checks
+enable-texture-checks
+enable-resource-usage-validation
+enable-stack-overflow
+MTL_DEBUG_LOG_CACHE_KEYS
+function binary
+[driver key(%@), framework key(%@)]
+[Hash for %@] %s hash: %@ %s
+RM_Bin
+RM_reflection
+reflection
+RM_pipelineStatistics
+pipelineStatistics
+RM_debugInstrumentation
+debugInstrumentation
+RM_linking
+linking
+fragment function not found in fragment reflection flatbuffer; number of functions found %ul; node type found: %ul, data:
+%016zx %016zx %016zx %016zx %016zx %016zx %016zx %016zx
+Invalid key
+reflection Queue
+array
+texture1d
+texture1d_array
+texture2d
+texture2d_array
+texture3d
+texturecube
+texturecube_array
+depthcube_array
+texture2d_ms
+texture2d_ms_array
+depth2d_ms_array
+depth2d
+depth2d_array
+depthcube
+depth2d_ms
+texture_buffer
+const
+global
+local
+constant
+__global
+__constant
+packed_float
+packed_float2
+packed_float3
+packed_float4
+packed_half
+packed_half2
+packed_half3
+packed_half4
+packed_bfloat
+packed_bfloat2
+packed_bfloat3
+packed_bfloat4
+packed_int
+packed_int2
+packed_int3
+packed_int4
+packed_uint
+packed_uint2
+packed_uint3
+packed_uint4
+short2
+short3
+short4
+packed_short
+packed_short2
+packed_short3
+packed_short4
+ushort2
+ushort3
+ushort4
+packed_ushort
+packed_ushort2
+packed_ushort3
+packed_ushort4
+packed_char
+packed_char2
+packed_char3
+packed_char4
+packed_uchar
+packed_uchar2
+packed_uchar3
+packed_uchar4
+packed_long
+packed_long2
+packed_long3
+packed_long4
+packed_ulong
+packed_ulong2
+packed_ulong3
+packed_ulong4
+double
+double2
+double3
+double4
+packed_double
+packed_double2
+packed_double3
+packed_double4
+float8
+float16
+half8
+half16
+bfloat8
+bfloat16
+int8
+int16
+uint8
+uint16
+short8
+short16
+ushort8
+ushort16
+char8
+char16
+uchar8
+uchar16
+long8
+long16
+ulong8
+ulong16
+double8
+double16
+bool8
+bool16
+packed_bool
+packed_bool2
+packed_bool3
+packed_bool4
+float2x2
+float2x3
+float2x4
+float3x2
+float3x3
+float3x4
+float4x2
+float4x3
+float4x4
+half2x2
+half2x3
+half2x4
+half3x2
+half3x3
+half3x4
+half4x2
+half4x3
+half4x4
+bfloat2x2
+bfloat2x3
+bfloat2x4
+bfloat3x2
+bfloat3x3
+bfloat3x4
+bfloat4x2
+bfloat4x3
+bfloat4x4
+metal::int4b_format
+metal::uint4b_format
+void
+indirect_command_buffer
+visible_function_table
+intersection_function_table
+primitive_acceleration_structure
+instance_acceleration_structure
+mesh_grid_properties
+mesh
+r8unorm
+r8snorm
+r16unorm
+r16snorm
+rg8unorm
+rg8snorm
+rg16unorm
+rg16snorm
+rgba8unorm
+srgba8unorm
+rgba8snorm
+rgba16unorm
+rgba16snorm
+rgb10a2
+rg11b10f
+rgb9e5
+Error: pipeline must be render or compute
+No active buffer found 
+bitset reset argument out of range
+requestType
+Internal Metal Compiler Scheduler Error.
+QOS_INTERACTIVE
+QOS_USER_INITIATED
+QOS_DEFAULT
+QOS_UTILITY
+QOS_BKG
+QOS_UNSPECIFIED
+Custom sample positions were specified, but Programmable Sample Positions is not supported on this device.
+Custom sample positions were specified, but the device does not support the number of samples supplied.
+renderTargetArrayLength > 0 specified, but Layered Rendering is not supported on this device.
+Explicit Image blocks and Late bound render targets are incompatible
+Device does not support color attachment mapping
+Requested threadgroup memory length exceeds amount supported by device (%lu)
+Per sample storage (%lu) cannot be greater than (%lu)
+Per pixel storage (%lu) cannot be greater than (%lu)
+Total allocated tile memory (%lu) cannot be greater than (%lu)
+-[MTLRenderPassColorAttachmentDescriptorInternal setTexture:]
+texture is not a MTLTextureImplementation.
+-[MTLRenderPassColorAttachmentDescriptorInternal setResolveTexture:]
+resolveTexture is not a MTLTextureImplementation.
+-[MTLRenderPassDepthAttachmentDescriptorInternal setTexture:]
+-[MTLRenderPassDepthAttachmentDescriptorInternal setResolveTexture:]
+-[MTLRenderPassStencilAttachmentDescriptorInternal setTexture:]
+-[MTLRenderPassStencilAttachmentDescriptorInternal setResolveTexture:]
+-[MTLRenderPassColorAttachmentDescriptorArrayInternal objectAtIndexedSubscript:]
+-[MTLRenderPassColorAttachmentDescriptorArrayInternal setObject:atIndexedSubscript:]
+attachment is not a MTLRenderPassColorAttachmentDescriptor.
+-[MTLRenderPassSampleBufferAttachmentDescriptorArrayInternal objectAtIndexedSubscript:]
+-[MTLRenderPassSampleBufferAttachmentDescriptorArrayInternal setObject:atIndexedSubscript:]
+-[MTLRenderPassDescriptorInternal setDepthAttachment:]
+-[MTLRenderPassDescriptorInternal setStencilAttachment:]
+Color Attachment %u
+Depth Attachment:
+Stencil Attachment:
+visibilityResultBuffer =
+renderTargetArrayLength =
+renderTargetWidth =
+renderTargetHeight =
+rasterizationRateMap =
+visibilityResultType =
+Reset
+Accumulate
+supportColorAttachmentMapping =
+-[MTLRenderPassDescriptorInternal setVisibilityResultBuffer:]
+buffer is not a MTLBuffer.
+-[MTLRenderPassDescriptorInternal setSamplePositions:count:]
+count (%lu) is not a supported sample count for custom positions.
+-[MTLRenderPassDescriptorInternal getSamplePositions:count:]
+-[MTLRenderPassDescriptorInternal validate:width:height:]
+loadAction is not a valid MTLLoadAction.
+storeAction is not a valid MTLStoreAction.
+storeActionOptions contains unrecognized bits (%#x)
+resolveFilter is not a valid MTLMultisampleDepthResolveFilter.
+resolveFilter is not a valid MTLMultisampleStencilResolveFilter.
+storeActionOptions contains unrecognized bits: %#x
+Stencil attachment storeActionOptions (%#x) contains options incompatible with this attachment type: %@
+none
+MTLStoreActionOptionCustomSamplePositions
+Invalid tile dimensions (%lu, %lu)
+texture =
+level =
+slice =
+depthPlane =
+resolveTexture =
+resolveLevel =
+resolveSlice =
+resolveDepthPlane =
+loadAction =
+storeAction =
+storeActionOptions =
+clearColor =
+yInvert =
+MTLLoadActionDontCare
+MTLLoadActionLoad
+MTLLoadActionClear
+MTLStoreActionDontCare
+MTLStoreActionStore
+MTLStoreActionMultisampleResolve
+MTLStoreActionStoreAndMultisampleResolve
+MTLStoreActionUnknown
+(%g %g %g %g)
+resolveFilter =
+clearDepth =
+MTLMultisampleDepthResolveFilterSample0
+MTLMultisampleDepthResolveFilterMin
+MTLMultisampleDepthResolveFilterMax
+clearStencil =
+stencilResolveFilter =
+MTLMultisampleStencilResolveFilterSample0
+MTLMultisampleStencilResolveFilterDepthResolvedSample
+Custom Sample Positions:
+number of positions = 
+sample 
+%s (%08x:%s)
+Function %s not found in library
+MPSGraphDevice
+MPSGraphShapedType
+MPSGraphExecutableEntryPoint
+desc
+valueType
+vendorType
+srcGroup
+enabled
+indexAvailable
+indexRequested
+MTLStatCommandBufferIndex
+command buffer index since queue created
+MTLStatEncoderIndex
+encoder index since command buffer created
+MTLStatEncoderID
+encoder unique trace ID
+MTLStatCommandIndex
+command index since encoder created
+MTLStatSample_nSec
+sample request CPU nSec
+VST ERROR: UNKNOWN NAME AT INDEX %d %s
+
+-[_MTLCommandEncoder initWithCommandBuffer:]
+-[_MTLCommandEncoder dealloc]
+Command encoder released without endEncoding
+-[_MTLCommandEncoder insertDebugSignpost:]
+-[_MTLCommandEncoder pushDebugGroup:]
+__resource_tracking_impl_trace_buffer
+Compute Bindings =
+Argument
+Global
+%@ %u:
+computeFunction =
+threadGroupSizeIsMultipleOfThreadExecutionWidth =
+stageInputDescriptor =
+linkedFunctions =
+pipelineLibrary =
+preloadedLibraries =
+binaryArchives =
+Needs custom border color samplers = 
+buffers = 
+-[MTLComputePipelineDescriptorInternal setLabel:]
+-[MTLComputePipelineDescriptorInternal setName:]
+-[MTLComputePipelineDescriptorInternal setComputeFunction:withType:]
+computeFunction must not be nil.
+computeFunction is not a MTLFunction.
+computeFunction functionType is not a %@.
+-[MTLComputePipelineDescriptorInternal setStageInputDescriptor:]
+stageInputDescriptor is not a MTLStageInputOutputDescriptor.
+-[MTLComputePipelineDescriptorInternal setLinkedFunctions:]
+-[MTLComputePipelineDescriptorInternal setMaxTotalThreadsPerThreadgroup:]
+-[_MTLComputePipelineState initWithDevice:pipelineStateDescriptor:]
+desc is not a MTLComputePipelineDescriptor.
+-[_MTLComputePipelineState initWithParent:]
+parent must not be nil.
+parent is not a _MTLComputePipelineState.
+-[_MTLComputePipelineState functionHandleWithFunction:]
+-[_MTLComputePipelineState newComputePipelineStateWithAdditionalBinaryFunctions:error:]
+-[_MTLComputePipelineState newComputePipelineStateWithAdditionalBinaryFunctions:resourceIndices:error:]
+Compute Pipeline Descriptor Validation
+computeFunction is associated with a different device
+function %s cannot be used to build a pipeline state. Use newFunctionWithName:constantValues:... to get the specialized function
+MTLBufferLayoutStrideDynamic set on buffer-layout index %u; device does not support dynamic attribute strides.
+MPSDataTypeFromMTLTensorDataType
+Unsupport MTLTensorDataType: %llu
+MTLTensorDataTypeFromMPSDataType
+Unsupported MPSDataType: %u
+tensorDataTypeBitCount
+Unsupported MTLTensorDataType: %llu
+The rank of the origin of the %s (%lu) should match the rank of the %s (%lu)
+The rank of the dimensions of the %s (%lu) should match the rank of the %s (%lu)
+At index %lu, the origin of the %s (%llu) should be at least 0
+At index %lu, the dimensions of the %s (%llu) should be greater than 0
+At index %lu, the origin of the %s (%llu) should be aligned to %llu elements
+At index %lu, the dimensions of the %s (%llu) should be aligned to %llu elements
+At index %lu, the origin of the %s (%llu) + the dimensions of the %s (%llu) should be at most the dimensions of the %s (%llu)
+The rank of the strides (%lu) should match the rank of the %s (%lu)
+Stride (%llu) at index 0 should be 1
+Stride (%llu) at index 1 should be aligned to 64 bytes when using MTLTensorUsageMachineLearning
+Stride (%llu) at index %lu should be equal to %s's dimensions at index %lu (%llu) * stride at index %lu (%llu) (%llu) when using MTLTensorUsageMachineLearning
+Stride (%llu) at index %lu should be greater than 0
+(%s.width(%lu) * %s.height(%lu) * %s.depth(%lu))(%lu) must not be 0.
+(%s.width(%lu) * %s.height(%lu) * %s.depth(%lu))(%lu) must be <= maxTotalThreadsPerThreadgroup (%lu)
+(%s.width(%lu) * %s.height(%lu) * %s.depth(%lu))(%lu) must be <= %lu (device limit)
+%s.width(%lu) must be <= %lu (device limit)
+%s.height(%lu) must be <= %lu (device limit)
+%s.depth(%lu) must be <= %lu (device limit)
+threadsPerThreadgroup.width(%lu) should be %lu (requiredThreadsPerThreadgroup.width)
+threadsPerThreadgroup.height(%lu) should be %lu (requiredThreadsPerThreadgroup.height)
+threadsPerThreadgroup.depth(%lu) should be %lu (requiredThreadsPerThreadgroup.depth)
+/System/Library/Frameworks/MetalPerformanceShadersGraph.framework/MetalPerformanceShadersGraph
+getMPSGraphInterface_block_invoke
+Unable to load MPSGraph dylib: %s
+compiler cancel queue
+connectionId
+llvmVersion
+sandboxTokens
+targetData
+pluginPath
+machOFD
+setRelaxedMath
+client_name
+APISpecifiedTimeoutInSeconds
+reply
+errorMessage
+Compiler encountered an internal error
+MTLCompiler: Compiler service could not be reached.
+Compiler encountered XPC_ERROR_CONNECTION_INVALID (is the OS shutting down?)
+AGX_LOG_SHADER_COMPILER_REQUEST
+-[MTLResourceStatePassSampleBufferAttachmentDescriptorArrayInternal objectAtIndexedSubscript:]
+-[MTLResourceStatePassSampleBufferAttachmentDescriptorArrayInternal setObject:atIndexedSubscript:]
+validateMTLBindingAccess
+access (%lu) is not a valid MTLBindingAccess.
+<Recursive>
+MTLDataTypeNone
+MTLDataTypeStruct
+MTLDataTypeArray
+MTLDataTypeFloat
+MTLDataTypeFloat2
+MTLDataTypeFloat3
+MTLDataTypeFloat4
+MTLDataTypeFloat2x2
+MTLDataTypeFloat2x3
+MTLDataTypeFloat2x4
+MTLDataTypeFloat3x2
+MTLDataTypeFloat3x3
+MTLDataTypeFloat3x4
+MTLDataTypeFloat4x2
+MTLDataTypeFloat4x3
+MTLDataTypeFloat4x4
+MTLDataTypeHalf
+MTLDataTypeHalf2
+MTLDataTypeHalf3
+MTLDataTypeHalf4
+MTLDataTypeHalf2x2
+MTLDataTypeHalf2x3
+MTLDataTypeHalf2x4
+MTLDataTypeHalf3x2
+MTLDataTypeHalf3x3
+MTLDataTypeHalf3x4
+MTLDataTypeHalf4x2
+MTLDataTypeHalf4x3
+MTLDataTypeHalf4x4
+MTLDataTypeInt
+MTLDataTypeInt2
+MTLDataTypeInt3
+MTLDataTypeInt4
+MTLDataTypeUInt
+MTLDataTypeUInt2
+MTLDataTypeUInt3
+MTLDataTypeUInt4
+MTLDataTypeShort
+MTLDataTypeShort2
+MTLDataTypeShort3
+MTLDataTypeShort4
+MTLDataTypeUShort
+MTLDataTypeUShort2
+MTLDataTypeUShort3
+MTLDataTypeUShort4
+MTLDataTypeChar
+MTLDataTypeChar2
+MTLDataTypeChar3
+MTLDataTypeChar4
+MTLDataTypeUChar
+MTLDataTypeUChar2
+MTLDataTypeUChar3
+MTLDataTypeUChar4
+MTLDataTypeBool
+MTLDataTypeBool2
+MTLDataTypeBool3
+MTLDataTypeBool4
+MTLDataTypeTexture
+MTLDataTypeSampler
+MTLDataTypePointer
+MTLDataTypeR8Unorm
+MTLDataTypeR8Snorm
+MTLDataTypeR16Unorm
+MTLDataTypeR16Snorm
+MTLDataTypeRG8Unorm
+MTLDataTypeRG8Snorm
+MTLDataTypeRG16Unorm
+MTLDataTypeRG16Snorm
+MTLDataTypeRGBA8Unorm
+MTLDataTypeRGBA8Unorm_sRGB
+MTLDataTypeRGBA8Snorm
+MTLDataTypeRGBA16Unorm
+MTLDataTypeRGBA16Snorm
+MTLDataTypeRGB10A2Unorm
+MTLDataTypeRG11B10Float
+MTLDataTypeRGB9E5Float
+MTLDataTypeLong
+MTLDataTypeLong2
+MTLDataTypeLong3
+MTLDataTypeLong4
+MTLDataTypeULong
+MTLDataTypeULong2
+MTLDataTypeULong3
+MTLDataTypeULong4
+MTLDataTypeDouble
+MTLDataTypeDouble2
+MTLDataTypeDouble3
+MTLDataTypeDouble4
+MTLDataTypeFloat8
+MTLDataTypeFloat16
+MTLDataTypeHalf8
+MTLDataTypeHalf16
+MTLDataTypeInt8
+MTLDataTypeInt16
+MTLDataTypeUInt8
+MTLDataTypeUInt16
+MTLDataTypeShort8
+MTLDataTypeShort16
+MTLDataTypeUShort8
+MTLDataTypeUShort16
+MTLDataTypeChar8
+MTLDataTypeChar16
+MTLDataTypeUChar8
+MTLDataTypeUChar16
+MTLDataTypeLong8
+MTLDataTypeLong16
+MTLDataTypeULong8
+MTLDataTypeULong16
+MTLDataTypeDouble8
+MTLDataTypeDouble16
+MTLDataTypeRenderPipeline
+MTLDataTypeComputePipeline
+MTLDataTypeIndirectCommandBuffer
+MTLDataTypeVisibleFunctionTable
+MTLDataTypeIntersectionFunctionTable
+MTLDataTypePrimitiveAccelerationStructure
+MTLDataTypeInstanceAccelerationStructure
+MTLDataTypeBool8
+MTLDataTypeBool16
+MTLDataTypeBFloat
+MTLDataTypeBFloat2
+MTLDataTypeBFloat3
+MTLDataTypeBFloat4
+MTLDataTypeBFloat8
+MTLDataTypeBFloat16
+MTLDataTypeBFloat2x2
+MTLDataTypeBFloat2x3
+MTLDataTypeBFloat2x4
+MTLDataTypeBFloat3x2
+MTLDataTypeBFloat3x3
+MTLDataTypeBFloat3x4
+MTLDataTypeBFloat4x2
+MTLDataTypeBFloat4x3
+MTLDataTypeBFloat4x4
+MTLDataTypeDepthStencilState
+MTLDataTypeTensor
+MTLTensorDataTypeFloat32
+MTLTensorDataTypeFloat16
+MTLTensorDataTypeBFloat16
+MTLTensorDataTypeInt8
+MTLTensorDataTypeUInt8
+MTLTensorDataTypeInt16
+MTLTensorDataTypeUInt16
+MTLTensorDataTypeInt32
+MTLTensorDataTypeUInt32
+MTLTensorDataTypeInt4
+MTLTensorDataTypeUInt4
+MTLTagTypeNone
+MTLTagTypeInstancing
+MTLTagTypeTriangleData
+MTLTagTypeWorldSpaceData
+MTLTagTypeInstanceMotion
+MTLTagTypePrimitiveMotion
+MTLTagTypeExtendedLimits
+MTLTagTypeCurveData
+MTLTagTypeMaxLevels
+MTLTagTypeIntersectionFunctionBuffer
+MTLTagTypeUserData
+MTLBindingAccessReadOnly
+MTLBindingAccessReadWrite
+MTLBindingAccessWriteOnly
+ElementType =
+%@ ElementTypeDescription = %@
+Access =
+ConstantBuffer = 
+Offset =
+ArgumentIndex =
+TypeInfo =
+ nil
+ArrayLength =
+Stride =
+ArgumentIndexStride =
+ElementTypeInfo = %@
+-[MTLBindingInternal isDepthTexture]
+Querying isDepthTexture on an argument that is not a texture
+-[MTLBindingInternal bufferAlignment]
+Querying buffer alignment on an argument that is not a buffer
+-[MTLBindingInternal bufferDataSize]
+Querying buffer data size on an argument that is not a buffer
+-[MTLBindingInternal bufferDataType]
+Querying buffer data type on an argument that is not a buffer
+-[MTLBindingInternal indirectConstantAlignment]
+Querying indirect constant alignment on an argument that is not an indirect constant
+-[MTLBindingInternal indirectConstantDataSize]
+Querying indirect constant data size on an argument that is not an indirect constant
+-[MTLBindingInternal indirectConstantDataType]
+Querying indirect constant data type on an argument that is not an indirect constant
+-[MTLBindingInternal bufferIndirectArgumentType]
+-[MTLBindingInternal bufferStructType]
+Querying buffer struct type on an argument that is not a buffer
+-[MTLBindingInternal threadgroupMemoryAlignment]
+Querying threadgroup memory alignment on an argument that is not a threadgroup memory
+-[MTLBindingInternal threadgroupMemoryDataSize]
+Querying threadgroup memory data size on an argument that is not a threadgroup memory
+-[MTLBindingInternal textureType]
+Querying texture type on an argument that is not a texture
+-[MTLBindingInternal textureDataType]
+Querying texture data type on an argument that is not a texture
+-[MTLBindingInternal objectPayloadAlignment]
+Querying object payload alignment on an argument that is not an object payload
+-[MTLBindingInternal objectPayloadDataSize]
+Querying object payload size on an argument that is not an object payload
+-[MTLBindingInternal meshVertexCount]
+Querying mesh vertex count on an argument that is not a mesh argument.
+-[MTLBindingInternal meshPrimitiveCount]
+Querying mesh primitive count on an argument that is not a mesh argument
+-[MTLBindingInternal meshTopologyType]
+Querying mesh topology on an argument that is not a mesh argument
+-[MTLBindingInternal meshVertexStruct]
+Querying mesh vertex struct on an argument that is not a mesh argument
+-[MTLBindingInternal meshPrimitiveStruct]
+Querying mesh primitive struct on an argument that is not a mesh argument
+LocationIndex =
+Non-Bindable
+Used =
+Argument =
+%@ TypeInfo = %@
+airMDType =
+aluType =
+MTLBindingTypeBuffer
+MTLBindingTypeThreadgroupMemory
+MTLBindingTypeTexture
+MTLBindingTypeSampler
+MTLBindingTypeImageblockData
+MTLBindingTypeImageblock
+MTLBindingTypeVisibleFunctionTable
+MTLBindingTypePrimitiveAccelerationStructure
+MTLBindingTypeInstanceAccelerationStructure
+MTLBindingTypeIntersectionFunctionTable
+MTLBindingTypeObjectPayload
+MTLBindingTypeTensor
+-[MTL4MeshRenderPipelineDescriptor setFragmentStaticLinkingDescriptor:]
+fragmentStaticLinkingDescriptor is not a MTL4StaticLinkingDescriptor.
+-[MTL4MeshRenderPipelineDescriptor setMeshStaticLinkingDescriptor:]
+meshStaticLinkingDescriptor is not a MTL4StaticLinkingDescriptor.
+-[MTL4MeshRenderPipelineDescriptor setObjectStaticLinkingDescriptor:]
+objectStaticLinkingDescriptor is not a MTL4StaticLinkingDescriptor.
+MTLValidationError
+MTLCommandBufferErrorDomain
+MTLLibraryErrorDomain
+MTLCounterErrorDomain
+MTLLogStateErrorDomain
+MTLMessageArrayKey
+baseObject
+There was an issue with your Metal framework usage. Please see MTLMessageArrayKey for the NSArray of issue strings.
+There was an issue with your Metal framework usage.
+Please address issues included in MTLMessageArrayKey and try again.
+com.Metal.NotifierArray
+Vertex Shader
+Fragment Shader
+Object Shader
+Mesh Shader
+Instruction count
+Temporary register count
+Compilation time in milliseconds
+Uniform register count
+ALU instruction count
+Threadgroup atomic instruction count
+Threadgroup load instruction count
+Threadgroup store instruction count
+Device atomic instruction count
+Device load instruction count
+Device store instruction count
+Branch instruction count
+Loop instruction count
+Texture reads instruction count
+Texture writes instruction count
+Spilled bytes
+Thread invariant spilled bytes
+Smashable device atomic instruction count
+Non-smashable device atomic instruction count
+Wait instruction count
+Threadgroup memory
+FP16 instruction count
+FP32 instruction count
+INT16 instruction count
+INT32 instruction count
+Max temporary registers
+Max uniform registers
+Max threadgroup memory
+Max theoretical occupancy
+Remarks
+Compile Performance
+Function Name
+Function was cached
+Total time for synchronous pipeline creation in ns
+Total time for synchronous compile service in ns
+Total compile time in ns
+Framework total compile time in ns
+Backend compiler build request total time in ns
+Driver total compile time in ns
+Compiler total time in ns
+Compiler translator pass time in ns
+Compiler optimization pass time in ns
+Compiler backend pass time in ns
+Framework instrumentation pass time in ns
+-[MTLLogicalToPhysicalColorAttachmentMap setPhysicalIndex:forLogicalIndex:]
+physicalIndex(%lu) must be < %lu
+logicalIndex(%lu) must be < %lu
+blending =
+Source blend factors:
+RGB   =
+Alpha =
+Destination blend factors:
+Blend operations:
+writeMask =
+blending = NO
+Pixel Format
+Blending Enabled
+Source RGB Blend Factor
+Destination RGB Blend Factor
+Source Alpha Blend Factor
+Destination Alpha Blend Factor
+RGB Blend Operation
+Alpha Blend Operation
+Write Mask
+Object Bindings:
+bindingsCount =
+Mesh Bindings:
+Vertex Bindings:
+Fragment Bindings:
+Tile Bindings:
+-[MTLRenderPipelineColorAttachmentDescriptorArrayInternal objectAtIndexedSubscript:]
+-[MTLRenderPipelineColorAttachmentDescriptorArrayInternal setObject:atIndexedSubscript:]
+attachment is not a MTLRenderPipelineColorAttachmentDescriptor.
+Unspecified
+Point
+Line
+Triangle
+MTLVertexAmplificationModeMask
+MTLVertexAmplificationModeCount
+Alpha to Coverage =
+Alpha to One =
+Rasterization Enabled =
+Sample Coverage =
+Sample Mask =
+0x%lx
+Input Primitive Topology =
+Depth Attachment Format =
+Stencil Attachment Format =
+tessellationPartitionMode =
+maxTessellationFactor =
+tessellationFactorScaleEnabled =
+tessellationFactorFormat =
+tessellationControlPointIndexType =
+tessellationFactorStepFunction =
+tessellationOutputWindingOrder =
+Vertex Function =
+Fragment Function =
+Vertex Array:
+Vertex Amplification Mode =
+Max Vertex Amplification Count =
+Vertex   Depth Compare Clamp Mask =
+0x%x
+Fragment Depth Compare Clamp Mask =
+Color Attachments:
+Pipeline Library:
+Vertex Buffer %u:
+vertexLinkedFunctions =
+supportAddingVertexBinaryFunctions =
+maxVertexCallStackDepth =
+supportAddingFragmentBinaryFunctions =
+maxFragmentCallStackDepth =
+explicitVisibilityGroupID =
+-[MTLRenderPipelineDescriptorInternal setVertexAmplificationMode:]
+-[MTLRenderPipelineDescriptorInternal setInputPrimitiveTopology:]
+inputPrimitiveTopology value (%u) is invalid
+-[MTLRenderPipelineDescriptorInternal setVertexLinkedFunctions:]
+-[MTLRenderPipelineDescriptorInternal setFragmentLinkedFunctions:]
+-[MTLRenderPipelineDescriptorInternal setObjectLinkedFunctions:]
+-[MTLRenderPipelineDescriptorInternal setMeshLinkedFunctions:]
+-[MTLRenderPipelineDescriptorInternal fastBlendDescriptorAtIndex:]
+index must be < %lu.
+-[MTLRenderPipelineDescriptorInternal setLabel:]
+-[MTLRenderPipelineDescriptorInternal setName:]
+-[MTLRenderPipelineDescriptorInternal setVertexFunction:]
+vertexFunction is not a MTLFunction.
+vertexFunction functionType is not a MTLFunctionTypeVertex.
+-[MTLRenderPipelineDescriptorInternal setFragmentFunction:]
+-[MTLRenderPipelineDescriptorInternal setObjectFunction:]
+-[MTLRenderPipelineDescriptorInternal setMeshFunction:]
+-[MTLRenderPipelineDescriptorInternal attachVertexDescriptor:]
+vertexDescriptor is not a MTLVertexDescriptor.
+-[MTLRenderPipelineDescriptorInternal setVertexDescriptor:]
+%s must not be nil.
+%s is associated with a different device.
+%s %@ cannot be used to build a pipeline state. Use newFunctionWithName:constantValues:... to get the specialized function
+Vertex function has input attributes but no vertex descriptor was set.
+-[_MTLRenderPipelineState initWithDevice:pipelineStateDescriptor:]
+Render Pipeline Descriptor Validation
+desc is not a MTLRenderPipelineDescriptor.
+pipelines with tessellationFactorScaleEnabled = YES are not compatible with indirect command buffers
+-[_MTLRenderPipelineState initWithDevice:meshRenderPipelineStateDescriptor:objectThreadExecutionWidth:meshThreadExecutionWidth:maxTotalThreadgroupsPerMeshGrid:]
+desc is not a MTLMeshRenderPipelineDescriptor.
+-[_MTLRenderPipelineState initWithDeviceAndTileDesc:tilePipelineStateDescriptor:]
+-[_MTLRenderPipelineState initWithParent:]
+Render Pipeline State Validation
+parent is not a _MTLRenderPipelineState.
+-[_MTLRenderPipelineState initWithTileParent:]
+-[_MTLRenderPipelineState vertexFunctionHandleWithFunction:]
+-[_MTLRenderPipelineState fragmentFunctionHandleWithFunction:]
+-[_MTLRenderPipelineState tileFunctionHandleWithFunction:]
+-[_MTLRenderPipelineState objectFunctionHandleWithFunction:]
+-[_MTLRenderPipelineState meshFunctionHandleWithFunction:]
+-[_MTLRenderPipelineState newRenderPipelineStateWithAdditionalBinaryFunctions:fragmentAdditionalBinaryFunctions:error:]
+-[_MTLRenderPipelineState newTileRenderPipelineStateWithAdditionalBinaryFunctions:error:]
+v32@?0@"NSString"8@"NSData"16*24
+MTLBlendFactorZero
+MTLBlendFactorOne
+MTLBlendFactorSourceColor
+MTLBlendFactorOneMinusSourceColor
+MTLBlendFactorSourceAlpha
+MTLBlendFactorOneMinusSourceAlpha
+MTLBlendFactorDestinationColor
+MTLBlendFactorOneMinusDestinationColor
+MTLBlendFactorDestinationAlpha
+MTLBlendFactorOneMinusDestinationAlpha
+MTLBlendFactorSourceAlphaSaturated
+MTLBlendFactorBlendColor
+MTLBlendFactorOneMinusBlendColor
+MTLBlendFactorBlendAlpha
+MTLBlendFactorOneMinusBlendAlpha
+MTLBlendFactorSource1Color
+MTLBlendFactorOneMinusSource1Color
+MTLBlendFactorSource1Alpha
+MTLBlendFactorOneMinusSource1Alpha
+MTLBlendFactorUnspecialized
+MTLBlendOperationAdd
+MTLBlendOperationSubtract
+MTLBlendOperationReverseSubtract
+MTLBlendOperationMin
+MTLBlendOperationMax
+MTLBlendOperationUnspecialized
+None
+RGBA
+MTLTessellationPartitionModePow2
+MTLTessellationPartitionModeInteger
+MTLTessellationPartitionModeFractionalOdd
+MTLTessellationPartitionModeFractionalEven
+MTLTessellationFactorFormatHalf
+MTLTessellationFactorFormatFloat_SPI
+MTLTessellationControlPointIndexTypeNone
+MTLTessellationControlPointIndexTypeUInt16
+MTLTessellationControlPointIndexTypeUInt32
+MTLTessellationFactorStepFunctionConstant
+MTLTessellationFactorStepFunctionPerPatch
+MTLTessellationFactorStepFunctionPerInstance
+MTLTessellationFactorStepFunctionPerPatchAndPerInstance
+MTLWindingClockwise
+MTLWindingCounterClockwise
+validateMTLTessellationPartitionMode
+tessellationPartitionMode is not a valid MTLTessellationPartitionMode.
+validateMaxTessellationFactor
+maxTessellationFactor must be >= 1 and <= 64
+validateMTLTessellationFactorFormat
+tessellationFactorFormat is not a valid MTLTessellationFactorFormat.
+validateMTLTessellationControlPointIndexType
+tessellationControlPointIndexType is not a valid MTLTessellationControlPointIndexType.
+validateMTLTessellationFactorStepFunction
+tessellationFactorStepFunction is not a valid MTLTessellationFactorStepFunction.
+validateMTLWinding
+tessellationOutputWindingOrder is not a valid MTLWinding.
+vertexFunction must be nil when meshFunction is not nil.
+maxTessellationFactor(%lu) must be <= %lu.
+maxTessellationFactor(%lu) must be a power of 2 when using MTLTessellationPartitionModePow2.
+maxTessellationFactor(%lu) must be even when using MTLTessellationPartitionModeFractionalOdd or MTLTessellationPartitionModeFractionalEven.
+colorSampleCount not 0 but the pipeline vertex function is writing to render_target_array_index.
+Pipeline rasterSampleCount (%u) is greater than 1 but the pipeline vertex function is writing to render_target_array_index.
+tessellationFactorFormat(%d) is not a valid MTLTessellationFactorFormat.
+Blending is enabled for render target %lu; however, the pixelformat %s for this render target is not blendable.
+writeMask(0x%lx) is not MTLColorWriteMaskAll or MTLColorWriteMaskNone or MTLColorWriteMaskUnspecialized for render target %lu; however, the pixelformat %s for this render target requires MTLColorWriteMaskAll or MTLColorWriteMaskNone or MTLColorWriteMaskUnspecialized.
+MTLRenderPipelineDescriptor color render target(%lu) exceeds platform max(%lu).
+Dual source blending is used in combination with multiple render targets
+MTLRenderPipelineDescriptor with alphaToCoverageEnabled requires a float/unorm pixel format, but colorAttachments[0].pixelFormat(%s) is not blendable
+MTLRenderPipelineDescriptor with alphaToOneEnabled requires a float/unorm pixel format, but colorAttachments[0].pixelFormat(%s) is not blendable
+depthAttachmentPixelFormat is not a valid MTLPixelFormat.
+depthAttachmentPixelFormat %s is not depth renderable.
+stencilAttachmentPixelFormat is not a valid MTLPixelFormat.
+stencilAttachmentPixelFormat %s is not stencil renderable.
+No valid pixelFormats set.
+depthAttachmentPixelFormat (%s) and stencilAttachmentPixelFormat (%s) must match.
+maxVertexAmplificationCount (%u) cannot be set to zero.
+maxVertexAmplificationCount (%u) is not supported on this device. See supportsVertexAmplificationCount:(NSUInteger).
+factor is not a valid MTLBlendFactor.
+func is not a valid MTLBlendOperation.
+blendFactorSource
+Invalid blend factor
+MTLRenderPipelineDescriptor color render target(%lu) is using a blend factor (%@)which is can only be used for render target 0
+failed assertion %s at line %d in %s. %@
+failed assertion %s at line %d in %s
+MTLFailureTypeGetErrorModeType
+MTLDebug.mm
+failureType < MTLFailureTypeCount
+MTLFailureTypeSetErrorModeType
+warning
+errorCheckExtended
+%s, line %u: %s '%s'
+
+ignore
+assert
+nslog
+exception
+METAL_ERROR_MODE
+MTL_ERROR_MODE
+METAL_DEBUG_ERROR_MODE
+MTL_DEBUG_LAYER_ERROR_MODE
+METAL_WARNING_MODE
+MTL_DEBUG_LAYER_WARNING_MODE
+METAL_ERROR_CHECK_EXTENDED_MODE
+Invalid option for %s, valid options are:
+
+	%s
+
+MTLGetEnvCase
+MTLUtils_Internal.h
+functions =
+privateFunctions =
+binaryFunctions =
+groups =
+-[MTLIOAccelHeap newSubResourceWithLength:alignment:options:offset:]
+The requested CPU cache mode (%@) does not match the heap's mode (%@)
+The requested storage mode (%@) is not compatible with the heap's mode (%@)
+-[MTLIOAccelHeap newSubResourceAtOffset:withLength:alignment:options:]
+-[MTLIOAccelHeap newAccelerationStructureWithSize:]
+newAccelerationStructureWithSize: Acceleration structure allocation requires MTLResourceStorageModePrivate storage mode
+-[MTLIOAccelHeap newAccelerationStructureWithDescriptor:]
+newAccelerationStructureWithDescriptor: Acceleration structure allocation requires MTLResourceStorageModePrivate storage mode
+-[MTLIOAccelHeap newAccelerationStructureWithSize:offset:]
+newAccelerationStructureWithSize:offset: Acceleration structure allocation requires MTLResourceStorageModePrivate storage mode
+-[MTLIOAccelHeap newAccelerationStructureWithDescriptor:offset:]
+newAccelerationStructureWithDescriptor:offset: Acceleration structure allocation requires MTLResourceStorageModePrivate storage mode
+-[MTLIOAccelHeap newAccelerationStructureWithSize:resourceIndex:]
+newAccelerationStructureWithSize:offset:resourceIndex: Acceleration structure allocation requires MTLResourceStorageModePrivate storage mode
+-[MTLIOAccelHeap newAccelerationStructureWithSize:offset:resourceIndex:]
+newAccelerationStructureWithDescriptor:offset:resourceIndex: Acceleration structure allocation requires MTLResourceStorageModePrivate storage mode
+MTLArchiveDomain
+unable to open file at URL: %@
+unable to find %s slice in archive '%s' 
+ available slices: %s 
+
+deployment target for architecture %s found in archive '%s' is not compatible with current OS
+Specialized function %@ was not found in archive
+Stitched function %s was not found in archive
+Unexpected function type while decoding descriptor
+Failed with error: %@
+Failed to find compute function: %s with key:%@
+vertex function %s
+fragment function %s
+Failed to find %@ with key:%@
+Failed to find tile function: %s with key:%@
+mesh function %s
+object function %s
+Failed to find binary function %s with key:%@
+Entry found in the archive is not complete. Key :%@
+Pipeline %s not found in archive
+Entry found in the archive is not complete.
+MetalPluginName
+MetalPluginClassName
+%s: IOMainPort failed %x
+-[MTLIOAccelServiceGlobalContext init]
+com.Metal.DeviceDispatch
+IOServicePublish
+IOAccelerator
+%s: IOServiceAddMatchingNotification failed %x
+IOServiceCompatibility
+IOGeneralInterest
+Removable
+SafeEjectRequested
+-[MTLIOAccelService dealloc]
+_notifyPort == NULL
+_notifyObject == 0
+MTLIOAccelCommandBufferStorageGrowKernelCommandBuffer
+MTLIOAccelCommandBufferStorageAllocResourceAtIndex
+MTLIOAccelResourcePool (dbclass: %d)
+MTLIOAccelCommandBufferStorageGrowSegmentList
+MTLIOAccelCommandBufferStoragePoolDealloc
+storage->currentShmemHeaderType == -2
+MTLIOAccelCommandBufferStoragePoolPurge
+MTLIOAccelCommandBufferStoragePoolCreateStorage
+MTLIOAccelCommandBufferStoragePoolReturnStorage
+storage->currentShmemHeaderType == -1
+_mtlIOAccelCommandBufferStorageRebaseShmemHeader
+_mtlIOAccelCommandBufferStorageBeginKernelCommandList
+storage->currentShmemHeaderType != eIOAccelSegmentListShmemHeaderTypeKernelCommandList
+_mtlIOAccelCommandBufferStorageBeginSegmentList
+storage->currentShmemHeaderType != eIOAccelSegmentListShmemHeaderTypeSegmentList
+-[MTL4RenderPipelineColorAttachmentDescriptorArray objectAtIndexedSubscript:]
+-[MTL4RenderPipelineColorAttachmentDescriptorArray setObject:atIndexedSubscript:]
+attachment is not a MTL4RenderPipelineColorAttachmentDescriptor.
+-[MTL4RenderPipelineDescriptor setVertexDescriptor:]
+-[MTL4RenderPipelineDescriptor setVertexStaticLinkingDescriptor:]
+-[MTL4RenderPipelineDescriptor setFragmentStaticLinkingDescriptor:]
+MTLPurgeableStateKeepCurrent
+MTLPurgeableStateNonVolatile
+MTLPurgeableStateVolatile
+MTLPurgeableStateEmpty
+MTLResourceCPUCacheModeWriteCombined 
+MTLResourceCPUCacheModeDefaultCache 
+MTLResourceCPUCacheModeInvalid 
+MTLResourceStorageModePrivate 
+MTLResourceStorageModeManaged 
+MTLResourceStorageModeShared 
+MTLResourceStorageModeMemoryless 
+MTLResourceStorageModeInvalid 
+MTLResourceHazardTrackingModeUntracked 
+MTLResourceHazardTrackingModeTracked 
+MTLResourceHazardTrackingModeDefault 
+MTLResourceHazardTrackingModeInvalid 
+MTLResourceReadOnly
+MTLHazardTrackingModeDefault
+MTLHazardTrackingModeUntracked
+MTLHazardTrackingModeTracked
+MTLSparsePageSize16
+MTLSparsePageSize64
+MTLSparsePageSize256
+{ address = %p, length: %llu }
+ranges = {
+validateMTLDataType
+type (%lu) is not a valid MTLDataType.
+validateMTLDataTypeConstant
+type (%lu) is not a const-like MTLDataType.
+pipelineCollection
+v8@?0
+%s.metallib
+%s%@
+addLibraryDescriptor
+collected two libraries with the same name (%@)
+adding library with name: %s filePath: %s
+StitchedLib_%s
+%@_%@_%s
+getFunctionData
+library was not collected for function %@
+function %@ was not collected but it is referenced in the descriptor
+dumpLibraries_block_invoke
+unable to load library data for %@
+unable to write library data to %@: %@
+writeJSONToFile_block_invoke
+writing serialized pipelines to '%@' failed with error: %@
+ComputePipeline_
+RenderPipeline_
+TileRenderPipeline_
+MeshRenderPipeline_
+0123456789ABCDEF
+MTL4CommandQueueErrorDomain
+com.Metal4.SubmissionQueue
+-[_MTL4CommandQueue preCommit:count:options:]
+-[MTLBlitPassSampleBufferAttachmentDescriptorArrayInternal objectAtIndexedSubscript:]
+-[MTLBlitPassSampleBufferAttachmentDescriptorArrayInternal setObject:atIndexedSubscript:]
+This object may only be encoded by an NSXPCCoder.
+Port
+Label
+This object may only be decoded by an NSXPCCoder.
+MTLSharedEventListener
+Internal error during notification request %08x
+-[MTLFunctionDescriptor setName:]
+-[MTLFunctionDescriptor setSpecializedName:]
+specializedName is not a NSString.
+-[MTLFunctionDescriptor setConstantValues:]
+constantValues is not a MTLFunctionConstantValues.
+specializedName =
+constantValues =
+options =
+function is not a valid MTLCompareFunction.
+MTLCompareFunctionNever
+MTLCompareFunctionLess
+MTLCompareFunctionEqual
+MTLCompareFunctionLessEqual
+MTLCompareFunctionGreater
+MTLCompareFunctionNotEqual
+MTLCompareFunctionGreaterEqual
+MTLCompareFunctionAlways
+stencilCompareFunction        =
+stencilFailureOperation       =
+stencilPassDepthFailOperation =
+stencilPassDepthPassOperation =
+stencilReadMask               =
+stencilWriteMask              =
+stencilCompareFunction        = MTLCompareFunctionAlways
+stencilFailOperation          = MTLStencilOperationKeep
+stencilPassDepthFailOperation = MTLStencilOperationKeep
+stencilPassDepthPassOperation = MTLStencilOperationKeep
+stencilReadMask               = 0xffffffff
+stencilWriteMask              = 0xffffffff
+depthCompareFunction =
+depthWriteEnabled =
+frontFace:
+backFace:
+-[MTLDepthStencilDescriptorInternal setFrontFaceStencil:]
+frontFaceStencil is not a MTLStencilDescriptor.
+-[MTLDepthStencilDescriptorInternal setBackFaceStencil:]
+backFaceStencil is not a MTLStencilDescriptor.
+-[MTLDepthStencilDescriptorInternal setLabel:]
+-[_MTLDepthStencilState initWithDevice:depthStencilDescriptor:]
+Creation Depth Stencil State
+desc is not a MTLDepthStencilDescriptor.
+MTLStencilOperationKeep
+MTLStencilOperationZero
+MTLStencilOperationReplace
+MTLStencilOperationIncrementClamp
+MTLStencilOperationDecrementClamp
+MTLStencilOperationInvert
+MTLStencilOperationIncrementWrap
+MTLStencilOperationDecrementWrap
+operation is not a valid MTLStencilOperation.
+Unable to reach MTLCompilerService. The process is unavailable because the compiler is no longer active. Latest invalidation reason: 
+Compilation failed because the MTL_FORCE_COMPILER_FAILURE flag is enabled.
+Compilation failed due to a critical error: XPC_ERROR_CONNECTION_TERMINATION_IMMINENT. The process was terminated unexpectedly (e.g., due to system resource constraints).
+Compilation failed because the compiler encountered an invalid connection: XPC_ERROR_CONNECTION_INVALID. Latest invalidation reason: 
+Compilation failed due to an interrupted connection: XPC_ERROR_CONNECTION_INTERRUPTED. This error occurred after multiple retries.
+Compilation failed because the compiler encountered an unknown error: XPC_ERROR_CONNECTION_UNKNOWN. If this issue persists, please use feedback assistant for further support.
+Compilation failed because MTL_FORCE_COMPILER_FAILURE is set.
+requestTraits
+MTL_FORCE_COMPILER_FAILURE
+alwaysInline
+kernel
+argumentIndex =
+arguments =
+controlDependencies =
+functionName =
+nodes =
+outputNode =
+attributes =
+functionGraphs =
+BindIndex = 
+bind index = 
+byte offset = 
+dereference = 
+<%@: %p>
+%@
+condition =
+MTLCommandBufferCreationTime
+MTLCommandBufferEnqueueTime
+MTLCommandBufferCommitTime
+MTLCommandBufferSubmitToKernelTime
+MTLCommandBufferKernelScheduledTime
+MTLCommandBufferSubmitToHWTime
+MTLCommandBufferCompletionInterruptTime
+MTLCommandBufferKernelCompleteTime
+MTLCommandBufferCompletionHandlerEnqueueTime
+MTLCommandBufferCompletionHandlerExecutionTime
+MTLCommandBufferEncoderInfoErrorKey
+MTLCommandEncoderErrorStateUnknown
+MTLCommandEncoderErrorStateCompleted
+MTLCommandEncoderErrorStateAffected
+MTLCommandEncoderErrorStatePending
+MTLCommandEncoderErrorStateFaulted
+<errorState: %@, label: %@, debugSignposts: %@>
+-[_MTLCommandBuffer initWithQueue:retainedReferences:synchronousDebugMode:]
+queue must not be nil.
+queue is not a MTLCommandQueue.
+-[_MTLCommandBuffer encodeDashboardTagForResourceGroup:]
+%s not supported on this device
+-[_MTLCommandBuffer encodeDashboardFinalizeForResourceGroup:dashboard:value:forIndex:]
+-[_MTLCommandBuffer encodeDashboardFinalizeForResourceGroup:dashboard:values:indices:count:]
+commandQueue =
+retainedReferences =
+-[_MTLCommandBuffer enqueue]
+enqueue an already enqueued command buffer
+-[_MTLCommandBuffer commit]
+-[_MTLCommandBuffer commitAndReset]
+Command buffer failed
+-[_MTLCommandBuffer addScheduledHandler:]
+Scheduled handler provided after commit call
+presentationMode
+enableFIFO
+presentTimeInterval
+-[_MTLCommandBuffer presentDrawable:options:]
+drawable must not be nil.
+drawable is not a MTLDrawableSPI.
+drawable does not implement presentWithOptions:, is it a CAMetalDrawable?
+options must not be nil.
+v16@?0@"<MTLDrawable>"8
+-[_MTLCommandBuffer presentDrawable:]
+drawable is not a MTLDrawable.
+-[_MTLCommandBuffer presentDrawable:atTime:]
+-[_MTLCommandBuffer presentDrawable:afterMinimumDuration:]
+-[_MTLCommandBuffer addCompletedHandler:]
+Completed handler provided after commit call
+-[_MTLCommandBuffer didScheduleWithStartTime:endTime:error:]
+Execution of the command buffer was aborted due to an error during execution. %@
+-[_MTLCommandBuffer didCompleteWithStartTime:endTime:error:]
+-[_MTLCommandBuffer postProcessSamples:toUserDst:numSamples:]
+Metal Vendor Statistics not implemented
+-[_MTLCommandBuffer pushDebugGroup:]
+MTL_PRESENT_FIFO
+format is not a valid MTLVertexFormat / MTLAttributeFormat.
+MTLAttributeFormatAlignment
+MTLAttributeFormatComponentCount
+MTLAttributeFormatSize
+MTLAttributeFormatUChar2
+MTLAttributeFormatUChar3
+MTLAttributeFormatUChar4
+MTLAttributeFormatChar2
+MTLAttributeFormatChar3
+MTLAttributeFormatChar4
+MTLAttributeFormatUChar2Normalized
+MTLAttributeFormatUChar3Normalized
+MTLAttributeFormatUChar4Normalized
+MTLAttributeFormatChar2Normalized
+MTLAttributeFormatChar3Normalized
+MTLAttributeFormatChar4Normalized
+MTLAttributeFormatUShort2
+MTLAttributeFormatUShort3
+MTLAttributeFormatUShort4
+MTLAttributeFormatShort2
+MTLAttributeFormatShort3
+MTLAttributeFormatShort4
+MTLAttributeFormatUShort2Normalized
+MTLAttributeFormatUShort3Normalized
+MTLAttributeFormatUShort4Normalized
+MTLAttributeFormatShort2Normalized
+MTLAttributeFormatShort3Normalized
+MTLAttributeFormatShort4Normalized
+MTLAttributeFormatHalf2
+MTLAttributeFormatHalf3
+MTLAttributeFormatHalf4
+MTLAttributeFormatFloat
+MTLAttributeFormatFloat2
+MTLAttributeFormatFloat3
+MTLAttributeFormatFloat4
+MTLAttributeFormatInt
+MTLAttributeFormatInt2
+MTLAttributeFormatInt3
+MTLAttributeFormatInt4
+MTLAttributeFormatUInt
+MTLAttributeFormatUInt2
+MTLAttributeFormatUInt3
+MTLAttributeFormatUInt4
+MTLAttributeFormatUChar4Normalized_BGRA
+MTLAttributeFormatUInt_VertexID
+MTLAttributeFormatUInt_InstanceID
+MTLAttributeFormatInvalid
+MTLAttributeFormatUChar
+MTLAttributeFormatChar
+MTLAttributeFormatUCharNormalized
+MTLAttributeFormatCharNormalized
+MTLAttributeFormatUShort
+MTLAttributeFormatShort
+MTLAttributeFormatUShortNormalized
+MTLAttributeFormatShortNormalized
+MTLAttributeFormatHalf
+MTLAttributeFormatFloatRGB9E5
+MTLAttributeFormatFloatRG11B10
+MTLAttributeFormatInt1010102Normalized
+MTLAttributeFormatUInt1010102Normalized
+-[MTLVertexBufferLayoutDescriptorArrayInternal objectAtIndexedSubscript:]
+-[MTLVertexBufferLayoutDescriptorArrayInternal setObject:atIndexedSubscript:]
+-[MTLVertexAttributeDescriptorInternal setBufferIndex:]
+-[MTLVertexAttributeDescriptorArrayInternal objectAtIndexedSubscript:]
+-[MTLVertexAttributeDescriptorArrayInternal setObject:atIndexedSubscript:]
+-[MTLVertexDescriptorInternal newSerializedDescriptor]
+MTLVertexDescriptor
+-[MTLVertexDescriptorInternal validateWithVertexFunction:error:renderPipelineDescriptor:]
+MTLVertexDescriptorDescription
+stepFunction is not a valid MTLVertexStepFunction.
+MTLVertexStepFunctionPerVertex not allowed with postTessellationVertexFunction.
+stepRate(%lu) must be one if stepFunction is MTLVertexStepFunctionPerVertex.
+stepRate(%lu) cannot be zero if stepFunction is MTLVertexStepFunctionPerInstance.
+stepRate(%lu) must be zero if stepFunction is MTLVertexStepFunctionConstant.
+MTLVertexStepFunctionPerPatch requires postTessellationVertexFunction.
+stepRate(%lu) must be one if stepFunction is MTLVertexStepFunctionPerPatch.
+MTLVertexStepFunctionPerPatchControlPoint requires postTessellationVertexFunction.
+stepRate(%lu) must be one if stepFunction is MTLVertexStepFunctionPerPatchAndPerInstance.
+MTLVertexStepFunctionConstant
+MTLVertexStepFunctionPerVertex
+MTLVertexStepFunctionPerInstance
+MTLVertexStepFunctionPerPatch
+MTLVertexStepFunctionPerPatchControlPoint
+-[_MTLCommandQueue initWithDevice:descriptor:]
+Command Queue Creation Validation
+invalid descriptor.qosLevel value %u
+cannot create command-buffer counting semaphore
+com.Metal.CommandQueueDispatch
+com.Metal.CompletionQueueDispatch
+cannot create presentation semaphore
+METAL_FORCE_IMMEDIATE_SUBMISSION
+-[_MTLCommandQueue enqueueCommandBuffer:]
+commandBuffer is associated with a different device
+-[_MTLCommandQueue completeCommandBuffers:count:]
+-[_MTLCommandQueue commitCommandBuffer:wake:]
+-[_MTLCommandQueue commandBufferDidComplete:startTime:completionTime:error:]
+-[_MTLCommandQueue availableCounters]
+-[_MTLCommandQueue requestCounters:]
+qosLevel =
+commitQueue =%p
+commitSynchronously =
+completionQueue =%p
+disableCrossQueueHazardTracking =
+disableAsyncCompletionDispatch =
+lockParameterBufferSizeToMax =
+com.apple.QuartzCore
+com.apple.CoreMedia
+com.apple.CoreImage-Internal
+com.apple.CoreImage
+com.apple.MapKit
+com.apple.SpriteKit
+com.apple.SceneKit
+com.apple.VideoToolbox.VTMetalTransferSession
+com.apple.QuartzCore-HDRProcessing
+com.apple.QuartzCore-CARenderer
+com.apple.QuartzCore-CA
+com.apple.QuartzCore-WebKit
+com.apple.WebKit
+MTLQosExclusive
+MTLQosHigh
+MTLQosMedium
+MTLQosLow
+MTLQosOpportunistic
+Client storage textures
+Memory barrier in compute
+Memory barrier in render
+Vertex->Vertex,Vertex->Fragment memory barriers in render
+Argument Buffers Tier 2
+Read-Write Texture Arguments Tier 2
+Command buffer streaming codec signalling SPI
+Programmable Sample Positions
+Framebuffer sizes larger than 64 bytes
+MTLClampToBorder with custom color
+Clamp to half border
+BC-format texture compression
+BC-format textures with MTLTextureType3D
+RGB10A2 format with gamma
+BGR10A2 format with gamma
+Override default primitive restart
+Global Variable Relocation
+Global Variable Relocation for Render
+Global Variable Relocation for Compute
+TLS variables in metal programs
+Resource bindings using global variables
+Resource bindings using global variables in dylibs
+32 bits per channel MSAA textures
+32 bits per channel Float texture filtering
+Query Texture LOD
+Vertex Amplification
+Sampler reduction mode support
+Placement heaps
+OpenCL Texture Write Swizzles
+Pull model interpolation
+Int64 Types
+Fixed line/point fill depth gradient
+Late Eval Events
+texture.write() with a non-zero LOD
+Shared Texture Handles
+Gathering buffer prefetch statistics
+YUV pixel formats
+Non-Private Depth/Stencil textures
+Non-Private MSAA textures
+MTLStorageModeShared Heap resources
+MTLStorageModeShared textures
+Linear textures from shared buffers
+Pipeline Libraries
+Fragment Only Render Encoders
+Create a buffer from an IOSurface
+Programmable Blending
+Render To Linear Textures
+Memoryless Render Targets
+Fast Math Inf/NaN Propagation
+Invariant Vertex Position
+LOD Average in shaders
+sRGB views without MTLTextureUsagePixelFormatView
+separate depth/stencil
+gpu statistics
+CompressedTextureView SPI
+Render target rotation
+Dynamic control point counts
+Hash support for IAB layouts for use by Tools
+Binary Archives
+Binary Libraries
+Deadline-profile objects
+FillTexture on blit encoder
+setThreadgroupPackingDisabled on ComputeEncoder
+ASTC-format texture compression
+Extended YUV pixel formats
+XR10 pixel formats
+sRGBwrites
+Depth Clip Mode
+Resource heaps
+Argument buffers
+Packed 32-bit format Texture Buffer Writes
+ASTC-format textures with MTLTextureType3D
+Extended XR10 pixel formats
+Writes to buffers from fragment functions
+Counting Occlusion Query
+Base Vertex Instance Drawing
+Indirect draw & dispatch arguments
+Tessellation
+Read-Write Buffer Arguments
+Readable Array Of Textures
+Array Of Samplers
+Combined MSAA Store And Resolve Action
+Mutable Tier1 Argument Buffers
+Sampler Compare Function
+MSAA Depth Resolve
+MSAA Stencil Resolve
+MSAA Depth Resolve Filter
+Indirect Command Buffers for graphics
+Indirect Command Buffers for compute
+Indirect Stage In Region
+Indirect texture access
+Bicubic filtering of 16-bit normalized values
+Out of Bounds Reads on Textures
+Texture Swizzle
+YUV + Alpha pixel formats
+Atomic functions with memory order
+Support quad_group* attributes in kernel functions
+Writes to textures from vertex and fragment functions
+Image Blocks
+Tile Shaders
+Image Block Sample Coverage Control
+FP16 on native hardware
+Post-Depth Coverage
+Mip Levels smaller than Block Size
+Dispatch Threads with Non-Uniform Threadgroup Size
+Read-Write Texture Arguments
+Read-Write Texture Cube Arguments
+Texture Cube Array
+QUAD Shuffles And Broadcast
+Concurrent Compute Dispatch
+A Render Pass without a Render Target
+Raster Order Groups
+Raster Order Groups on Color Attachments
+Dynamic Attribute Stride in vertex fetching
+Linear Texture 2D arrays
+Non-Square Tile Shaders
+Separate Visibility And Shading Rate
+2D Linear Texture Array
+Layered Rendering
+Viewport and Scissor Array
+Indirect Tessellation
+MSAA Stencil Resolve Filter
+Stencil Feedback
+FP32 Tessellation Factors
+Unaligned vertex fetch
+RGB9E5 & RG11B10 vertex fetch
+Resource detach backing
+Create a buffer from a set of address ranges
+Create a heap from a set of address ranges
+Support simd_group* attributes in kernel functions
+Shader Min LOD Clamp
+SIMD Shuffles And Broadcast
+Writable Array Of Textures
+Variable Rate Rasterization
+YCBCR PQ pixel formats
+YCBCR 12 pixel formats
+YCBCR XR pixel formats
+ASTC HDR Texture Compression
+Sparse textures
+Sparse heaps
+access::write on indirect textures
+Function Pointers
+Dynamic Libraries created with compute state
+Dynamic Libraries created with render/tileRender state
+Function Pointers from Render stages
+Shared function tables
+Raytracing from Render stages
+Raytracing Primitive Motion Blur
+Ray Tracing Extended Vertex Formats and Transformation
+Heap Acceleration Structure Allocation
+RayTracing Per Primitive Data
+Ray Tracing Traversal Metrics
+Raytracing Buffers from Intersection Function Tables
+Deserialization of Acceleration Structures on CPU
+Ray tracing multi-level instancing
+Ray Tracing Indirect Instance Acceleration Structure Build
+Ray Tracing GPU Table Update Buffers
+Ray tracing curve primitives
+Barycentrics coordinates and PrimitiveID
+Black Or White Sampler Border Colors
+MirrorClampToEdge Sampler Mode
+SIMD Reduction
+DepthClipModeClamp with zMin != 0 or zMax != 1
+Texture 2D Multisample Array
+Force seams on cubemap filtering
+Bicubic filtering of 16-bit float values
+Inf/Nan filtering of 16-bit float values
+RTZ Rounding and Clamping
+Aniso sampling controls for certain conditions
+YCBCR Packed PQ pixel formats
+YCBCR Packed 12 pixel formats
+YCBCR Packed XR pixel formats
+Buffer Bounds Checking
+Forkable command buffers
+Support device partitioning
+Support compute writes on compressed textures
+Support SIMD group matrix multiply add
+Support compression interchange
+Quad Reduction
+Support Command Queue Barriers
+Compute Virtual Substreams
+Tensors
+Metal 4 Command Queue
+Metal 4 Command Allocator
+Metal 4 Render Command Encoder
+Metal 4 Unified Compute Command Encoder
+Metal 4 Texture View Pools
+Metal 4 Placement Sparse
+Metal 4 Compilation Model
+Late Bound Render Targets
+Pipeline State Object Specialization
+Machine Learning Command Encoders
+Metal 4 Counters
+SIMD Shuffle and fill
+Bfloat16 Texture format
+Sparse Depth Texture Attachments
+ulong atomic min and max without return
+Texture lossy compression footprint selection
+Atomic Float
+Object and Mesh shader stages
+Function Pointers and Ray Tracing from Mesh and Object stages
+Mesh shader draws can be encoded into ICBs
+Dynamic library linking inside Mesh render pipelines
+Bfloat16 Buffer content
+Command Buffer Jump
+Selection of per-texture color space conversion matrix
+Selection of lossy compression rate per-iosurface plane
+Atomic Wait and Notify
+Conditional edge checked load/store
+Stack Overflow, maximum call stack depth exceeded
+Ray tracing from indirect command buffers
+Performance State Assertion
+AIRNT archive support for specialized functions
+AIRNT archive support for function pointers
+AIRNT archive support for stitched functions
+Explicit visibility groups
+Ray Tracing Matrix Layout
+Direct access to ray tracing intersection result state
+Ray tracing per-component motion transform interpolation
+Extended Sampler LOD Bias Range
+Depth Bounds Testing
+Extended Indirect Render Command
+Intersection Function Buffers
+Support for 8-bit floating types
+Conditional Tile Dispatch
+Texture Access Patterns
+Device scoped memory coherency for buffers and textures
+-[MTL4MachineLearningPipelineDescriptor setInputDimensions:withRange:]
+range and dimensions do not match
+unordered_map::at: key not found
+LMDB 0.9.70: (December 19, 2015)
+Successful return: 0
+(no reader locks)
+
+%10d %zx -
+
+%10d %zx %zu
+
+    pid     thread     txnid
+
+(no active readers)
+
+/data.mdb
+/lock.mdb
+-lock
+mdb_put error: %s
+mdb_cursor_open error: %s
+Unable to open mach-O at path: %s  Error:%i
+fstat failed for file %s with errno %d
+Mapping of file %s failed with errno %d
+'%s' was set to '%d', binary archives and pipeline libraries will be %s.
+ignore_precompiled_binaries feature flag enabled, binary archives and pipeline libraries will be ignored.
+%s was set, ignoring MTLPipelineOptionFailOnBinaryArchiveMiss and MTLPipelineLibrary.disableRunTimeCompilation
+The pipeline library's cache is nil, but disableRunTimeCompilation was set. Cache lookups will always fail.
+The primary shader cache is null. No shaders will be cached. This should not occur on a live system.
+Compiler failed to build request
+Compiler failed with XPC_ERROR_CONNECTION_INTERRUPTED
+XPC_ERROR_CONNECTION_INTERRUPTED
+
+Compiler failed with XPC_ERROR_CONNECTION_INVALID
+XPC_ERROR_CONNECTION_INVALID
+
+Compiler failed with XPC_ERROR_TERMINATION_IMMINENT
+XPC_ERROR_TERMINATION_IMMINENT
+
+Compiler failed with unknown XPC error
+UNKNOWN XPC_TYPE_ERROR
+
+%{public}sConnection attempt %u/%u failed with XPC_ERROR_CONNECTION_INVALID: %{public}s (compiler service may have crashed, been jetsammed, or OS shutting down)
+%{public}sConnection attempt %u/%u failed with XPC_ERROR_CONNECTION_INTERRUPTED (compiler service crashed during communication)
+%{public}sConnection attempt %u/%u failed with XPC_ERROR_TERMINATION_IMMINENT (system is preparing to terminate)
+%{public}sConnection attempt %u/%u failed with build error (compiler service returned error during ping)
+%{public}sConnection attempt %u/%u failed with unknown error (state: %d)
+%{public}sFINAL FAILURE - Unable to establish connection to compiler service after %u attempts over %.1f ms. Error breakdown: %u invalid connections, %u interrupted connections, %u other errors. This indicates a compiler service issue. Try setting MTL_MONOLITHIC_COMPILER=1 to bypass XPC service.
+MTLCompiler: XPC connection is down (due to prior XPC_ERROR_CONNECTION_INVALID, is the OS shutting down?)
+MTLCompiler path is NULL - unsupported configuration
+Failed to dlopen MTLCompiler framework with error: %s
+Metal: Call to MTLMakeShaderCacheWritableByAllUsers after the FS cache was already initialized: call ignored
+Metal: Ignoring call MTLSetShaderCachePath('%s') because cache path was %s '%s'
+fscache_open returned a NULL pointer but no error.
+Path set to copy Metal shader cache (%s) does not exist
+Path set to copy Metal shader cache (%s) is not a directory
+failed to create %s directory in shader cache at location: %s
+@ %s(): fscache_element_get_data() failed with error = %d
+
+fstat failed for the pipeline data cache, errno %d
+Mapping the pipeline data cache failed, errno %d
+The pipeline data cache is empty
+The pipeline data cache is not valid for the given system
+The pipeline data cache has an invalid data section
+The pipeline data cache has an invalid number of entries
+The pipeline data cache has an invalid entry
+Failed to get Metal shader cache main folder: shader cache main folder was overriden and the path is too long (max length %zu)
+Failed to get cache main folder: failed to lookup DARWIN_USER_CACHE_DIR err:%d
+Failed to get cache main folder: path for application cache was not found (errno = %u, count = %d, len = %zu, path = %s)
+Failed to get cache main folder: mkdir failed to create cache path (errno = %u, path = %s, attempting to create intermediate subdir '%.*s', possible sandbox issue?)
+Failed to get cache main folder: mkdir failed to create cache path (errno = %u, path = %s, attempting to create final subdir '%s', possible sandbox issue?)
+Encountered invalid string in shader logging. Skipping message
+Dropped %d messages due to insufficient log buffer size
+Dropped messages due to insufficient log buffer size
+MTL_LOG_LEVEL provided is invalid, defaulting to MTLLogLevelDebug
+Dropped message: unexpected number of arguments for format specifier(s).
+Dropped message: unexpected format specifier '%s'.
+%s was set, printing errors/faults from loading from URL.
+MTLBinaryArchive - load from URL: '%s'
+unable to find %s slice or a compatible one in binary archive '%s' 
+ available slices: %s 
+
+unable to map air script
+cannot load schema with error %s
+cannot decode flatbuffert with error %s
+Error loading machO library: %s
+No binaries found in %s 
+Failed to allocate memory for uncompression while extracting the flatbuffer.
+Failed to uncompress data; unexpected EOF found.
+Failed to uncompress data; out buffer is full.
+Failed to uncompress data.
+Done compiling Metal function '%s': %f ms
+Done compiling Metal library with functions '%s': %f ms
+Done compiling Metal function specialization for '%s': %f ms
+Done compiling Metal %s, compile statistics: %s
+Failed to add compile time dictionary for library fom source
+Failed to add compile time dictionary for dynamic library
+Failed to add compile time dictionary for binary function
+Warning: %s
+[NSBundle bundleWithIdentifier:@"com.apple.Metal"] failed
+[metalBundle URLForResource:@"MTLECBE" withExtension:@"metallib"] failed
+[NSBundle bundleForClass:[MTLRenderPipelineDescriptor class]] failed
+[metalBundle URLForResource:@"MTLMeshShaderEmulator" withExtension:@"metallib"] failed
+Failed to allocate %llu bytes for request - %u, %u, %u, %u, %u, %u, %u, %u
+Use of MTLCreateSystemDefaultDevice is not supported for non-interactive (commandline or daemon) apps. Use MTLCopyAllDevices(WithObserver) instead.
+could not open MTLSimDriver!
+could not find symbol MTLCreateSimulatorDevice
+MTLCompilerService log replay resulted in %u error
+%s: Could not load compiler plugin at %s
+mdb_env_create error: %s
+mdb_env_open("%s") error: %s
+db version mismatch: file %u, current %u
+Database invalid - resetting
+Failed to drop database %s
+mdb_txn_begin error: %s
+mdb_dbi_open error: %s
+mdb_txn_commit error: %s
+%d: key(%zu,%p) data(%zu,%p)
+storeArchive('%s', '%s') invalid payload
+Cannot open mach-O (%s) with error:%i
+Invalid metallib file (reached unexpected end of file)
+Invalid metallib file (missing token)
+failed to open metal library with error: %s
+Compiler deserialization error, could not deserialize array length.
+Compiler deserialization error, tried to deserialize %zu out of %u strings, but ran out of data, or into an empty string.
+Current string list: %s
+Error: Cannot create compiler
+Misuse of Internal Scheduler. No available compiler found. This indicates a major error.
+Internal Metal Compiler Scheduler Error (LogRequest)
+MTLCompilerService: log replay resulted in %u error
+MTLCompiler: could not save replay log because compiler service was unreachable
+MTLCompiler: Compiler encountered XPC_ERROR_CONNECTION_INVALID: %s (is the OS shutting down?)
+MTLCompiler: failed to ping the compiler service %u times over %f ms
+compiling shader
+MTLCompiler: Compilation failed with XPC_ERROR_CONNECTION_INTERRUPTED on %d try
+MTLCompiler: Compilation failed with XPC_ERROR_CONNECTION_INVALID on %d try: %s (is the OS shutting down?)
+%s, line %u: %s '%s'
+
+%s: failed to allocate shmem to grow commandBuffer {commandBufferID: 0x%llx, segmentCount: %u, reserved:%u}, 0x%x bytes failed to be allocated
+%s: failed to allocate pooled resource at dbClass: %d
+%s: failed to allocate shmem for the segmentList {commandBufferID: 0x%llx, segmentCount: %u, reserved:%u}
+%s: failed to allocate shmem for the segmentList, segmentListHeader is null
+MTLResourceListRebuild() failed.  Hash limit reached
+%s Failed to allocate Commit Feedback object
+Failed to create constant hash for function.
+Metal Compiling Shader
+Request %llu: Connection %llu is no longer alive. Latest invalidation reason: %{public}s.
+MTLCompiler: Compilation failed with XPC_ERROR_CONNECTION_TERMINATION_IMMINENT on %d try. This indicates that the process was likely terminated by the OS (e.g., jetsam or shutdown).
+MTLCompiler: Compilation failed with XPC_ERROR_CONNECTION_INVALID on %d try. Check the connection state and ensure it is initialized correctly. Latest invalidation reason: %{public}s.
+MTLCompiler: Compilation failed with XPC_ERROR_CONNECTION_INTERRUPTED on %d try. This error suggests an unexpected interruption in the connection. Possible reasons: a crash in the compiler service, termination by the OS due to resource constraints (e.g., jetsam), a timeout in the service, or an issue with IPC. Verify system stability and check the logs for more details.
+MTLCompiler: Compilation failed with XPC_ERROR_CONNECTION_UNKNOWN on %d try. Possible reasons: a crash in the compiler service, termination by the OS due to resource constraints (e.g., jetsam), a timeout in the service, or an issue with IPC. Verify system stability and check the logs for more details.
+Compiling Shader
+MTLCompiler: Failed to load compiler plugin at %s
+Execution of the command buffer was aborted due to an error during execution. %{public}s
+Command queue creation delayed, queues are being created too quickly.
+UHâÂHÖˇt«
+HÖˆt«	
+HÖ“t«F
+HçHˆ¸ˇ]√UHâÂAWAVSHÉÏIâ˛HãGHHãÄÄ
+HãOP1“H;ÅÄ
+HâÛí¬ãG¡ËÉ‡1–HãD«HHãÄÄ
+HãO@HâA1¿Lç}–IâGfA«G
+IâI«G
+Aã~æ
+Lâ˙1¿ËÄ#¯ˇÖ¿tËØ!¯ˇã
+É¯t›Î1¿1…â¬˜⁄…âHÉƒ[A^A_]√UHâÂAVSHâ˚H∫Ñ]Ë @
+ø
+Ë$¯ˇHÖ¿tEIâ∆«@~
+IâF I«ˇˇˇˇA«FˇˇˇˇËô#¯ˇAâF(ø
+Ëa&¯ˇAâFLâ31¿Î∏
+[A^]√UHâÂAVSIâˆHâ˚Hã8HÖˇÑÜ
+HÉ{`
+HãCHHãÄÄ
+HãKP1“H;ÅÄ
+í¬ãC¡ËÉ‡1–HãD√HMÖˆuLãpLâÒHã@xHˇ¿DãsLØL9ÒLGÒHãspËí#¯ˇLâspˆCu1ˆÎHãs8HâﬂË*
+â¡Ö¿uLâspãs1…HÖˆtLâ1“H˜ˆHâÉÄ
+â»[A^]√UHâÂAWAVSPIâˆHâ˚Dã∫
+A∫Ásã;HãspËi"¯ˇ∫
+Ö¿xnHãspDãLâ˜π
+E1…Ë˜"¯ˇHâC8HÉ¯ˇtEA∫ÁsHãspHâ«∫
+Ëì"¯ˇHãC8MÖˆt
+π
+L9u)HçHHâKHãKH»HÉ¿HâCP1…ÎH«C8
+Ë≠¯ˇãâ»HÉƒ[A^A_]√UHâÂ∏
+HÉ8
+uÉ∆âw$1¿]√UHâÂ∏
+ÖˆtHÉ8
+uâw1¿]√UHâÂHÖˇî¡HÖˆî¬∏
+ uãGâ1¿]√UHâÂAWAVAUATSHÉÏ«E‘ˇˇˇˇAº
+˜¬˛ø
+¸Ö4
+Hâ˚É?ˇÖ(
+AâœAâ÷IâıDsHçU¿Hâ˜DâˆË
+AâƒÖ¿Ö
+Iºÿbk"@
+Dâ
+ A∫ÊrIAâ∆øˇˇ
+ËdG˜ˇHâÉ»
+HÖ¿Ñ™
+Içî$›{5ø
+ËO!¯ˇHâÉ–
+HÖ¿ÑÉ
+DâÎ%ˇˇ˜ˇâE–âCLâÔËa#¯ˇHâC0ã{$æ0
+Lâ‚Ë!¯ˇHâÉà
+ã{$IæÇàR@
+IçñS~rkæ
+ËÓ ¯ˇHâÉê
+ã{$æ
+LâÚË◊ ¯ˇHâÉò
+Hããà
+HÖ…Ñ
+HÉ{0
+HÉªê
+î¬HÖ¿î¿–Ö‰
+Hç=±ˆˇHâADãu–EâıE∑ˇAÅÂ
+1¿AÅÊ
+E–Hçu¿HâﬂDâ˘IâÿË
+Ö¿Ö‹
+uHçu¿HçM‘HâﬂDâ˙Ë
+Ö¿Ö∏
+Dãm–AÅÂ
+HâﬂDâÓËõ
+Ö¿Öö
+LçCHçu¿Hâﬂ∫
+@Dâ˘Ë∏
+Ö¿u~EÖÌÖõ
+Hçu‘HâﬂËÎ˙ˇˇA	∆ÑÖ
+AâƒÖ¿uÈ
+DâsAº
+HâﬂËı
+t	Hã}»Ëœ¯ˇDâ‡HÉƒ[A\A]A^A_]√Hçu¿HçM‘HâﬂDâ˙ËJ
+Ö¿tAâƒÎªDãu–A∫ÊÉÂ˛ˇˇAº#
+Ö’˛ˇˇÎöEÖˆÖõ
+ãsDãs$ø
+∫ı<MË-¯ˇHâCXHÖ¿ÑhˇˇˇAk∆=à
+Hcø
+∫vå≥≥Ë¯ˇAº
+HÖ¿ÑDˇˇˇHçàà
+HâHXãK$HçIH¡‚H¬HÅ¬à
+HâPhHç HâP`HçäHâHpHâX Hããà
+HâHP«@|
+HâChE1‰Èˆ˛ˇˇUHâÂAWAVSPIâ÷Aâ˜Hâ˚A˜◊«B
+Ëƒ ¯ˇAâA˜«
+uIâ^Î,É¿
+Hc¯æfÌ‹SËb¯ˇIâFHÖ¿t A«F
+Hâ«HâﬁËt ¯ˇ1¿HÉƒ[A^A_]√∏
+ÎÓUHâÂAWAVAUATSHÉÏ(IâŒâ—Hâ˚Hã˜R0Hã
+HâE–Lç∫
+Mâ¯Ë∏
+Ö¿t$AâƒÉ¯Ö„
+ˆCÑ”
+E1‰ÈÀ
+ˆC u#Hçª†
+Hç5È.˜ˇËE¯ˇÖ¿tAâƒÈ¶
+ÄKH∏
+Lçm∏IâEI«E
+I«E
+Aã?æ
+LâÍ1¿ËÖ¯ˇAº
+Ö¿tKËÆ¯ˇã
+É¯tÿÖ¿t;Lçm∏fA«E
+Aã?E1‰æ	
+LâÍ1¿ËK¯ˇÖ¿tËz¯ˇDã AÉ¸tŸEÖ‰Ö
+Eâ&Aã?1ˆ∫
+ËÍ¯ˇHÉ¯ˇÑı
+DãcAˇÃI¡‰IÅƒ
+L9‡}AÉ>
+~Aã?LâÊËd¯ˇÖ¿tÈƒ
+ˇˇˇ?
+H¡H¡Èˇ¡âKIâƒEã1ˇLâÊ∫
+E1…Ë÷¯ˇHÉ¯ˇÑá
+HâC@AÉ>
+W¿@H@8@(@HãC@Ä∞
+Ä†
+Äê
+ÄÄ
+Hç}∏Ë¯ˇÖ¿Öè˛ˇˇHç}∏æ
+ËÚ¯ˇÖ¿uHã{@HÉ«Hçu∏Ëø¯ˇÖ¿t}AâƒHç}∏Ë¡¯ˇÎËR¯ˇDã HãıR0Hã
+H;E–Ö¨
+Dâ‡HÉƒ([A\A]A^A_]√Aº∑áˇˇÅ8ﬁ¿ÔæuÃAº∂áˇˇÅx†).uΩË¯ˇDã IÉ¸#wØH∏ 
+L£‡Ç»˝ˇˇÎôHã{@HÉÔÄLçu∏LâˆË*¯ˇAâƒLâ˜Ë1¯ˇEÖ‰ÖqˇˇˇHãC@«
+ﬁ¿ÔæHãC@«@†).HãC@H«@
+HãC@«@
+Èm˝ˇˇËú¯ˇUHâÂAWAVAUATSPLâ√AâÃAâ◊IâıIâ˛É~
+t4Ic}
+I}1¿AÅˇ
+î¿AãN¡‡HçØJh1H¬¡ÈÉ·Hã4Ë¯ˇIã}Dâ˛ÅÊ
+@A∑‘E1‰1¿Ëﬁ¯ˇAâ≈É¯ˇt,AÅˇ
+
+u+AãFA;Fr!E1‰DâÔæ0
+1¿ËÆ¯ˇÎËﬂ¯ˇDã Dâ+Dâ‡HÉƒ[A\A]A^A_]√UHâÂAWAVAUATSHÅÏ8
+AâˆHâ˚Hã`ÛR0Hã
+HâE–ãGâÖ4ˇˇˇAµE1ˇLç•8ˇˇˇã;Icœ∫ò
+LâÊËm¯ˇ=ò
+ˆÖBˇˇˇπ∑áˇˇÑ™
+ÅΩHˇˇˇﬁ¿ÔæÖö
+ÉΩLˇˇˇÖÅ
+EÖˇtHãE»Hãç(ˇˇˇEÖˆt8H9»s∫à
+HçΩ®˛ˇˇHçµHˇˇˇË·¯ˇãÖ¿˛ˇˇA«Aˆ≈AΩ
+ÖiˇˇˇÎ&H9»w»ÎﬁA	«t/π∑áˇˇÖ¿y+Ë÷¯ˇãÖ…u ãÖ¿˛ˇˇâCHãKp≤Èµ
+π∂áˇˇÎπ
+É˘Ö_
+ãK∏
+9¡B¡âCW¿Ö ˇˇˇÖˇˇˇÖ
+ˇˇˇÖ˛ˇˇÖ‡˛ˇˇÖ–˛ˇˇÖ¿˛ˇˇÖ∞˛ˇˇHπﬁ¿Ôæ
+Hâç®˛ˇˇHãKpâÖ¿˛ˇˇH«Ö ˇˇˇ
+ãSÉ fâïƒ˛ˇˇH«¬ˇˇˇˇHâïË˛ˇˇHâïˇˇˇH«Ö∏˛ˇˇ
+1“HÖ…uHãç∏˛ˇˇHâKpHãµ ˇˇˇHˇ∆â¿HØ∆H9¡sHâCpHâ¡Hâç∏˛ˇˇÑ“tˆÖ4ˇˇˇt%Hãµ∞˛ˇˇÎˆÖ4ˇˇˇuXHçµ®˛ˇˇHâﬂËÜ
+Ö¿uX1ˆHâﬂËDıˇˇÖ¿uJãsçFâ¡¡Èˇ…âãÿ
+¡ËçE˛ˇˇˇâÉ‹
+HãCp1…1“H˜ˆHâÉÄ
+ÎHãµ∞˛ˇˇHâﬂË˙ÙˇˇÖ¿t&â¡Hã˚R0Hã
+H;E–u0â»HÅƒ8
+[A\A]A^A_]√HãC8Hçµ®˛ˇˇHâFHâﬂËÌ
+ÈpˇˇˇË¯ˇˆG ÑZ
+UHâÂAWAVSPHâ˚Hãøà
+HÖˇtBLcs$IÉ˛|3Oç<vIˇ∆I¡ÁIÉ«ÿHãÉà
+Jã<8Ëù¯ˇIˇŒIÉ«–IÉ˛w„Hãªà
+ËÑ¯ˇHã{XË{¯ˇHãªò
+Ëo¯ˇHãªê
+Ëc¯ˇHã{0ËZ¯ˇHãª–
+ËN¯ˇHã{hËE¯ˇHãª»
+Ë5=˜ˇˆCtHãª†
+Ëã¯ˇHã{8HÖˇt	HãspË)¯ˇã{ÉˇˇtËö¯ˇã;ÉˇˇtËé¯ˇHÉ{@
+tUËh¯ˇHcKHÖ…~.HçQH¡·HÅ¡à
+Hãs@ã<9«u«
+Hˇ HÉ¡¿HÉ˙w·Hã{@ãsˇŒH¡ÊHÅ∆
+Ë¥¯ˇã{ÉˇˇtË%¯ˇÄcœHÉƒ[A^A_]√HÖˇt<UHâÂSPHâ˚Hãª¿
+HÖˇtHãHâÉ¿
+Ë[¯ˇÎ„HâﬂËh˛ˇˇHâﬂHÉƒ[]ÈC¯ˇ√UHâÂAWAVAUATSHÅÏ®
+Aâ˜Hâ˚HãıÓR0Hã
+HâE–ˆ¬ÖÖ
+ˇˇˇH«
+Hâﬂ1ˆ∫
+Ë´ˆˇAâ≈Ö¿Ö'
+E1‰HÉ{@
+ˇˇˇLâ˜æ
+ËŒÆˆˇLãc@IÉÏÄLâÁË-¯ˇAâ≈Ö¿Öﬁ
+Lâ˜ËßˆˇÖ¿Ñ®
+Aâ≈LâÁË¯ˇÈæ
+W¿LçµˇˇˇA)Ü†
+A)Üê
+A)ÜÄ
+A)FpA)F`A)FPA)F@A)F0A)F A)FA)A)F1¿IâÜ∞
+HâÖ˛ˇˇLâ˜1ˆËî¯ˇAâ≈Ö¿ÖW
+Lç•PˇˇˇLâÁ1ˆË6¯ˇÖ¿tQAâ≈Lâ˜Ëc¯ˇÈ2
+DãkLãs8EÌLâ≠¯˛ˇˇt%DâˇLâˆLâÍË>¯ˇHÖ¿àŸ
+I∆I)≈u€E1ÌÈ”
+ãsHçΩ0˝ˇˇ∫
+πj¨¢ˆËr¯ˇÖ¿tAâ≈Èï
+Lã≠0˝ˇˇLç•
+ˇˇˇMâ¨$Ä
+LâÔËO¯ˇIÅ≈
+Mâ¨$à
+I«Ñ$∞
+Iâ$Eâº$∏
+Hç
+HçΩÿ˛ˇˇ1ˆLâ·Lç•PˇˇˇËe¯ˇAâ≈Ö¿Ö!
+Hçç˛ˇˇHâﬂ1ˆ∫
+Ë'©ˆˇÖ¿Ñˇ
+LãΩ˛ˇˇÈ 
+Ë¯ˇDã(ÎAΩ
+MÖ‰tLâÁËO¯ˇEÖÌt5HãΩ
+ˇˇˇË®ØˆˇHãèÏR0Hã
+H;E–Ö‡
+DâËHÅƒ®
+[A\A]A^A_]√HãÖ
+ˇˇˇLã`ã;ã[Hçµ0˝ˇˇË≈¯ˇÖ¿tËé¯ˇDã(EÖÌuûE1‰ÎLØ„HãÖê˝ˇˇI9ƒLC‡E1ÌL+•¯˛ˇˇÑwˇˇˇª
+@I9‹∫
+@IB‘DâˇLâˆËï¯ˇHÖ¿xtI∆I)ƒu⁄ÈGˇˇˇË*¯ˇDã(È:ˇˇˇAΩ
+È/ˇˇˇLã}ÄãsˆLâˇË–¯ˇI«
+fAâG
+IçwHπﬁ¿Ôæ
+IâOHãKpIâO ãKAâO(∫
+Iâóà
+ã{ÉœfAâ,I«ƒˇˇˇˇMâgPMâßÄ
+Hã{HHãIâHã}ÄLç,Hç|HâWfâG˙∫à
+ËW¯ˇLãΩ˛ˇˇIãGXHãHXHâçË˛ˇˇL9·Ñ≥
+Lâ≠‡˛ˇˇE1‰HçΩ0˝ˇˇLâΩ¯˛ˇˇLâ˛1“1…Ë#µˆˇLçΩ∏˛ˇˇLç≠»˛ˇˇHçΩ0˝ˇˇLâ˛LâÍπ
+Ëm÷ˆˇÖ¿uHãÖ–˛ˇˇL ÎŸ=≤áˇˇÖô
+LãΩ¯˛ˇˇIãGXL`L`L`I˜‘MgLã≠‡˛ˇˇMâ•à
+@0H@AEXAMhHã@PIâExMâ•Ä
+Î∑@4fAâE\fÖ¿tI«Öê
+ãC¿HçΩ
+ˇˇˇâá†
+LâHçµË˛ˇˇ1“Ë~	
+Ö¿tLç•PˇˇˇÎ%Lç•PˇˇˇLãΩ¯˛ˇˇÎ∏¿áˇˇL9•Ë˛ˇˇLç•PˇˇˇtâEƒHçΩ
+ˇˇˇæ
+HãΩÿ˛ˇˇ1ˆË\¯ˇAâ≈LâˇËﬂ¨ˆˇHã}ÄË¯ˇLâÁË¯ˇLâ˜ËJ¯ˇEÖÌÖ˝ˇˇDãmƒÈ˝ˇˇËı¯ˇUHâÂ1“]È{˙ˇˇUHâÂAWAVATSHÉÏ Aâ÷HâIâˇæ
+wHçU»Hâ«ËΩÒˇˇÖ¿tâ√ÎhLçe»LçE‹LâˇLâÊ∫
+
+π∂
+Ë¸Ùˇˇâ√AÉ|$
+t	Hã}–ËY¯ˇÖ€u4Dãe‹LâˇDâÊDâÚË˙ˇˇâ√DâÁËÀ¯ˇÖ¿ò¿Ö€î¡ ¡Ä˘uË=¯ˇãâÿHÉƒ [A\A^A_]√UHâÂ1“]ÈIˇˇˇUHâÂ∏
+˜∆ˇˇÍ˛uÖ“t	wÎ˜÷!w1¿]√UHâÂHÖˇî¡HÖˆî¬∏
+ u∏@ˇ#Gâ1¿]√UHâÂHÖˇtHâ∑Ë
+1¿Î∏
+]√UHâÂHÖˇt	HãáË
+Î1¿]√UHâÂ1…HÖˇ∏
+E¡]√UHâÂHÖˇî¡HÖˆî¬∏
+ u	HãG0Hâ1¿]√UHâÂHÖˇî¡HÖˆî¬∏
+ uãâ1¿]√HÖˇî¿HÖˆî¡¡∏
+uNUHâÂHãGHHãÄÄ
+HãOP1“H;ÅÄ
+í¬ãGãO¡ËÉ‡1–HãD«Hâ∑HNâN@PF@`F1¿]√HÖˇî¿HÖˆî¡¡∏
+unUHâÂHãGHHãÄÄ
+HãOP1“H;ÅÄ
+í¬ãG¡ËÉ‡1–HãD«HHãHHâHãHxHâNHãÄÄ
+HâFHãGpHâFãGâF HãO@1¿∫
+HÖ…tãQâV$]√UHâÂAWAVSHÅÏx
+Hâ”âÚHÖ€î¡HÖˇ@î∆∏
+@ŒuqIâ˛;WxsiIãNpAâ◊B∂9ˆ¡tX∏¬áˇˇAˆF|uLˆ¡tHçΩ`˛ˇˇHççp¸ˇˇLâˆËﬁ∞ˆˇIãF IãNXKçH¡‚ã@â∑DâCDCDC1¿HÅƒx
+[A^A_]√UHâÂ∏ˇ
+]√UHâÂAWAVAUATSHÉÏXHâ”HãNÊR0Hã
+HâE–HÖˇî¡HÖˆî¬∏ˇˇˇˇ Ö
+IâLãg@MÖ‰ÑÃ
+Eãl$MÖÌÑÔ
+I˜›IÅƒ–
+E1ˆHç=ùﬁ¸ˇHç¢ﬁ¸ˇE1ˇ1¿IçOI¡ÁMÁLâ˛IâœÉ~¯
+uHÉ∆@Kç/Hˇ¡Iˇ«HÉ˘uÊÈô
+LâEàLãNIÉ˘ˇHD◊ãN¯Lãæ@
+Hç}ê1¿Ë®¯ˇAˆ∆uHç=Hﬁ¸ˇHâﬁˇUàÖ¿xoHç}êHâﬁˇUàÖ¿xaLâÈA∂L˘LãEàHç=ﬁ¸ˇHçﬁ¸ˇÖdˇˇˇÎ>HãKÂR0Hã
+H;E–uMHç=…›¸ˇHâﬁHÉƒX[A\A]A^A_]Aˇ‡Aˆ∆uHç=Û›¸ˇHâﬁAˇ–HãÂR0Hã	H;M–uHÉƒX[A\A]A^A_]√ËH	¯ˇUHâÂAWAVAUATSHÉÏ8HÖˇÑπ
+IâˆHâ˚HÖˆtA«
+Lãc@MÖ‰Ñ°
+Eãl$Aç}H¡ÁHæÇàR@
+Ëô¯ˇHÖ¿ÑÄ
+Iâ««
+MÖÌÑu
+MâÈLâu¿IÉƒLãS@IçÇ»
+HâE®E1ˆ«E‘
+Lâm»LâU∞Lâe∏LâH¡‡Eã¨»
+EÖÌÑ
+D;k(Ñ˝
+AãÖ¿t=1“â«Aâ¯A—ËBçˇ¡DâÓA+4èxÑ◊
+A˜–D«â Aâ¯Dâ«EÖ¿u“1“Öˆü¬—Îπ
+ˇ¿Aâ9»vâ¿â…AãTá¸AâáHˇ»H9»wÔâ¿Eâ,áHâﬂæ
+DâÍËª˜ˇÖ¿utLâÁIâ‹ËD¯ˇÖ¿Öº
+Lâ„LâÁæ
+DâÍËë˜ˇÖ¿DâÚHãM»E—9 s,â–)—H¡‡HE®Lãe∏ãu‘ãD9Íu«
+ˇ∆HÉ¿@ˇ…uÈÎLãe∏ãu‘âu‘LâÁË·¯ˇLãM»LãU∞Iˇ∆M9ŒÖ’˛ˇˇ1€Lãu¿Îª
+Î'1€Î#ª
+Î«E‘
+1€LâˇË&	¯ˇMÖˆtãE‘AââÿHÉƒ8[A\A]A^A_]√â√Î∑UHâÂAWAVAUATSPIâÙIâ˛Dãø
+∫7fÅ¸Lâ˛Ë®	¯ˇHÖ¿tlHâ√H«
+fAΩ
+fDâh
+Hçx∫à
+LâÊË¢	¯ˇJ«;
+fFâl;
+Jç<;HÉ«∫à
+LâÊË	¯ˇEˇAã>HâﬁLâ˙1…Ë"¯ˇÉ¯ˇuËå¯ˇÉ8t·ÎAæ
+Î%Ö¿x1…A9«Aæ
+DDÒÎËc¯ˇDã0HâﬂË>¯ˇDâHÉƒ[A\A]A^A_]√UHâÂAWAVAUATSHÉÏ(Hâ˚Hçu‘«
+E1ˆø
+1“Ëü
+¯ˇÖ¿tâÉƒ
+LçcLâÁË_
+¯ˇLç{PãÉ¿
+Ö¿uLâˇLâÊË
+
+¯ˇÎÈÉ¯Ñ“
+Lâe»Lâu¿EâıFã¥´†
+Nã§ÎÄ
+EÖˆ~aÉªƒ
+uXãª∏
+DâÚLâÊË˜
+¯ˇÖ¿xt6â¡Å·ˇˇˇIÃA)∆–Î/Ëà¯ˇã
+Ö¿t$É¯ uHç}‘HçuºË2
+¯ˇ∏ 
+Î∏
+Fã¥´®
+EÖˆtNã§Îê
+B«Ñ´®
+ÈtˇˇˇB«Ñ´†
+Lãu¿AÉˆˇã¿
+LâˇË0	¯ˇLãe»ÈˇˇˇLâÁËg	¯ˇ1¿HÉƒ([A\A]A^A_]√UHâÂAWAVAUATSHÅÏ
+Aâ÷HâÛIâˇHçΩÿ˝ˇˇæà
+Ëê¯ˇHã3HÉ˛ˇtNHçï ˛ˇˇf«B¯
+IãGHâB–π
+#H|âJ¸HçΩÿ˝ˇˇ1…Ë¯‡ˆˇÖ¿uHçΩÿ˝ˇˇ1ˆ∫
+Ë#˜ˇÖ¿tAâƒÎE1‰Dâ‡HÅƒ
+[A\A]A^A_]√Iã∑Ω˛ˇˇØxæVå§1Ë˜¯ˇHÖ¿tSDâu¥E1‰fÉΩ˛ˇˇ
+HâEòtIIããQE1ˆIâ≈Jã¥ı ˛ˇˇLâÔËÖ˜ˇNâ¨ı ˛ˇˇIããPI’Iˇ∆∑Ω˛ˇˇI9˛r–ÎAº
+Èpˇˇˇ1ˇIâ≈fÉΩ˛ˇˇ
+Ñz
+Aãáº
+âE‘∑œHãÑÕ ˛ˇˇHâE»∑PÉ¬Aâ÷A—Ó∑p
+@ˆ∆Ö›
+∑îM ˇˇˇˇ¬fâîM ˇˇˇ∑ A9ŒÜ(
+∑LHã∑tH¡Ê H	÷Lçµÿ˝ˇˇLâ˜HçU»1…Ë∑ﬂˆˇÖ¿ÖÙ
+Û~Ö˛ˇˇfv…f˘¡f≈¯f~Ö˛ˇˇf«Ñ} ˇˇˇ
+Lãe»AˆD$
+tAHãº˝ ˛ˇˇIããPLâÊËy˜ˇ∑Ö˛ˇˇ∑ÑE ˇˇˇA∑DDAãA∑tH¡Ê H	ŒÈvˇˇˇLâ§˝ ˛ˇˇf~¡fÖ…Ö˛˛ˇˇÈ~
+@ˆ∆ Ö_
+É}¥áU
+É˙ÇL
+AÉ˛AÉ÷
+E1‰Hãu»B∑DfHç∑D®ÖÃ
+®Ñ
+L9Ót*∑Ö˛ˇˇLâ¨≈ ˛ˇˇIããPLâÔË«˜ˇLâm»C∑TeLÍLâe∏∑BÛoDÛoLT()UÄfçpˇˇˇfÖ`ˇˇˇãE‘Aâáº
+HâU¿∑RÉ‚LâˇHçuàË¸¸ˇˇÖ¿Öñ
+Aãáº
+âE‘HãM¿∑AHÉ¡foÖ`ˇˇˇfoçpˇˇˇ(UÄT ÛLÛÈJ
+L9Ót*∑Ö˛ˇˇLâ¨≈ ˛ˇˇIããPLâÔË˜ˇLâm»C∑TeLÍLâe∏∑BHãtIãè∞
+HâLHçΩÿ˝ˇˇHçï`ˇˇˇ1…Ëµ›ˆˇÖ¿ÖÚ
+HcM‘AãÑè†
+|*Lâˇæ
+Ö¿Ö 
+Aãáº
+âE‘Hc»AãÑè†
+HâM¿IãåœÄ
+HâM®HòHâE†Hç<Lã•`ˇˇˇIããPLâÊËÆ¯ˇHãU¿Iãá∞
+HãM†Hãu®HâAãL$H¡Iâè∞
+IããHAåó†
+AãL$É˘r;ˇ…ØHAâåó®
+ã@IƒMâ§◊ê
+Lâˇæ
+Ö¿Ö
+Aãáº
+âE‘Lãe∏IˇƒM9ÊÖø˝ˇˇLcu‘CãÑ∑†
+|*Lâˇæ
+Ö¿Ö’
+Aãáº
+âE‘LcCãÑ∑†
+Kãå˜Ä
+HâM¿HòHâE∏Lç$Hãu»IããPLâÁËf˜ˇIãá∞
+HçHIâè∞
+HãM∏HãU¿Hâ
+Iãã@CÑ∑†
+∑Ω˛ˇˇHÖˇtqçOˇHãîÕ ˛ˇˇ∑åM ˇˇˇ∑LJA∑4$fâ4
+A∑t$fât
+A∑t$fât
+∑ç˛ˇˇE1‰fÖ…tfˇ…fâç˛ˇˇt+ˇœfâΩ˛ˇˇÈì˚ˇˇAâƒHã}òË,¯ˇÈ’˙ˇˇIã$HâE1‰ÎÊÄ•˛ˇˇ˛Î›UHâÂAWAVATSAâˆHâ˚LçLâˇËk¯ˇD≥¿
+LçcPLâÁË¯ˇˆÉ¿
+tLâÁLâ˛Ë¯ˇÎÍLâˇË@¯ˇAÉÊD3≥º
+Dâ≥º
+Ic∆«ÑÉ†
+[A\A^A_]√

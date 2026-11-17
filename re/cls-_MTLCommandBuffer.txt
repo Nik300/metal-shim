@@ -1,0 +1,199 @@
+## _MTLCommandBuffer size=704
+  ivar   24 _currentCommandEncoder @"<MTLCommandEncoder>"
+  ivar   32 _queue @"_MTLCommandQueue<MTLCommandQueue>"
+  ivar   40 _scheduledDispatchList ^{MTLDispatch=^{MTLDispatch}@?}
+  ivar   48 _scheduledDispatchListTail ^{MTLDispatch=^{MTLDispatch}@?}
+  ivar   56 _completedDispatchList ^{MTLDispatch=^{MTLDispatch}@?}
+  ivar   64 _completedDispatchListTail ^{MTLDispatch=^{MTLDispatch}@?}
+  ivar   72 _syncDispatchList ^{MTLSyncDispatch=^{MTLSyncDispatch}@?}
+  ivar   80 _syncDispatchListTail ^{MTLSyncDispatch=^{MTLSyncDispatch}@?}
+  ivar   88 _mutex {_opaque_pthread_mutex_t="__sig"q"__opaque"[56c]}
+  ivar  152 _completedCond {_opaque_pthread_cond_t="__sig"q"__opaque"[40c]}
+  ivar  200 _scheduledCond {_opaque_pthread_cond_t="__sig"q"__opaque"[40c]}
+  ivar  248 _creationTime Q
+  ivar  256 _enqueueTime Q
+  ivar  264 _commitTime Q
+  ivar  272 _submitToKernelTime Q
+  ivar  280 _submitToHardwareTime Q
+  ivar  288 _completionInterruptTime Q
+  ivar  296 _completionHandlerEnqueueTime Q
+  ivar  304 _completionHandlerExecutionTime Q
+  ivar  312 _status Q
+  ivar  320 _error @"NSError"
+  ivar  328 _skipRender B
+  ivar  329 _profilingEnabled B
+  ivar  330 _scheduledCallbacksDone B
+  ivar  331 _completedCallbacksDone B
+  ivar  332 _strongObjectReferences c
+  ivar  336 _profilingResults @"NSDictionary"
+  ivar  344 _retainedReferences c
+  ivar  345 _synchronousDebugMode c
+  ivar  352 _userDictionary @"NSMutableDictionary"
+  ivar  360 _kernelStartTime Q
+  ivar  368 _kernelEndTime Q
+  ivar  376 _gpuStartTime Q
+  ivar  384 _gpuEndTime Q
+  ivar  392 _numEncoders Q
+  ivar  400 _numThisCommandBuffer Q
+  ivar  408 _listIndex Q
+  ivar  416 _numRequestedCounters Q
+  ivar  424 _numInternalSampleCounters Q
+  ivar  432 _statCommandBuffer @"_MTLCommandBuffer<MTLCommandBuffer>"
+  ivar  440 _sampleLock {os_unfair_lock_s="_os_unfair_lock_opaque"I}
+  ivar  444 _ownedByParallelEncoder c
+  ivar  445 _wakeOnCommit c
+  ivar  448 _retainedObjects @"NSMutableArray"
+  ivar  456 _needsCommandBufferSemaphoreSignal c
+  ivar  464 _globalTraceObjectID Q
+  ivar  472 _privateData @"<MTLBuffer>"
+  ivar  480 _privateDataOffset Q
+  ivar  488 _privateLoggingBuffer @"<MTLBuffer>"
+  ivar  496 _logState @"<MTLLogState>"
+  ivar  504 _labelTraceID Q
+  ivar  512 _StatEnabled c
+  ivar  520 _perfSampleHandlerBlock @?
+  ivar  528 _StatOptions Q
+  ivar  536 _StatLocations Q
+  ivar  544 _samplesPerStorageBlock Q
+  ivar  552 _totalNumStatSamples Q
+  ivar  560 _sampleStorage @"NSMutableArray"
+  ivar  568 _samples ^{MTLStatSampleRec=^vQ[0Q]}
+  ivar  576 _currentSample ^{MTLStatSampleRec=^vQ[0Q]}
+  ivar  584 _internalCounterSampleSize Q
+  ivar  592 _hasPresent B
+  ivar  600 _progressBuffer @"<MTLBuffer>"
+  ivar  608 _progressOffset I
+  ivar  612 _creatingProgressEncoder B
+  ivar  613 _needsFrameworkAssistedErrorTracking B
+  ivar  616 _encoderInfos @"NSMutableArray"
+  ivar  624 _sharedIndirectionTable c
+  ivar  632 _deadlineProfile @"<MTLDeadlineProfile>"
+  ivar  640 _logs @"NSArray"
+  ivar  648 _numPresentWaits Q
+  ivar  656 _requiresBindingLogState B
+  ivar  657 _didComplete c
+  ivar  664 _swiftConcurrencyScheduledWaiters ^{MTLDispatch=^{MTLDispatch}@?}
+  ivar  672 _swiftConcurrencyScheduledWaitersTail ^{MTLDispatch=^{MTLDispatch}@?}
+  ivar  680 _swiftConcurrencyCompletedWaiters ^{MTLDispatch=^{MTLDispatch}@?}
+  ivar  688 _swiftConcurrencyCompletedWaitersTail ^{MTLDispatch=^{MTLDispatch}@?}
+  ivar  696 _errorOptions Q
+  +initialize  v16@0:8
+  -dealloc  v16@0:8
+  -description  @16@0:8
+  -error  @16@0:8
+  -GPUStartTime  d16@0:8
+  -addSynchronizationNotification:  v24@0:8@?16
+  -deadlineProfile  @16@0:8
+  -setPrivateData:  v24@0:8@16
+  -setStatOptions:  v24@0:8Q16
+  -useInternalResidencySets:count:  v32@0:8r^@16Q24
+  -GPUEndTime  d16@0:8
+  -enqueue  v16@0:8
+  -kernelStartTime  d16@0:8
+  -pushDebugGroup:  v24@0:8@16
+  -setStatEnabled:  v20@0:8c16
+  -__waitUntilCompletedAsync:  v24@0:8@?16
+  -__waitUntilScheduledAsync:  v24@0:8@?16
+  -accelerationStructureCommandEncoder  @16@0:8
+  -accelerationStructureCommandEncoderWithDescriptor:  @24@0:8@16
+  -addCompletedHandler:  v24@0:8@?16
+  -addScheduledHandler:  v24@0:8@?16
+  -blitCommandEncoderWithDescriptor:  @24@0:8@16
+  -commandQueue  @16@0:8
+  -commit  v16@0:8
+  -commitAndHold  v16@0:8
+  -commitAndWaitUntilSubmitted  c16@0:8
+  -commitAndWaitUntilSubmittedWithDeadline:  c24@0:8Q16
+  -commitWithDeadline:  v24@0:8Q16
+  -computeCommandEncoderWithDescriptor:  @24@0:8@16
+  -computeCommandEncoderWithDispatchType:  @24@0:8Q16
+  -configWithCommandBufferDescriptor:  v24@0:8@16
+  -debugBufferContentsWithLength:  ^v24@0:8^Q16
+  -encodeConditionalAbortEvent:  v24@0:8@16
+  -encodeDashboardFinalizeForResourceGroup:dashboard:value:forIndex:  v48@0:8@16Q24Q32Q40
+  -encodeDashboardFinalizeForResourceGroup:dashboard:values:indices:count:  v56@0:8@16Q24r^Q32r^Q40Q48
+  -encodeDashboardTagForResourceGroup:  v24@0:8@16
+  -encodeSignalEvent:value:agentMask:  v40@0:8@16Q24Q32
+  -errorOptions  Q16@0:8
+  -executeSynchronizationNotifications:  v20@0:8i16
+  -executeSynchronizationNotifications:scope:resources:count:  v44@0:8i16Q20r^@28Q36
+  -formattedDescription:  @24@0:8Q16
+  -getListIndex  Q16@0:8
+  -getStatLocations  Q16@0:8
+  -getStatOptions  Q16@0:8
+  -globalTraceObjectID  Q16@0:8
+  -isCommitted  c16@0:8
+  -isProfilingEnabled  c16@0:8
+  -isStatEnabled  c16@0:8
+  -kernelEndTime  d16@0:8
+  -logs  @16@0:8
+  -popDebugGroup  v16@0:8
+  -presentDrawable:  v24@0:8@16
+  -presentDrawable:afterMinimumDuration:  v32@0:8@16d24
+  -presentDrawable:atTime:  v32@0:8@16d24
+  -presentDrawable:options:  v32@0:8@16@24
+  -privateData  @16@0:8
+  -privateDataOffset  Q16@0:8
+  -privateLoggingBuffer  @16@0:8
+  -profilingResults  @16@0:8
+  -resourceStateCommandEncoderWithDescriptor:  @24@0:8@16
+  -retainedReferences  c16@0:8
+  -sampledAccelerationStructureCommandEncoder:capacity:  @32@0:8^(?={?=b8b24IQQ}{?=b8b24IQQ})16Q24
+  -sampledAccelerationStructureCommandEncoderWithDescriptor:programInfoBuffer:capacity:  @40@0:8@16^(?={?=b8b24IQQ}{?=b8b24IQQ})24Q32
+  -sampledBlitCommandEncoder:capacity:  @32@0:8^(?={?=b8b24IQQ}{?=b8b24IQQ})16Q24
+  -sampledBlitCommandEncoderWithDescriptor:programInfoBuffer:capacity:  @40@0:8@16^(?={?=b8b24IQQ}{?=b8b24IQQ})24Q32
+  -sampledComputeCommandEncoderWithDescriptor:programInfoBuffer:capacity:  @40@0:8@16^(?={?=b8b24IQQ}{?=b8b24IQQ})24Q32
+  -sampledComputeCommandEncoderWithDispatchType:programInfoBuffer:capacity:  @40@0:8Q16^(?={?=b8b24IQQ}{?=b8b24IQQ})24Q32
+  -sampledComputeCommandEncoderWithProgramInfoBuffer:capacity:  @32@0:8^(?={?=b8b24IQQ}{?=b8b24IQQ})16Q24
+  -sampledRenderCommandEncoderWithDescriptor:programInfoBuffer:capacity:  @40@0:8@16^(?={?=b8b24IQQ}{?=b8b24IQQ})24Q32
+  -setLogs:  v24@0:8@16
+  -setPrivateDataOffset:  v24@0:8Q16
+  -setPrivateLoggingBuffer:  v24@0:8@16
+  -setProfilingEnabled:  v20@0:8c16
+  -setResponsibleTaskIDs:count:  v28@0:8r^I16I24
+  -setSharedIndirectionTable:  v20@0:8c16
+  -setStatLocations:  v24@0:8Q16
+  -sharedIndirectionTable  c16@0:8
+  -skipRender  c16@0:8
+  -status  Q16@0:8
+  -useInternalResidencySet:  v24@0:8@16
+  -useResidencySet:  v24@0:8@16
+  -useResidencySets:count:  v32@0:8r^@16Q24
+  -userDictionary  @16@0:8
+  -waitUntilCompleted  v16@0:8
+  -waitUntilScheduled  v16@0:8
+  -setNumEncoders:  v24@0:8Q16
+  -_addRetainedObject:  v24@0:8@16
+  -bindLogState  v16@0:8
+  -commitAndReset  v16@0:8
+  -didCompleteWithStartTime:endTime:error:  v40@0:8Q16Q24@32
+  -didSchedule:error:  v32@0:8Q16@24
+  -didScheduleWithStartTime:endTime:error:  v40@0:8Q16Q24@32
+  -getAndIncrementNumEncoders  Q16@0:8
+  -getDriverEncoderInfoData:  v24@0:8@16
+  -initProgressTracking  v16@0:8
+  -initWithQueue:retainedReferences:  @28@0:8@16c24
+  -initWithQueue:retainedReferences:synchronousDebugMode:  @32@0:8@16c24c28
+  -internalCounterSampleSize  Q16@0:8
+  -kernelSubmitTime  v16@0:8
+  -newSample  ^{MTLStatSampleRec=^vQ[0Q]}16@0:8
+  -numEncoders  Q16@0:8
+  -numThisCommandBuffer  Q16@0:8
+  -ownedByParallelEncoder  c16@0:8
+  -postProcessCommandbuffer  v16@0:8
+  -postProcessSamples:toUserDst:numSamples:  v40@0:8^{MTLStatSampleRec=^vQ[0Q]}16^Q24Q32
+  -processEncoderInfos  v16@0:8
+  -progressTrackingBlitCommandEncoder  @16@0:8
+  -progressTrackingComputeCommandEncoder  @16@0:8
+  -progressTrackingRenderCommandEncoder  @16@0:8
+  -runPerfCounterCallbackWithBlock:  v24@0:8@?16
+  -setCommitted:  v20@0:8c16
+  -setCurrentCommandEncoder:  v24@0:8@16
+  -setErrorOptions:  v24@0:8Q16
+  -setInternalCounterSampleSize:  v24@0:8Q16
+  -setNumThisCommandBuffer:  v24@0:8Q16
+  -setOwnedByParallelEncoder:  v20@0:8c16
+  -setStatCommandBuffer:  v24@0:8@16
+  -signalCommandBufferAvailable  v16@0:8
+  -statCommandBuffer  @16@0:8
+  -synchronousDebugMode  c16@0:8

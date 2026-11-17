@@ -1,0 +1,18 @@
+## _MTLSamplerState size=48
+  ivar    8 _device @"<MTLDevice>"
+  ivar   16 _label @"NSString"
+  ivar   24 _pixelFormat Q
+  ivar   32 _resourceIndex Q
+  ivar   40 _gpuAddress Q
+  -dealloc  v16@0:8
+  -description  @16@0:8
+  -label  @16@0:8
+  -uniqueIdentifier  Q16@0:8
+  -device  @16@0:8
+  -formattedDescription:  @24@0:8Q16
+  -gpuAddress  Q16@0:8
+  -gpuHandle  Q16@0:8
+  -gpuResourceID  {MTLResourceID=Q}16@0:8
+  -pixelFormat  Q16@0:8
+  -resourceIndex  Q16@0:8
+  -initWithDevice:samplerDescriptor:  @32@0:8@16@24

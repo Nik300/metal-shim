@@ -1,0 +1,16 @@
+## _MTLDepthStencilState size=24
+  ivar    8 _device @"<MTLDevice>"
+  ivar   16 _label @"NSString"
+  -dealloc  v16@0:8
+  -description  @16@0:8
+  -label  @16@0:8
+  -uniqueIdentifier  Q16@0:8
+  -device  @16@0:8
+  -formattedDescription:  @24@0:8Q16
+  -gpuResourceID  {MTLResourceID=Q}16@0:8
+  -readsDepth  c16@0:8
+  -readsStencil  c16@0:8
+  -resourceIndex  Q16@0:8
+  -writesDepth  c16@0:8
+  -writesStencil  c16@0:8
+  -initWithDevice:depthStencilDescriptor:  @32@0:8@16@24

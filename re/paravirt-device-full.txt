@@ -1,0 +1,84 @@
+## AppleParavirtDevice size=54784
+  ivar 54424 _serializer @"PGSerializer"
+  ivar 54432 _descriptorHeaps @"NSMutableArray"
+  ivar 54440 _descriptor_heaps_lock {os_unfair_lock_s="_os_unfair_lock_opaque"I}
+  ivar 54448 _apvCompiler @"MTLCompiler"
+  ivar 54456 _objectRefAllocator @"AppleParavirtObjectRefAllocator"
+  ivar 54464 _deviceInfo {?="MSAASamples"(?="u"I"f"f)"D24S8Supported"(?="u"I"f"f)"MaxThreadsPerThreadgroupW"(?="u"I"f"f)"MaxThreadsPerThreadgroupH"(?="u"I"f"f)"MaxThreadsPerThreadgroupD"(?="u"I"f"f)"MaxThreadgroupMemoryLength"(?="u"I"f"f)"IsFramebufferReadSupported"(?="u"I"f"f)"IsRGB10A2GammaSupported"(?="u"I"f"f)"SupportsNativeHardwareFP16"(?="u"I"f"f)"DeserializerVersion"(?="u"I"f"f)"PrimtiveTypeSupport"(?="u"I"f"f)"SupportsMultiplaneTextures"(?="u"I"f"f)"LinearTextureAlignment"(?="u"I"f"f)"HeapBuffers"(?="u"I"f"f)"HeapBufferAlignment"(?="u"I"f"f)"HeapTextures"(?="u"I"f"f)"BufferFromIOSurface"(?="u"I"f"f)"MaxMetalShaderVersion"(?="u"I"f"f)"SupportsSharedTextures"(?="u"I"f"f)"MaxVertexAmplificationCount"(?="u"I"f"f)"SupportsProgrammableSamplePositions"(?="u"I"f"f)"RasterizationRateLayerCount"(?="u"I"f"f)"TileShaders"(?="u"I"f"f)"ImageBlocks"(?="u"I"f"f)"RasterOrderGroups"(?="u"I"f"f)"MemoryOrderAtomics"(?="u"I"f"f)"LargeMRT"(?="u"I"f"f)"SupportFlags2023"(?="value"I""{?="SupportsApple5"b1"SupportsDynamicAttributeStride"b1"SupportsTexture2DMultisampleArray"b1"Reserved"b29})"MaxTotalComputeThreadsPerThreadgroup"(?="u"I"f"f)"MaxComputeLocalMemorySizes"(?="u"I"f"f)"MaxComputeThreadgroupMemory"(?="u"I"f"f)"MaxComputeThreadgroupMemoryAlignmentBytes"(?="u"I"f"f)"SupportFlags2024"(?="value"I""{?="SupportsLargeUserTasks"b1"SupportsLargeKernelTasks"b1"SupportsCommandBufferJump"b1"SupportsRangeBuffer"b1"SupportsSharedMemoryHeap"b1"SupportsArgumentBuffers"b1"SupportsSIMDReduction"b1"SupportsFloat16BCubicFiltering"b1"SupportsSIMDShuffleAndFill"b1"SupportsConditionalLoadStore"b1"SupportsComputeCompressedTextureWrite"b1"SupportsSharedTexturePlacement"b1"Reserved"b20})"GpuCoreCount"(?="u"I"f"f)"MaxTextureLayers"(?="u"I"f"f)"MaxPredicatedNestingDepth"(?="u"I"f"f)"HostGPUFamilyClamped"(?="u"I"f"f)"ArgumentBuffersTier"(?="u"I"f"f)"ArgumentBuffersMaxSamplerCount"(?="u"I"f"f)"MinimumLinearTextureAlignment"(?="u"I"f"f)"SupportedTextureWriteRoundingModes"(?="u"I"f"f)"SupportFlags2025"(?="value"I""{?="SupportsIndirectCommandBuffers"b1"SupportsArgumentBuffers2025"b1"SupportsEnhancedRenderICBs"b1"Reserved"b29})"HostGPUFamilies"(?="value"I""{?="supportsFamily5"b1"supportsFamily6"b1"supportsFamily7"b1"supportsFamily8"b1"supportsFamily9"b1"supportsFamily9b"b1"supportsFamily10"b1"supportsFamily11"b1"reserved"b24})"MSAASamplesDefined"C"D24S8SupportedDefined"C"MaxThreadsPerThreadgroupWDefined"C"MaxThreadsPerThreadgroupHDefined"C"MaxThreadsPerThreadgroupDDefined"C"MaxThreadgroupMemoryLengthDefined"C"IsFramebufferReadSupportedDefined"C"IsRGB10A2GammaSupportedDefined"C"SupportsNativeHardwareFP16Defined"C"DeserializerVersionDefined"C"PrimtiveTypeSupportDefined"C"SupportsMultiplaneTexturesDefined"C"LinearTextureAlignmentDefined"C"HeapBuffersDefined"C"HeapBufferAlignmentDefined"C"HeapTexturesDefined"C"BufferFromIOSurfaceDefined"C"MaxMetalShaderVersionDefined"C"SupportsSharedTexturesDefined"C"MaxVertexAmplificationCountDefined"C"SupportsProgrammableSamplePositionsDefined"C"RasterizationRateLayerCountDefined"C"TileShadersDefined"C"ImageBlocksDefined"C"RasterOrderGroupsDefined"C"MemoryOrderAtomicsDefined"C"LargeMRTDefined"C"SupportFlags2023Defined"C"MaxTotalComputeThreadsPerThreadgroupDefined"C"MaxComputeLocalMemorySizesDefined"C"MaxComputeThreadgroupMemoryDefined"C"MaxComputeThreadgroupMemoryAlignmentBytesDefined"C"SupportFlags2024Defined"C"GpuCoreCountDefined"C"MaxTextureLayersDefined"C"MaxPredicatedNestingDepthDefined"C"HostGPUFamilyClampedDefined"C"ArgumentBuffersTierDefined"C"ArgumentBuffersMaxSamplerCountDefined"C"MinimumLinearTextureAlignmentDefined"C"SupportedTextureWriteRoundingModesDefined"C"SupportFlags2025Defined"C"HostGPUFamiliesDefined"C"MaxMetalShaderVersionMajor"I"MaxMetalShaderVersionMinor"I}
+  ivar 54688 _features {APVFeatures="valid"B"unsupported"B"objectTables"B"efiDisplay"B"displayDoorbell"B"mapperIOSurfaces"B"synchronizeAndDiscardResources"B"displayMapperSurface"B"discardResources"B"displaySleep"B"supportsRGhAPresents"B"synchronizeDiscardChildResources"B"dualPlaneTextures"B"displaySetProperties"B"displayDimensionFloats"B"metalHeaps"B"bufferFromIOSurface"B"maxFIFOCount"I"s8ByteCountForD32S8"I"supportsSharedTextures"B"supportsInfoEncoder"B"supportsDefaultRasterSampleCount"B"supportsVertexAmplification"B"supportsSunburstDisplay"B"supportsProgrammableSamplePositions"B"supportsVariableRasterizationRateMaps"B"supportsTileShadersImageBlocks"B"supportsDisplayCompositorParameters"B"supportsCmdExecIndirect3"B"supportsSwizzledTextures"B"supportsDynamicAttributeStride"B"supportsBlitEncoderSPI"B"supportsMultiplaneMippedBlitTextures"B"supportsComputePassDescriptorDispatchType"B"supportsObjectUniqueIdentifier"B"supportsCommandBufferJump"B"supportsSharedStorageHeaps"B"supportsHeapHazardTracking"B"supportsProtectionOptionsEnvelope"B"supportsInsertCompressedTextureReinterpretationFlush"B"supportsArgumentBuffers"B"supportsDisplaySetGuestICCProfile"B"supportsCorrect2pXR10A8"B"supportsCPUBuffers"B"supportsIndirectCommandBuffers"B"supportsProtectedTextureOptions"B"supportsDispatchThreadsIndirect"B"supportsInfoIndirect"B"supportsDisplayPortConnectionType"B"supportsTextureDescriptor2"B"supportsMultipleDisplays"B}
+  ivar 54748 magicMipmapSupported c
+  ivar 54752 doubleFPConfig Q
+  ivar 54760 singleFPConfig Q
+  ivar 54768 halfFPConfig Q
+  ivar 54776 featureProfile Q
+  -initWithAcceleratorPort:  @20@0:8I16
+  -setupCompiler  B16@0:8
+  -compiler  @16@0:8
+  -setupResourcePools  v16@0:8
+  -setupDeviceInfo  v16@0:8
+  -dealloc  v16@0:8
+  -heapBufferSizeAndAlignWithLength:options:  {?=QQ}32@0:8Q16Q24
+  -heapTextureSizeAndAlignWithDescriptor:  {?=QQ}24@0:8@16
+  -minimumTextureBufferAlignmentForPixelFormat:  Q24@0:8Q16
+  -newBufferWithBytes:length:options:  @40@0:8r^v16Q24Q32
+  -newBufferWithBytesNoCopy:length:options:deallocator:  @48@0:8^v16Q24Q32@?40
+  -newBufferWithLength:options:  @32@0:8Q16Q24
+  -newDepthStencilStateWithDescriptor:  @24@0:8@16
+  -newHeapWithDescriptor:  @24@0:8@16
+  -newSamplerStateWithDescriptor:  @24@0:8@16
+  -newTextureWithDescriptor:  @24@0:8@16
+  -newTextureWithDescriptor:iosurface:plane:  @40@0:8@16^{__IOSurface=}24Q32
+  -tileSizeWithTextureType:pixelFormat:sampleCount:  {?=QQQ}40@0:8Q16Q24Q32
+  -familyName  @16@0:8
+  -newIndirectCommandBufferWithDescriptor:maxCount:options:  @40@0:8@16Q24Q32
+  -newIndirectComputeCommandEncoderWithBuffer:  @24@0:8@16
+  -newIndirectRenderCommandEncoderWithBuffer:  @24@0:8@16
+  -productName  @16@0:8
+  -supportsSampleCount:  c24@0:8Q16
+  -vendorName  @16@0:8
+  -metalAssertionsEnabled  c16@0:8
+  -setMetalAssertionsEnabled:  v20@0:8c16
+  -featureProfile  Q16@0:8
+  -newCommandQueueWithDescriptor:  @24@0:8@16
+  -allocateDescriptorForTexture:heap:offset:  c40@0:8@16^@24^Q32
+  -newDescriptorBuffer:  @24@0:8Q16
+  -newVertexVariantWithCompilerOutput:pipelineStatisticsOutput:  @32@0:8@16@24
+  -newFragmentVariantWithCompilerOutput:pipelineStatisticsOutput:  @32@0:8@16@24
+  -newComputeVariantWithCompilerOutput:pipelineStatisticsOutput:  @32@0:8@16@24
+  -newRenderPipelineWithDescriptor:vertexVariant:fragmentVariant:errorMessage:  @48@0:8@16@24@32^@40
+  -newComputePipelineWithDescriptor:variant:errorMessage:  @40@0:8@16@24^@32
+  -llvmVersion  i16@0:8
+  -newFence  @16@0:8
+  -areProgrammableSamplePositionsSupported  c16@0:8
+  -releaseObjectRef:  v20@0:8I16
+  -isDepth24Stencil8PixelFormatSupported  c16@0:8
+  -maxThreadsPerThreadgroup  {?=QQQ}16@0:8
+  -maxThreadgroupMemoryLength  Q16@0:8
+  -supportsOpenGL  c16@0:8
+  -deviceInfo  r^{?=(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=I{?=b1b1b1b29})(?=If)(?=If)(?=If)(?=If)(?=I{?=b1b1b1b1b1b1b1b1b1b1b1b1b20})(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=If)(?=I{?=b1b1b1b29})(?=I{?=b1b1b1b1b1b1b1b1b24})CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCII}16@0:8
+  -features  r^{APVFeatures=BBBBBBBBBBBBBBBBBIIBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB}16@0:8
+  -supportsSharedTextureHandles  c16@0:8
+  -newSharedTextureWithDescriptor:  @24@0:8@16
+  -newSharedTextureWithHandle:  @24@0:8@16
+  -copyIOSurfaceSharedTextureProperties:  @24@0:8@16
+  -getSharedTextureAllocSize:  Q24@0:8@16
+  -newRenderPipelineStateWithTileDescriptor:options:completionHandler:  v40@0:8@16Q24@?32
+  -newRenderPipelineStateWithTileDescriptor:options:reflection:error:  @48@0:8@16Q24^@32^@40
+  -sparseTileSizeWithTextureType:pixelFormat:sampleCount:  {?=QQQ}40@0:8Q16Q24Q32
+  -sparseTileSizeWithTextureType:pixelFormat:sampleCount:sparsePageSize:  {?=QQQ}48@0:8Q16Q24Q32q40
+  -newVisibleFunctionTableWithDescriptor:  @24@0:8@16
+  -supportsDynamicLibraries  c16@0:8
+  -supportsStatefulDynamicLibraries  c16@0:8
+  -supportsRenderDynamicLibraries  c16@0:8
+  -supportsFunctionPointers  c16@0:8
+  -supportsFunctionPointersFromRender  c16@0:8
+  -supportsBinaryArchives  c16@0:8
+  -supportsArgumentBuffers  c16@0:8
+  -supportsResourceHeaps  c16@0:8
+  -supportsComputeCoalescing  c16@0:8
+  -supportsCorrectTextureUsageBits  c16@0:8
+  -doubleFPConfig  Q16@0:8
+  -singleFPConfig  Q16@0:8
+  -halfFPConfig  Q16@0:8
+  -isMagicMipmapSupported  c16@0:8
+  -serializer  @16@0:8
