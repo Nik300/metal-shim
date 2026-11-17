@@ -1,0 +1,21 @@
+#!/bin/sh
+# tsmtl – command-line front end of "TeraScale Metal.app".
+#   tsmtl            opens the app (also: tsmtl gui [--section gpu|log|apps|status])
+#   tsmtl <command>  runs the CLI (status, stats, log, apps, enable, disable, reset, remove, auto, help)
+APP=""
+REPO=$(cd "$(dirname "$0")/.." 2>/dev/null && pwd)   # gui/tsmtl run from the metal-shim folder
+for candidate in "/Applications/TeraScale Metal.app" "$REPO/build/TeraScale Metal.app"; do
+    if [ -x "$candidate/Contents/MacOS/TeraScaleMetal" ]; then APP=$candidate; break; fi
+done
+if [ -z "$APP" ]; then
+    echo "tsmtl: non trovo TeraScale Metal.app (né in /Applications né in $REPO/build)" >&2
+    exit 1
+fi
+if [ $# -eq 0 ] || [ "$1" = gui ]; then
+    [ $# -gt 0 ] && shift
+    if [ -n "${TSMTL_CONFIG_DIR:-}" ]; then
+        exec /usr/bin/open --env "TSMTL_CONFIG_DIR=$TSMTL_CONFIG_DIR" "$APP" --args "$@"
+    fi
+    exec /usr/bin/open "$APP" --args "$@"
+fi
+exec "$APP/Contents/MacOS/TeraScaleMetal" "$@"
