@@ -1,0 +1,67 @@
+# macOS
+.DS_Store
+
+# Build output (make, kext/build.sh, gui/build.sh, bench/build.sh)
+/build/
+*.dSYM/
+*.o
+
+# Compiled developer tools (built by the Makefile from tools/*.m, tools/*.swift)
+/tools/airtrans
+/tools/airdump
+/tools/mslbundle
+/tools/glassgen
+/tools/caglass
+/tools/rbglass
+/tools/cltrans
+/tools/winid
+/tools/sheet
+/tools/imgdiff
+/tools/mouse
+/tools/keys
+/tools/scroll
+
+# Reverse-engineering helpers (compiled from re/*.c, re/*.m)
+/re/dumpstr
+/re/introspect
+/re/introspect2
+/re/protocheck
+
+# Local app copies, profiles, per-app logs and benchmark state
+/apps/
+
+# Local safety copies and tarball snapshots
+/backups/
+/snapshots/
+
+# Raw captures (contact sheets in docs/findings-2026-10-31/*.png are tracked)
+/docs/findings-2026-10-31/b2/
+/docs/findings-2026-10-31/b3/
+
+# Experiments: sources are tracked, outputs (logs, captures, binaries, dumps) are not
+/exp/**/*.txt
+/exp/**/*.png
+/exp/**/*.bin
+/exp/**/*.dylib
+/exp/bufs-*/
+/exp/**/data/
+/exp/glcaps
+/exp/lib
+/exp/srgbblit
+/exp/iosurf2d
+/exp/layer0
+/exp/init0
+/exp/profiles
+/exp/glrate
+/exp/air0
+/exp/tboorphan/tbo
+/exp/usecount/usecount
+/exp/swiftrt/*
+!/exp/swiftrt/*.*
+
+# Vendored SDK archive (extracted copy in kext/vendor/MacKernelSDK is tracked)
+/kext/vendor/MacKernelSDK.tar.gz
+
+# Log bundles from tools/collect-logs.sh, loose screenshots
+/logs-*.tgz
+/m10.png
