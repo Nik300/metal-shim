@@ -1,5 +1,7 @@
 # TeraScale Metal Shim
 
+> 🇬🇧 English version: [README-en.md](README-en.md)
+
 Driver Metal per GPU AMD TeraScale (es. Turks) su macOS 26 Tahoe con Moraea: le app rilevano un device Metal e si
 avviano, mentre i comandi vengono eseguiti su OpenGL 4.1 (e OpenCL 1.2 per il compute).
 
