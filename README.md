@@ -4,8 +4,8 @@ Driver Metal per GPU AMD TeraScale (es. Turks) su macOS 26 Tahoe con Moraea: le 
 avviano, mentre i comandi vengono eseguiti su OpenGL 4.1 (e OpenCL 1.2 per il compute).
 
 > [!WARNING]
-> **Compatibilità OpenCore:** per ora la repo funziona **solo con OpenCore rc3**.
-> Il supporto a **OpenCore rc5** è in lavorazione.
+> **Compatibilità OpenCore:** per ora la repo funziona **solo con OpenCore 3.0.0 rc3**.
+> Il supporto a **OpenCore 3.0.0 rc5** è in lavorazione.
 
 ## Struttura
 
