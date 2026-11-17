@@ -1,0 +1,1 @@
+(async()=>{const iv=document.querySelector('info-view'); if(!iv) return 'no info-view'; await new Promise(r=>setTimeout(r,1500)); const t=(iv.shadowRoot||iv).innerText; return t.split('\n').filter(l=>/Skia Backend|Rasterization|Compositing|GL_RENDERER|Graphite|Display type|ANGLE/i.test(l)).slice(0,14).join(' | ');})()
